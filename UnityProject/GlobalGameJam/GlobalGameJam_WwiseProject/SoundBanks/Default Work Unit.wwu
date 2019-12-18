@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F362FE2C-B4B5-4E96-90C0-A5519A486C00}" SchemaVersion="94">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{F362FE2C-B4B5-4E96-90C0-A5519A486C00}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F362FE2C-B4B5-4E96-90C0-A5519A486C00}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Test" ID="{D0466DF7-7E42-4A7B-B7E0-B9A34A47FF76}">
+					<ObjectInclusionList>
+						<ObjectRef Name="OBJ_Totoro_Aura_play" ID="{37B05FA7-2FAC-48E1-B268-7B7D249F93BF}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AMB_Sine_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="TRIG_claqBois_play" ID="{8AA22861-B6E8-4F50-AA4D-FD946272EF52}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

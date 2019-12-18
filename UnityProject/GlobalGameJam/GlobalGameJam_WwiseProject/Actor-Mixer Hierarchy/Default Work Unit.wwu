@@ -1,6 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A3689AF4-F60E-4329-A715-450A60EEE04A}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{A3689AF4-F60E-4329-A715-450A60EEE04A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A3689AF4-F60E-4329-A715-450A60EEE04A}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="mixerAmb" ID="{CA426A20-CB6F-4FF0-B570-38FCDD80E6A2}" ShortID="466820935">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="AMB_Sine" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" ShortID="646771588">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sine470Hz" ID="{57A40CCE-2FE1-4D6D-860E-C0772D19E999}" ShortID="146090795">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Sine" ID="{B6DC3572-1B60-47BA-91EF-13BFFA716A89}" ShortID="11507520" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+											<PropertyList>
+												<Property Name="SineDuration" Type="Real32" Value="10.3"/>
+												<Property Name="SineFrequency" Type="Real32" Value="470"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+										<SourcePlugin Name="Wwise Synth One" ID="{051DCF8E-64AB-4F3F-89BB-3AEF8222A695}" ShortID="218395273" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32" Value="470"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{853917E8-A1EE-4B23-830B-BFA4CB7F966D}" ShortID="868129559">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{0FE57F10-A526-4577-AEBD-4B2BA300FCAE}" ShortID="703657807">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{0212E27D-D23F-4C3E-B5FA-94BA93661CA3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{051DCF8E-64AB-4F3F-89BB-3AEF8222A695}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sine300Hz" ID="{5E9A252E-2978-434C-8C34-608D3C7EE3F4}" ShortID="41207926">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Sine" ID="{B7E796DE-ADB1-44FD-8D1E-7B3889CFE1DB}" ShortID="921409488" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+											<PropertyList>
+												<Property Name="SineDuration" Type="Real32" Value="10.7"/>
+												<Property Name="SineFrequency" Type="Real32" Value="300"/>
+												<Property Name="SineGain" Type="Real32" Value="-13"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+										<SourcePlugin Name="Wwise Synth One" ID="{F63C1F39-3A79-4B49-9876-63E8658CB6CB}" ShortID="951145841" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32" Value="300"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{288173C4-533A-47C7-989A-83FFA773E876}" ShortID="783208878">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{4E069957-C349-4CF0-9BCD-6CA6A2DEE9E5}" ShortID="541647597">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AD0A51DE-4310-4CBE-86DC-4A2CC0444B9E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{F63C1F39-3A79-4B49-9876-63E8658CB6CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="mixerTrig" ID="{4C8C636F-E516-4051-9E1C-11D572E0C068}" ShortID="730803171">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="PercRes_Bois_claquement" ID="{AFCC8D54-130B-4422-9661-54220AA32776}" ShortID="563133439">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F5930582-141B-40D1-A6DB-7CDC803C09AC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1187"/>
+													<Property Name="Min" Type="Real64" Value="-733"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PercRes_Bois_claquement" ID="{8A32B19B-94C2-4418-8BED-A07E5D5946C6}" ShortID="308285816">
+									<Language>SFX</Language>
+									<AudioFile>PercRes_Bois_claquement.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PercRes_Bois_claquement" ID="{8A32B19B-94C2-4418-8BED-A07E5D5946C6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="mixerEmitter" ID="{D2A331F3-3A01-47D0-9B7F-AC65666AB1B2}" ShortID="284915332">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="OBJ_Totoro_Aura" ID="{DBF8B852-A8AA-4881-9599-13FE49EB5DF6}" ShortID="400951325">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{CB6379A3-C1DC-448B-BCC5-69D8D2052F65}" ShortID="280460" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="750"/>
+										<Property Name="FmAmount" Type="Real32" Value="6.8"/>
+										<Property Name="OperationMode" Type="int32" Value="1"/>
+										<Property Name="Osc1Transpose" Type="int32" Value="76"/>
+										<Property Name="Osc1Waveform" Type="int32" Value="1"/>
+										<Property Name="Osc2Transpose" Type="int32" Value="38"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{D70C5753-6040-4C6B-AD5D-B3CF6ADE82D7}" ShortID="18629819">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{D131BA67-558F-4751-8219-DD65C41460F6}" ShortID="517392977">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{52CA8466-FAED-4D59-8878-605E8E51E7C0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{CB6379A3-C1DC-448B-BCC5-69D8D2052F65}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

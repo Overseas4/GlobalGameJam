@@ -12,14 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491b9e6e80c86ac44bb4248a138abf68, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 94b504ca733fce48928d74677681757d
+    GuidInternal: 
+    m_lastTime: -8586254077220834543
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bf7e00dccd7a304cabd44eb7491dca25
+    GuidInternal: 
+    m_lastTime: -8586254077221013997
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2cfe62f3b5b4964e90c0a5519a486c00
+    GuidInternal: 
+    m_lastTime: -8586254077221074076
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5da25d0f1a067a4e86970331ce30f5e6
+    GuidInternal: 
+    m_lastTime: -8586254077221054140
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 119549ed6065814cbd0a33f49af814c5
+    GuidInternal: 
+    m_lastTime: -8586254077221004000
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 0e37a9a7e681204f87066350569dd356
+    GuidInternal: 
+    m_lastTime: -8586254077221084054
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 09f6cae873a20345b99cb5ee05fb68ff
+    GuidInternal: 
+    m_lastTime: -8586254077221023945
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f63e96f4cbbbae458a19303346ef2cd9
+    GuidInternal: 
+    m_lastTime: -8586254077220934204
+    List: []
+  ExpandedItems:
+  - /GlobalGameJam_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
