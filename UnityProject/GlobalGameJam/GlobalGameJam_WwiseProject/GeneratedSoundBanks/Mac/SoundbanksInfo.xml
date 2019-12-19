@@ -22,7 +22,7 @@
 			<Path>Test.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2483929586" Name="AMB_Sine_play" ObjectPath="\Events\Default Work Unit\AMB_Sine_play" DurationType="Unknown"/>
-				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" DurationType="Unknown"/>
+				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" MaxAttenuation="60.000000" DurationType="Unknown"/>
 				<Event Id="2668050469" Name="TRIG_claqBois_play" ObjectPath="\Events\Default Work Unit\TRIG_claqBois_play" DurationType="OneShot" DurationMin="0.200762" DurationMax="0.608598"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
