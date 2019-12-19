@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Totoro : MonoBehaviour
 {
-    [SerializeField]AK.Wwise.Event akEvent;
+    [SerializeField]AK.Wwise.Event totoroClickEvent;
 
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            akEvent.Post(gameObject);
+            totoroClickEvent.Post(gameObject);
         }
     }
 }
