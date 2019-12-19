@@ -424,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c3dfd01ff95817d4c9245d13add7a225, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c3dfd01ff95817d4c9245d13add7a225, type: 3}
       propertyPath: m_LocalPosition.y
@@ -468,15 +468,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c3dfd01ff95817d4c9245d13add7a225, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c3dfd01ff95817d4c9245d13add7a225, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c3dfd01ff95817d4c9245d13add7a225, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3dfd01ff95817d4c9245d13add7a225, type: 3}
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362bf7c0c91a6c34a8b44c23e9d67de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  akEvent:
+  totoroClickEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8d8c6526233d2fc408ee9e50ec451517,
