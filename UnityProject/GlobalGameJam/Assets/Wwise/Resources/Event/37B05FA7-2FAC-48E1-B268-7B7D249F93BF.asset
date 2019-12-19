@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7475d23f768844408b09464b66f8542, type: 3}
+  m_Name: 37B05FA7-2FAC-48E1-B268-7B7D249F93BF
+  m_EditorClassIdentifier: 
+  objectName: OBJ_Totoro_Aura_play
+  id: 304890365
+  guid: 37B05FA7-2FAC-48E1-B268-7B7D249F93BF
