@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TotoroScript : MonoBehaviour
+public class Totoro : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]AK.Wwise.Event akEvent;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            akEvent.Post(gameObject);
+        }
     }
 }
