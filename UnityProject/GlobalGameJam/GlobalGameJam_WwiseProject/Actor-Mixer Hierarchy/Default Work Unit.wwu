@@ -224,6 +224,7 @@
 				</ActorMixer>
 				<ActorMixer Name="mixerEmitter" ID="{D2A331F3-3A01-47D0-9B7F-AC65666AB1B2}" ShortID="284915332">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="5"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
