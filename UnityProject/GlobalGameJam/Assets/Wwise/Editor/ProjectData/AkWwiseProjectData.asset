@@ -17,58 +17,105 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 94b504ca733fce48928d74677681757d
     GuidInternal: 
-    m_lastTime: -8586254077220834543
+    m_lastTime: -8586254065130439793
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: bf7e00dccd7a304cabd44eb7491dca25
     GuidInternal: 
-    m_lastTime: -8586254077221013997
+    m_lastTime: -8586254065133301075
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2cfe62f3b5b4964e90c0a5519a486c00
     GuidInternal: 
-    m_lastTime: -8586254077221074076
-    List: []
+    m_lastTime: -8586248926825921633
+    List:
+    - name: Test
+      guid: f76d46d0427e7b4ab7e0b9a34a47ff76
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Test
+        ObjectType: 7
+      Path: Default Work Unit\Test
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5da25d0f1a067a4e86970331ce30f5e6
     GuidInternal: 
-    m_lastTime: -8586254077221054140
-    List: []
+    m_lastTime: -8586248926828943523
+    List:
+    - name: AMB_Sine_play
+      guid: 3117dc731fcb974e8f6b769469165c1e
+      id: 2483929586
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_Sine_play
+        ObjectType: 3
+      Path: Default Work Unit\AMB_Sine_play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OBJ_Totoro_Aura_play
+      guid: a75fb037ac2fe148b2687b7d249f93bf
+      id: 304890365
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_Totoro_Aura_play
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_Totoro_Aura_play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TRIG_claqBois_play
+      guid: 6128a28ae8b6504faa4dfd946272ef52
+      id: 2668050469
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TRIG_claqBois_play
+        ObjectType: 3
+      Path: Default Work Unit\TRIG_claqBois_play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 119549ed6065814cbd0a33f49af814c5
     GuidInternal: 
-    m_lastTime: -8586254077221004000
+    m_lastTime: -8586254065134590393
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0e37a9a7e681204f87066350569dd356
     GuidInternal: 
-    m_lastTime: -8586254077221084054
+    m_lastTime: -8586254065131102485
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 09f6cae873a20345b99cb5ee05fb68ff
     GuidInternal: 
-    m_lastTime: -8586254077221023945
+    m_lastTime: -8586254065130872520
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f63e96f4cbbbae458a19303346ef2cd9
     GuidInternal: 
-    m_lastTime: -8586254077220934204
+    m_lastTime: -8586254065130672358
     List: []
   ExpandedItems:
   - /GlobalGameJam_WwiseProject
+  - /GlobalGameJam_WwiseProject/Events
+  - /GlobalGameJam_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
