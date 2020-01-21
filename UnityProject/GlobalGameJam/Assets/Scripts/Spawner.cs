@@ -42,34 +42,36 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         ResetOnEscape();
+
         timer += Time.deltaTime;
-        if(timer > _spawnInterval)
+        if (timer > _spawnInterval)
         {
-            timer -= _spawnInterval;
-            for(int i = 0; i < _ammountPerInterval; i++)
-            {
-                GameObject spawn = SpawnObject;
-                SetRandomPosition(ref spawn);
-                _spawns.Add(spawn);
-            }
+            SpawnOnInterval();
         }
     }
 
-    void SetRandomPosition(ref GameObject obj)
+
+    void SpawnOnInterval()
     {
-        Transform randomSpawnPoint = GetSpawnPoint;
-        obj.transform.position = randomSpawnPoint.position;
-        obj.transform.rotation = randomSpawnPoint.rotation;
+        timer -= _spawnInterval;
+        for (int i = 0; i < _ammountPerInterval; i++)
+        {
+            GameObject spawn = SpawnObject;
+            Transform randomSpawnPoint = GetSpawnPoint;
+            spawn.transform.position = randomSpawnPoint.position;
+            spawn.transform.rotation = randomSpawnPoint.rotation;
+            _spawns.Add(spawn);
+        }
     }
 
     void ResetSpawnsList()
     {
-        for (int i = 0; i < _spawns.Count; i++)
+        while(_spawns.Count > 0)
         {
-            Destroy(_spawns[i]);
-            _spawns.RemoveAt(i);
+            _spawns[0].SetActive(false);
+            Destroy(_spawns[0]);
+            _spawns.RemoveAt(0);
         }
-        _spawns = new List<GameObject>();
     }
     void ResetSpawnPositionsList()
     {
