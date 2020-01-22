@@ -4,39 +4,54 @@ using UnityEngine;
 
 public class ColorRandomizer : MonoBehaviour
 {
-    [SerializeField] private List<Color> _colors = new List<Color>();
-    [SerializeField] private List<float> _ratios = new List<float>();
+    [System.Serializable]
+    public struct ColorWithRatio
+    {
+        public Color color;
+        public float ratio;
+    }
+
+    [SerializeField] private List<ColorWithRatio> _colorsWithRatio = new List<ColorWithRatio>();
+    public List<ColorWithRatio> ColorsWithRatio { get => _colorsWithRatio; set => _colorsWithRatio = value; }
+
     private Color RandomColor
     {
         get
         {
             Color color = Color.white;
-            if (Colors.Count != 0)
+            if (ColorsWithRatio.Count != 0)
             {
-                if (_ratios.Count != Colors.Count)
+                float sumOfRatios = 0f;
+                for (int i = 0; i < ColorsWithRatio.Count; i++)
                 {
-                    color = _colors[Random.Range(0, _colors.Count)];
+                    sumOfRatios += ColorsWithRatio[i].ratio;
+                }
+
+                if (sumOfRatios == 0f)
+                {
+                    int randomIndex = Random.Range(0, ColorsWithRatio.Count);
+                    color = ColorsWithRatio[randomIndex].color;
                 }
                 else
                 {
-                    float random01 = Random.Range(0f, 1f);
+                    float random = Random.Range(0f, sumOfRatios);
                     float value = 0f;
-                    for (int i = 0; i < _ratios.Count; i++)
+                    for (int i = 0; i < ColorsWithRatio.Count; i++)
                     {
-                        value += _ratios[i];
-                        if (random01 < value)
+                        value += ColorsWithRatio[i].ratio;
+                        if (random < value)
                         {
-                            color = Colors[i];
+                            color = ColorsWithRatio[i].color;
                             break;
                         }
                     }
                 }
+
             }
             return color;
         }
     }
-    public List<Color> Colors { get => _colors; set => _colors = value; }
-    public List<float> Ratios { get => _ratios; set => _ratios = value; }
+
     void Start()
     {
         SetRandomColor();

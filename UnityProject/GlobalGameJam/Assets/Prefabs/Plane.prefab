@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3151381500649937557
+--- !u!1 &3389212324383594121
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2158977212980045769}
-  - component: {fileID: 6178783626280363112}
-  - component: {fileID: 1799289457669855235}
-  - component: {fileID: 2450754076495978581}
-  - component: {fileID: 9143849464835973007}
-  - component: {fileID: 5449839125480581880}
+  - component: {fileID: 3389212324383594133}
+  - component: {fileID: 3389212324383594132}
+  - component: {fileID: 3389212324383594135}
+  - component: {fileID: 3389212324383594134}
+  - component: {fileID: 3389212324383594130}
   m_Layer: 0
-  m_Name: SpawnExample
+  m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2158977212980045769
+--- !u!4 &3389212324383594133
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151381500649937557}
+  m_GameObject: {fileID: 3389212324383594121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.35, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6178783626280363112
+--- !u!33 &3389212324383594132
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151381500649937557}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1799289457669855235
+  m_GameObject: {fileID: 3389212324383594121}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3389212324383594135
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151381500649937557}
+  m_GameObject: {fileID: 3389212324383594121}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ad24008a40cab7d4d906e8f9925fb0d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,55 +79,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &2450754076495978581
-SphereCollider:
+--- !u!64 &3389212324383594134
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151381500649937557}
+  m_GameObject: {fileID: 3389212324383594121}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &9143849464835973007
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151381500649937557}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &5449839125480581880
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3389212324383594130
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151381500649937557}
+  m_GameObject: {fileID: 3389212324383594121}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b2f84ee13d0acf408150a68f30de33b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _colorsWithRatio:
-  - color: {r: 0.3443396, g: 0.5907525, b: 1, a: 0}
+  - color: {r: 0.254717, g: 0.1929544, b: 0.1021271, a: 0}
     ratio: 0
-  - color: {r: 0.5473832, g: 0.764151, b: 0.032440357, a: 0}
+  - color: {r: 0.064880736, g: 0.16981131, b: 0.098983176, a: 0}
     ratio: 0
-  - color: {r: 0.7924528, g: 0.40455368, b: 0.04111784, a: 0}
-    ratio: 0
-  - color: {r: 0.0033374948, g: 0.7075472, b: 0.08263795, a: 0}
-    ratio: 0
-  - color: {r: 0.6848675, g: 0.18770024, b: 0.6981132, a: 0}
+  - color: {r: 0.25920358, g: 0.095941596, b: 0.26415092, a: 0}
     ratio: 0
