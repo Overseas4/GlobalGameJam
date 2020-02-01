@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f177116400c8d174e8f4ba688dd9026e
+guid: cf4b4d0db16582d48957994e2248534d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: body
-    100002: //RootNode
+    100000: Alpha_Joints
+    100002: Alpha_Surface
     100004: mixamorig:Head
     100006: mixamorig:HeadTop_End
     100008: mixamorig:Hips
@@ -72,8 +72,9 @@ ModelImporter:
     100132: mixamorig:Spine
     100134: mixamorig:Spine1
     100136: mixamorig:Spine2
-    400000: body
-    400002: //RootNode
+    100138: //RootNode
+    400000: Alpha_Joints
+    400002: Alpha_Surface
     400004: mixamorig:Head
     400006: mixamorig:HeadTop_End
     400008: mixamorig:Hips
@@ -141,12 +142,15 @@ ModelImporter:
     400132: mixamorig:Spine
     400134: mixamorig:Spine1
     400136: mixamorig:Spine2
-    2100000: geo_body1_initialShadingGroup1
-    2100002: lambert1
-    4300000: body
-    7400000: Take 001
+    400138: //RootNode
+    2100000: Alpha_Body_MAT
+    2100002: Alpha_Joints_MAT
+    4300000: Alpha_Surface
+    4300002: Alpha_Joints
+    7400000: mixamo.com
     9500000: //RootNode
-    13700000: body
+    13700000: Alpha_Joints
+    13700002: Alpha_Surface
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -187,7 +191,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
