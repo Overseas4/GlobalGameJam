@@ -10,10 +10,10 @@ public class ColorRandomizer : MonoBehaviour
         public Color color;
         public float ratio;
     }
-
+    [SerializeField] private List<GameObject> _objectsOfSameColor = new List<GameObject>();
     [SerializeField] private List<ColorWithRatio> _colorsWithRatio = new List<ColorWithRatio>();
     public List<ColorWithRatio> ColorsWithRatio { get => _colorsWithRatio; set => _colorsWithRatio = value; }
-
+    public List<GameObject> ObjectsOfSameColor { get => _objectsOfSameColor; set => _objectsOfSameColor = value; }
     private Color RandomColor
     {
         get
@@ -64,7 +64,21 @@ public class ColorRandomizer : MonoBehaviour
 
     void SetRandomColor()
     {
-        GetComponent<MeshRenderer>().material.color = RandomColor;
+        Color randomColor = RandomColor;
+        MeshRenderer renderer = GetComponent<MeshRenderer>();
+        if(renderer != null)
+        {
+            renderer.material.color = randomColor;
+        }
+        foreach (GameObject go in ObjectsOfSameColor)
+        {
+            MeshRenderer goRenderer = go.GetComponent<MeshRenderer>();
+            if (goRenderer != null)
+            {
+                goRenderer.material.color = randomColor;
+            }
+        }
+
     }
 
     void ResetOnEscape()
