@@ -54,9 +54,10 @@ public class ScrollWaterTexture : MonoBehaviour
         }
         else
         {
+            Renderer.material.color = Color.red;
             Renderer.material.mainTextureOffset = _offset * 1.5f ;
             Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2 * 1.5f);
-            transform.position = _initialPosition + _rotationPoint.transform.forward * _bigWaveHeight
+            transform.position = _initialPosition + _rotationPoint.transform.forward * _bigWaveHeight;
             
             if(_bigWavesTimer > _bigWavesInterval + _cycleDuration)
             {
