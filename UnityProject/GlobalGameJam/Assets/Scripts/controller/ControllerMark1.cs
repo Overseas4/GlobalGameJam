@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using UnityEngine;
-
 public class ControllerMark1 : MonoBehaviour
 {
 	private const string HorizontalAxis = "Horizontal";
@@ -59,23 +58,25 @@ public class ControllerMark1 : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		float fallingSpeed = rb.velocity.y;
 		Vector3 direction = new Vector3(Input.GetAxisRaw(HorizontalAxis), 0, Input.GetAxisRaw(VerticalAxis));
-		rb.velocity.Set(rb.velocity.x * decelationSpeed, rb.velocity.y, rb.velocity.z * decelationSpeed);
+
+		Vector3 velocity = new Vector3(rb.velocity.x * decelationSpeed, fallingSpeed, rb.velocity.z * decelationSpeed);
 
 		if (direction != Vector3.zero)
 		{
-			rb.velocity += direction * accelationSpeed;
+			velocity += direction * accelationSpeed;
+			velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
+
 			Quaternion playerRotation = playerTransform.rotation;
 			Quaternion directionRotation = Quaternion.LookRotation(direction);
 			Quaternion targetRotation = Quaternion.Slerp(playerRotation, directionRotation, Time.deltaTime * rotateSpeed);
 			playerTransform.rotation = targetRotation;
 		}
-		else
-		{
-		}
-		rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
 
-		forwardSpeed = rb.velocity.magnitude;
+		rb.velocity = new Vector3(velocity.x, fallingSpeed, velocity.z);
+
+		forwardSpeed = new Vector3(velocity.x, 0, velocity.z).magnitude;
 
 		anim.SetFloat(turnSpeedHash, turnSpeed);
 		anim.SetFloat(forwardSpeedHash, forwardSpeed);
