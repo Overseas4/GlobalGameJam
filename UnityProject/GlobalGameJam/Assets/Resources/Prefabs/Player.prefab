@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &984751775121087887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647344510408891427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2f84ee13d0acf408150a68f30de33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsOfSameColor: []
+  _colorsWithRatio:
+  - color: {r: 0.12130654, g: 0.50638443, b: 0.8867924, a: 0}
+    ratio: 0
+  - color: {r: 0.8301887, g: 0.16055535, b: 0.8034053, a: 0}
+    ratio: 0
+  - color: {r: 0.8207547, g: 0.38383937, b: 0.07355818, a: 0}
+    ratio: 0
+  - color: {r: 0.24653165, g: 0.6226415, b: 0.049928807, a: 0}
+    ratio: 0
+  - color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
+    ratio: 0
 --- !u!1 &1647344511293763498
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,6 +104,8 @@ MonoBehaviour:
   decelationSpeed: 0.9
   accelationSpeed: 1.5
   rotateSpeed: 10
+  pickUpRange: 0
+  nbMaxPickUp: 0
 --- !u!1001 &1647344510408923783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148,6 +174,12 @@ PrefabInstance:
 --- !u!4 &1647344510408785921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: c9b869374a2a6a848aa2d822314a9fb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647344510408923783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647344510408891427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: c9b869374a2a6a848aa2d822314a9fb9,
     type: 3}
   m_PrefabInstance: {fileID: 1647344510408923783}
   m_PrefabAsset: {fileID: 0}
