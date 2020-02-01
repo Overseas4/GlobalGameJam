@@ -36,7 +36,7 @@
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="7axY5+J8B0Sr8EmHWaK8JPalFLWhFrFAkgriApMs/nU="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="921G0EJ+e0q34LmjSkf/dg=="/>
@@ -93,7 +93,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_0" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_0" Type="string" Value="9Jpoow72KUOnFUUKYO7gSiBqQspvy/BPtXA4/N2A5qI="/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="b2OMTBblUUCeHBHVcuDAaPSaaKMO9ilDpxVFCmDu4Eo="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="b2OMTBblUUCeHBHVcuDAaPSaaKMO9ilDpxVFCmDu4Eo5F5u3UJBuR4bw3Fk83ow2RrSgKBFvHk+n6Nnh11HmeiBqQspvy/BPtXA4/N2A5qI="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_0" Type="string" Value="Re+qn5D4J0OTSYMlA3O58l2iXQ8aBnpOhpcDMc4w9eY="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="XaJdDxoGek6GlwMxzjD15g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_0" Type="string" Value=""/>
