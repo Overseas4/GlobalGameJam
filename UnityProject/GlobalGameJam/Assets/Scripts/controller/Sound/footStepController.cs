@@ -20,6 +20,7 @@ public class footStepController : MonoBehaviour
 	{
 		controller = GetComponentInParent<ControllerMark1>();
 	}
+
 	private void Update()
 	{
 		Vector3 leftFootPosition = leftFoot.position;
