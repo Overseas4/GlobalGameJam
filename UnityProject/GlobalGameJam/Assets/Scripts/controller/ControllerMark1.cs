@@ -12,11 +12,17 @@ public class ControllerMark1 : MonoBehaviour
 	private int pickUpHash = Animator.StringToHash("pickUp");
 	private int action1Hash = Animator.StringToHash("action1");
 	private int interactibleLayerMask;
+	private int waterLayerMask;
 
-	private float turnSpeed;
-	private float forwardSpeed;
+	private float feetDistance;
+
+	public float ForwardSpeed { get; private set; }
+	public bool IsInWater { get; private set; }
+	public float RefMaxSpeed { get; private set; }
+
 	private bool pickUp;
 	private bool action1;
+	private float life;
 
 	public float maxSpeed;
 	public float decelationSpeed;
@@ -24,7 +30,6 @@ public class ControllerMark1 : MonoBehaviour
 	public float rotateSpeed;
 	public float pickUpRange;
 	public int nbMaxPickUp;
-	private float life;
 
 	private Rigidbody rb;
 	private Animator anim;
@@ -32,7 +37,10 @@ public class ControllerMark1 : MonoBehaviour
 
 	private void Awake()
 	{
+		RefMaxSpeed = maxSpeed;
 		interactibleLayerMask = LayerMask.GetMask("Interactible");
+		waterLayerMask = LayerMask.GetMask("Water");
+
 		rb = GetComponentInChildren<Rigidbody>();
 		anim = GetComponentInChildren<Animator>();
 		playerTransform = transform.GetChild(0).transform;
@@ -76,11 +84,12 @@ public class ControllerMark1 : MonoBehaviour
 
 		rb.velocity = new Vector3(velocity.x, fallingSpeed, velocity.z);
 
-		forwardSpeed = new Vector3(velocity.x, 0, velocity.z).magnitude;
+		ForwardSpeed = new Vector3(velocity.x, 0, velocity.z).magnitude;
 
-		anim.SetFloat(turnSpeedHash, turnSpeed);
-		anim.SetFloat(forwardSpeedHash, forwardSpeed);
+		anim.SetFloat(forwardSpeedHash, ForwardSpeed);
 		anim.SetBool(pickUpHash, pickUp);
-		anim.SetBool(action1Hash, action1);
+		//anim.SetBool(action1Hash, action1);
+
+		IsInWater = Physics.Raycast(transform.position, Vector3.down * feetDistance, waterLayerMask);
 	}
 }
