@@ -49,19 +49,21 @@ public class footStepController : MonoBehaviour
 
 		if (playSound)
 		{
-			Debug.Log("Poc");
 			if (controller.IsInWater)
 			{
+				Debug.Log("splouch");
 				eventController.Instance.FS_eau.Post(controller.gameObject);
 			}
 			else
 			{
 				if (controller.ForwardSpeed > minRunSpeedForSound)
 				{
+					Debug.Log("cour");
 					eventController.Instance.FS_sable_course.Post(controller.gameObject);
 				}
 				else
 				{
+					Debug.Log("marche");
 					eventController.Instance.FS_sable_marche.Post(controller.gameObject);
 				}
 			}

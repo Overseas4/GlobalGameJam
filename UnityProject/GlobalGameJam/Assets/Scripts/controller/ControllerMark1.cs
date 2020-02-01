@@ -14,7 +14,7 @@ public class ControllerMark1 : MonoBehaviour
 	private int interactibleLayerMask;
 	private int waterLayerMask;
 
-	private float feetDistance;
+	private float feetDistance = 1f;
 
 	public float ForwardSpeed { get; private set; }
 	public bool IsInWater { get; private set; }
@@ -32,6 +32,7 @@ public class ControllerMark1 : MonoBehaviour
 	public int nbMaxPickUp;
 
 	private Rigidbody rb;
+	private Collider collider;
 	private Animator anim;
 	private Transform playerTransform;
 
@@ -42,6 +43,7 @@ public class ControllerMark1 : MonoBehaviour
 		waterLayerMask = LayerMask.GetMask("Water");
 
 		rb = GetComponentInChildren<Rigidbody>();
+		collider = GetComponentInChildren<Collider>();
 		anim = GetComponentInChildren<Animator>();
 		playerTransform = transform.GetChild(0).transform;
 	}
@@ -89,7 +91,7 @@ public class ControllerMark1 : MonoBehaviour
 		anim.SetFloat(forwardSpeedHash, ForwardSpeed);
 		anim.SetBool(pickUpHash, pickUp);
 		//anim.SetBool(action1Hash, action1);
-
+		
 		IsInWater = Physics.Raycast(transform.position, Vector3.down * feetDistance, waterLayerMask);
 	}
 }
