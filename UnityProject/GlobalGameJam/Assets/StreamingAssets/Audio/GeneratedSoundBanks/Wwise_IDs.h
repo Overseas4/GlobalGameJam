@@ -13,6 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ACT_ALGUE_PICKUP = 2077102845U;
+        static const AkUniqueID ACT_ALGUE_USE = 844881994U;
+        static const AkUniqueID ACT_BOIS_PICKUP = 2503182546U;
+        static const AkUniqueID ACT_BOIS_USE = 912935335U;
+        static const AkUniqueID ACT_EAU_PICKUP = 4281641228U;
+        static const AkUniqueID ACT_SABLE_PICKUP = 2528094752U;
+        static const AkUniqueID ACT_SABLE_USE = 2689366621U;
+        static const AkUniqueID ACT_SUPERBOIS_PICKUP = 2961476021U;
+        static const AkUniqueID ACT_SUPERBOIS_USE = 3517581714U;
         static const AkUniqueID AMB_JOUR_PLAY = 3638139367U;
         static const AkUniqueID AMB_STOP = 729984210U;
         static const AkUniqueID AMB_SWITCH_JOUR = 1678679793U;
