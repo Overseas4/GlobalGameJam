@@ -57,7 +57,6 @@ public class DayCycleLight : MonoBehaviour
             switch (_currentdaytime)
             {
                 case daytime.earlyday:
-                    Debug.Log(Ratio);
                     color = Color.Lerp(_colorsunrise, _colorsunup, Ratio);
                     break;
                 case daytime.midday:
