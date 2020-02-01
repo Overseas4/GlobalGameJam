@@ -11,6 +11,9 @@ public class ScrollWaterTexture : MonoBehaviour
     [SerializeField] private float _resetTextureTimer = 0f;
     private float _timer = 0f;
     private float _distanceFromRotationPoint = 2f;
+
+    [SerializeField] private float _cicleSpeed = 10f;
+    [SerializeField] private float _wavesSpeed = 0.05f;
     private Renderer _renderer = null;
     private Renderer Renderer { get => _renderer != null ? _renderer : _renderer = GetComponent<Renderer>(); }
     private Vector2 _offset = new Vector2();
@@ -27,12 +30,12 @@ public class ScrollWaterTexture : MonoBehaviour
     }
     void Update()
     {
-        _timer += Time.deltaTime * 0.1f;
+        _timer += Time.deltaTime * _wavesSpeed;
         _offset = new Vector2(_timer * _scrollNormalX, _timer * _scrollNormalY);
         _offset2 = new Vector2(_timer * _scrollNormal2X, _timer * _scrollNormal2Y);
         Renderer.material.mainTextureOffset = _offset;
         Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2);
-        _rotationPoint.transform.RotateAround(_initialPosition, Vector3.left, 50f * Time.deltaTime);
+        _rotationPoint.transform.RotateAround(_initialPosition, Vector3.left, _cicleSpeed * Time.deltaTime);
         transform.position = _initialPosition + _rotationPoint.transform.forward * _distanceFromRotationPoint;
     }
 }
