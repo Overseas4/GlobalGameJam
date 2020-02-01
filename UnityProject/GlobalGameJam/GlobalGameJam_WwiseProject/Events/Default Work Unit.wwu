@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="AMB_Sine_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}">
+				<Event Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -12,11 +12,11 @@
 						<Action Name="" ID="{D15CE428-1F0C-4DFA-8BA9-C9CCAE374539}" ShortID="552659670">
 							<PropertyList>
 								<Property Name="FadeInCurve" Type="int16" Value="5"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AMB_Sine" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+									<ObjectRef Name="AMB_jour" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -51,6 +51,97 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="PercRes_Bois_claquement" ID="{AFCC8D54-130B-4422-9661-54220AA32776}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_switch_nuit" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{58C6DAE2-C30E-4769-918C-2376CE7CE496}" ShortID="622495844">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_nuit" ID="{7ECF776C-0049-4772-AFC5-CC9170B2E60B}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A409C8AB-620D-4990-BE07-8ABE153489E1}" ShortID="118836165">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_jour" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_switch_jour" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{059D70A0-CC04-4AC4-B35D-70C0A5459A28}" ShortID="702314671">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_jour" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{05716660-F7FB-4DB6-9185-25DAEC2A5301}" ShortID="313401776">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_nuit" ID="{7ECF776C-0049-4772-AFC5-CC9170B2E60B}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{CEA49CFA-659D-44C7-B446-792736AB3D88}" ShortID="226002308">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_nuit" ID="{7ECF776C-0049-4772-AFC5-CC9170B2E60B}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CC4DC1F8-C24E-490A-8E67-74C7547693A5}" ShortID="833012265">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_jour" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
