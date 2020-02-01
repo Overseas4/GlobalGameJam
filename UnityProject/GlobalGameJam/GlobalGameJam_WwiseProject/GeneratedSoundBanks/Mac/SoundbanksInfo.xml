@@ -26,6 +26,15 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2077102845" Name="ACT_algue_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_algue_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="844881994" Name="ACT_algue_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_algue_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2503182546" Name="ACT_bois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="912935335" Name="ACT_bois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4281641228" Name="ACT_eau_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_eau_pickUp" DurationType="OneShot" DurationMin="1.584271" DurationMax="1.703875"/>
+				<Event Id="2528094752" Name="ACT_sable_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2689366621" Name="ACT_sable_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2961476021" Name="ACT_superBois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3517581714" Name="ACT_superBois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB\AMB_jour_play" DurationType="Infinite"/>
 				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB\AMB_switch_jour" DurationType="Infinite"/>
@@ -148,6 +157,10 @@
 				<File Id="975767688" Language="SFX">
 					<ShortName>FS_sable_marche_12.wav</ShortName>
 					<Path>SFX\FS_sable_marche_12_10C4C929.wem</Path>
+				</File>
+				<File Id="993427534" Language="SFX">
+					<ShortName>ACT_eau_pickUp.wav</ShortName>
+					<Path>SFX\ACT_eau_pickUp_10C4C929.wem</Path>
 				</File>
 				<File Id="1030168568" Language="SFX">
 					<ShortName>FS_sable_course_15.wav</ShortName>
