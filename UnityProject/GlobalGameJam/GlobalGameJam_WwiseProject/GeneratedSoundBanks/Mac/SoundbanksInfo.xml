@@ -16,10 +16,10 @@
 			<ShortName>Ambiant</ShortName>
 			<Path>Ambiant.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB_jour_play" DurationType="Infinite"/>
-				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB_switch_jour" DurationType="Infinite"/>
-				<Event Id="376456049" Name="AMB_switch_nuit" ObjectPath="\Events\Default Work Unit\AMB_switch_nuit" DurationType="Infinite"/>
+				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB\AMB_jour_play" DurationType="Infinite"/>
+				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB\AMB_switch_jour" DurationType="Infinite"/>
+				<Event Id="376456049" Name="AMB_switch_nuit" ObjectPath="\Events\Default Work Unit\AMB\AMB_switch_nuit" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="62547066" Language="SFX">
@@ -40,7 +40,7 @@
 				</File>
 				<File Id="285009467" Language="SFX">
 					<ShortName>AMB_nuit_eau.wav</ShortName>
-					<Path>SFX\AMB_nuit_eau_5C4CAF97.wem</Path>
+					<Path>SFX\AMB_nuit_eau_C089B5C3.wem</Path>
 				</File>
 				<File Id="414888579" Language="SFX">
 					<ShortName>AMB_jour_wave_03.wav</ShortName>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="634674283" Language="SFX">
 					<ShortName>AMB_nuit_background.wav</ShortName>
-					<Path>SFX\AMB_nuit_background_0ACCA464.wem</Path>
+					<Path>SFX\AMB_nuit_background_812B2634.wem</Path>
 				</File>
 				<File Id="646411383" Language="SFX">
 					<ShortName>AMB_nuit_wave_07.wav</ShortName>
@@ -64,7 +64,7 @@
 				</File>
 				<File Id="710100213" Language="SFX">
 					<ShortName>AMB_jour_eau.wav</ShortName>
-					<Path>SFX\AMB_jour_eau_8E71AC7F.wem</Path>
+					<Path>SFX\AMB_jour_eau_86E0FE84.wem</Path>
 				</File>
 				<File Id="760461119" Language="SFX">
 					<ShortName>AMB_nuit_wave_06.wav</ShortName>
@@ -72,7 +72,7 @@
 				</File>
 				<File Id="830644049" Language="SFX">
 					<ShortName>AMB_nuit_crickets_05.wav</ShortName>
-					<Path>SFX\AMB_nuit_crickets_05_ABA80F9D.wem</Path>
+					<Path>SFX\AMB_nuit_crickets_05_F3211E93.wem</Path>
 				</File>
 				<File Id="898447040" Language="SFX">
 					<ShortName>AMB_nuit_wave_08.wav</ShortName>
@@ -84,7 +84,7 @@
 				</File>
 				<File Id="931035927" Language="SFX">
 					<ShortName>AMB_jour_background.wav</ShortName>
-					<Path>SFX\AMB_jour_background_24ED9B6E.wem</Path>
+					<Path>SFX\AMB_jour_background_7D9C6A32.wem</Path>
 				</File>
 				<File Id="940516832" Language="SFX">
 					<ShortName>AMB_jour_mouette_03.wav</ShortName>
@@ -102,14 +102,33 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB_jour_play" DurationType="Infinite"/>
-				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB_switch_jour" DurationType="Infinite"/>
-				<Event Id="376456049" Name="AMB_switch_nuit" ObjectPath="\Events\Default Work Unit\AMB_switch_nuit" DurationType="Infinite"/>
+				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB\AMB_jour_play" DurationType="Infinite"/>
+				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB\AMB_switch_jour" DurationType="Infinite"/>
+				<Event Id="376456049" Name="AMB_switch_nuit" ObjectPath="\Events\Default Work Unit\AMB\AMB_switch_nuit" DurationType="Infinite"/>
+				<Event Id="23400934" Name="FS_eau" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_eau" DurationType="OneShot" DurationMin="0.514785" DurationMax="0.653593"/>
+				<Event Id="4224216346" Name="FS_sable_course" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_course" DurationType="OneShot" DurationMin="0.481704" DurationMax="0.643121"/>
+				<Event Id="127011407" Name="FS_sable_marche" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_marche" DurationType="OneShot" DurationMin="0.182487" DurationMax="0.349751"/>
 				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" MaxAttenuation="60.000000" DurationType="Unknown"/>
 				<Event Id="2668050469" Name="TRIG_claqBois_play" ObjectPath="\Events\Default Work Unit\TRIG_claqBois_play" DurationType="OneShot" DurationMin="0.200762" DurationMax="0.608598"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="3509374" Language="SFX">
+					<ShortName>FS_sable_marche_11.wav</ShortName>
+					<Path>SFX\FS_sable_marche_11_10C4C929.wem</Path>
+				</File>
+				<File Id="14374580" Language="SFX">
+					<ShortName>FS_sable_course_16.wav</ShortName>
+					<Path>SFX\FS_sable_course_16_10C4C929.wem</Path>
+				</File>
+				<File Id="29139635" Language="SFX">
+					<ShortName>FS_eau_01.wav</ShortName>
+					<Path>SFX\FS_eau_01_10C4C929.wem</Path>
+				</File>
+				<File Id="53214674" Language="SFX">
+					<ShortName>FS_sable_marche_13.wav</ShortName>
+					<Path>SFX\FS_sable_marche_13_10C4C929.wem</Path>
+				</File>
 				<File Id="62547066" Language="SFX">
 					<ShortName>AMB_nuit_wave_09.wav</ShortName>
 					<Path>SFX\AMB_nuit_wave_09_10C4C929.wem</Path>
@@ -117,6 +136,10 @@
 				<File Id="94534673" Language="SFX">
 					<ShortName>AMB_jour_mouette_02.wav</ShortName>
 					<Path>SFX\AMB_jour_mouette_02_10C4C929.wem</Path>
+				</File>
+				<File Id="201240982" Language="SFX">
+					<ShortName>FS_eau_00.wav</ShortName>
+					<Path>SFX\FS_eau_00_10C4C929.wem</Path>
 				</File>
 				<File Id="201466404" Language="SFX">
 					<ShortName>AMB_jour_wave_05.wav</ShortName>
@@ -128,11 +151,15 @@
 				</File>
 				<File Id="285009467" Language="SFX">
 					<ShortName>AMB_nuit_eau.wav</ShortName>
-					<Path>SFX\AMB_nuit_eau_5C4CAF97.wem</Path>
+					<Path>SFX\AMB_nuit_eau_C089B5C3.wem</Path>
 				</File>
 				<File Id="308285816" Language="SFX">
 					<ShortName>PercRes_Bois_claquement.wav</ShortName>
 					<Path>SFX\PercRes_Bois_claquement_10C4C929.wem</Path>
+				</File>
+				<File Id="327986251" Language="SFX">
+					<ShortName>FS_eau_03.wav</ShortName>
+					<Path>SFX\FS_eau_03_DCA65CDC.wem</Path>
 				</File>
 				<File Id="414888579" Language="SFX">
 					<ShortName>AMB_jour_wave_03.wav</ShortName>
@@ -142,13 +169,21 @@
 					<ShortName>AMB_jour_wave_04.wav</ShortName>
 					<Path>SFX\AMB_jour_wave_04_10C4C929.wem</Path>
 				</File>
+				<File Id="515074450" Language="SFX">
+					<ShortName>FS_eau_02.wav</ShortName>
+					<Path>SFX\FS_eau_02_10C4C929.wem</Path>
+				</File>
+				<File Id="557627522" Language="SFX">
+					<ShortName>FS_sable_marche_14.wav</ShortName>
+					<Path>SFX\FS_sable_marche_14_10C4C929.wem</Path>
+				</File>
 				<File Id="605390967" Language="SFX">
 					<ShortName>AMB_jour_mouette_01.wav</ShortName>
 					<Path>SFX\AMB_jour_mouette_01_10C4C929.wem</Path>
 				</File>
 				<File Id="634674283" Language="SFX">
 					<ShortName>AMB_nuit_background.wav</ShortName>
-					<Path>SFX\AMB_nuit_background_0ACCA464.wem</Path>
+					<Path>SFX\AMB_nuit_background_812B2634.wem</Path>
 				</File>
 				<File Id="646411383" Language="SFX">
 					<ShortName>AMB_nuit_wave_07.wav</ShortName>
@@ -156,7 +191,11 @@
 				</File>
 				<File Id="710100213" Language="SFX">
 					<ShortName>AMB_jour_eau.wav</ShortName>
-					<Path>SFX\AMB_jour_eau_8E71AC7F.wem</Path>
+					<Path>SFX\AMB_jour_eau_86E0FE84.wem</Path>
+				</File>
+				<File Id="751262472" Language="SFX">
+					<ShortName>FS_sable_course_17.wav</ShortName>
+					<Path>SFX\FS_sable_course_17_076F4DA0.wem</Path>
 				</File>
 				<File Id="760461119" Language="SFX">
 					<ShortName>AMB_nuit_wave_06.wav</ShortName>
@@ -164,7 +203,11 @@
 				</File>
 				<File Id="830644049" Language="SFX">
 					<ShortName>AMB_nuit_crickets_05.wav</ShortName>
-					<Path>SFX\AMB_nuit_crickets_05_ABA80F9D.wem</Path>
+					<Path>SFX\AMB_nuit_crickets_05_F3211E93.wem</Path>
+				</File>
+				<File Id="883708242" Language="SFX">
+					<ShortName>FS_sable_marche_10.wav</ShortName>
+					<Path>SFX\FS_sable_marche_10_10C4C929.wem</Path>
 				</File>
 				<File Id="898447040" Language="SFX">
 					<ShortName>AMB_nuit_wave_08.wav</ShortName>
@@ -176,11 +219,19 @@
 				</File>
 				<File Id="931035927" Language="SFX">
 					<ShortName>AMB_jour_background.wav</ShortName>
-					<Path>SFX\AMB_jour_background_24ED9B6E.wem</Path>
+					<Path>SFX\AMB_jour_background_7D9C6A32.wem</Path>
 				</File>
 				<File Id="940516832" Language="SFX">
 					<ShortName>AMB_jour_mouette_03.wav</ShortName>
 					<Path>SFX\AMB_jour_mouette_03_10C4C929.wem</Path>
+				</File>
+				<File Id="975767688" Language="SFX">
+					<ShortName>FS_sable_marche_12.wav</ShortName>
+					<Path>SFX\FS_sable_marche_12_10C4C929.wem</Path>
+				</File>
+				<File Id="1030168568" Language="SFX">
+					<ShortName>FS_sable_course_15.wav</ShortName>
+					<Path>SFX\FS_sable_course_15_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
