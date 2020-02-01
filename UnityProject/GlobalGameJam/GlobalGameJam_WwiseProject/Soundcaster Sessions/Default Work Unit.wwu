@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BEFE4BA0-D692-41EE-9163-3960D87C2846}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{BEFE4BA0-D692-41EE-9163-3960D87C2846}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BEFE4BA0-D692-41EE-9163-3960D87C2846}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Ambiance" ID="{D4A44121-2844-4C8F-AFCC-4B9193538408}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="FS" ID="{A0AB3CE8-C440-4B70-A776-E39B48F6671B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="FS_eau" ID="{8793EB19-D440-4BEF-AC38-9B646FC91CD0}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FS_sable_marche" ID="{704255CA-DA6D-443A-B81E-B687F504BD13}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FS_sable_course" ID="{98D9BEB9-220B-49E3-8874-E8DBA2A87A0A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

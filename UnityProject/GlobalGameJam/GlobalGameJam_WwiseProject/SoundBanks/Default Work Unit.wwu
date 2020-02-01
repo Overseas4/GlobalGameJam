@@ -3,11 +3,27 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{F362FE2C-B4B5-4E96-90C0-A5519A486C00}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Test" ID="{D0466DF7-7E42-4A7B-B7E0-B9A34A47FF76}">
+				<SoundBank Name="Main" ID="{D0466DF7-7E42-4A7B-B7E0-B9A34A47FF76}">
 					<ObjectInclusionList>
+						<ObjectRef Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FS_sable_marche" ID="{704255CA-DA6D-443A-B81E-B687F504BD13}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="OBJ_Totoro_Aura_play" ID="{37B05FA7-2FAC-48E1-B268-7B7D249F93BF}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FS_sable_course" ID="{98D9BEB9-220B-49E3-8874-E8DBA2A87A0A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FS_eau" ID="{8793EB19-D440-4BEF-AC38-9B646FC91CD0}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="TRIG_claqBois_play" ID="{8AA22861-B6E8-4F50-AA4D-FD946272EF52}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambiant" ID="{0532682A-5D7E-423B-8E53-DA52DF0AA17E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
