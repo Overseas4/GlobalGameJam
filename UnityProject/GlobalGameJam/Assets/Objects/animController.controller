@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bodyRig_controller
+  m_Name: animController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: turnSpeed
@@ -1061,15 +1061,15 @@ AnimatorStateMachine:
   - {fileID: 1101664119858619576}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: 1107651728031781598}
-    second:
-    - {fileID: 1109205869106915028}
-  - first: {fileID: 1107454927171529774}
-    second:
-    - {fileID: 1109913165587352138}
   - first: {fileID: 1107119696121678458}
     second:
     - {fileID: 1109751989801091258}
+  - first: {fileID: 1107454927171529774}
+    second:
+    - {fileID: 1109913165587352138}
+  - first: {fileID: 1107651728031781598}
+    second:
+    - {fileID: 1109205869106915028}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 468, y: -156, z: 0}
   m_EntryPosition: {x: 468, y: 324, z: 0}
