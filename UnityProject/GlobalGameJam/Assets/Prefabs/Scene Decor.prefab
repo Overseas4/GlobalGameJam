@@ -48,7 +48,8 @@ GameObject:
   - component: {fileID: 1474482051830550399}
   - component: {fileID: 1474482051830550398}
   - component: {fileID: 1789320777}
-  m_Layer: 0
+  - component: {fileID: 2613398256817121458}
+  m_Layer: 4
   m_Name: Water-Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,6 +148,22 @@ MonoBehaviour:
   _resetTextureTimer: 0
   _cicleSpeed: 10
   _wavesSpeed: 0.05
+--- !u!114 &2613398256817121458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474482051830550369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a43c2d63a07df4489cb82327daea99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactibleRange: 5
+  _type: 1
+  _weight: 0
+  _repairValue: 0
 --- !u!1 &1474482052546180348
 GameObject:
   m_ObjectHideFlags: 0

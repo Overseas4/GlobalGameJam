@@ -1,21 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InventoryItem : Interactible, IIventoryItem
 {
+    [SerializeField] private ItemType _type = ItemType.Wood;
     [SerializeField] private float _weight = 0f;
-    [SerializeField] private float _durability = 0f;
     [SerializeField] private float _repairValue = 0f;
-    [SerializeField] private float _damage = 0f;
 
-    public float Durability { get => _durability; set => _durability = value; }
+    public ItemType Type { get => _type; set => _type = value; }
     public float RepairValue { get => _repairValue; set => _repairValue = value; }
-    public float Damage { get => _damage; set => _damage = value; }
     public float Weight { get => _weight; set => _weight = value; }
 
     public override void Interact()
     {
+        if (Type == ItemType.Water)
+        {
+            bool hasSand = false;
+            for(int i = 0; i < Inventory.Instance.Items.Count; i++)
+            {
+                if(Inventory.Instance.Items[i].Type == ItemType.Sand)
+                {
+                    hasSand = true;
+                    break;
+                }
+            }
+        }
         Inventory.Instance.Items.Add(this);
     }
 }

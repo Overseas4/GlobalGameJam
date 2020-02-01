@@ -1,7 +1,14 @@
-﻿public interface IIventoryItem 
+﻿public enum ItemType
 {
-    float Durability { get; set; }
+    Wood,
+    Water,
+    SeaWeed,
+    Sand,
+}
+
+public interface IIventoryItem 
+{
+    ItemType Type { get; set; }
     float RepairValue { get; set; }
-    float Damage { get; set; }
     float Weight { get; set; }
 }
