@@ -38,6 +38,10 @@
 					</ChildrenList>
 				</Event>
 				<Folder Name="AMB" ID="{AFB37257-60EA-457B-AC15-635EFFE2B88F}" ShortID="723946269">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}">
 							<PropertyList>
@@ -152,6 +156,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="CHARACTER" ID="{1B0CBFD4-69D7-4574-A501-BDA57B7734E2}" ShortID="91160550">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="FS_sable_marche" ID="{704255CA-DA6D-443A-B81E-B687F504BD13}">
 							<PropertyList>
@@ -193,6 +201,77 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FS_sable_course" ID="{FA03C7A4-D633-4D8D-9487-4BEE3681C468}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ACTIONS" ID="{9FAAEF45-F890-4327-9349-83250373B9F2}" ShortID="809372848">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="ACT_algue_pickUp" ID="{405BB35A-8B87-4D4B-8044-AB61A068FE8E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_algue_use" ID="{A4450F06-02A9-4123-9F6A-1C6083D8881A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_bois_pickUp" ID="{78FA85BE-0467-41BB-8ED8-3F1B4973480A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_bois_use" ID="{1CC05CB3-115D-4DB3-8993-B8C19087597A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_superBois_pickUp" ID="{92789871-E201-47BA-BB03-E5A6E33D2397}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_superBois_use" ID="{8800F358-3920-4906-9084-C448A33291A4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_sable_pickUp" ID="{3E7CC68D-037E-45DC-9518-FF2BEC4249D7}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_sable_use" ID="{04813672-C530-44DF-8EFC-C73A27FCC252}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="ACT_eau_pickUp" ID="{03F4B7A0-2B27-4A08-8BBF-A7F1524CD35A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{BDC3B949-2665-4166-A998-93771CD2EBBF}" ShortID="860953843">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_eau_pickUp" ID="{28A0B446-6F11-4F1E-A7E8-D9E1D751E67A}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
