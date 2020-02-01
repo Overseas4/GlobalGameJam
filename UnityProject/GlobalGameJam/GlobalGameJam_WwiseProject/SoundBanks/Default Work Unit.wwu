@@ -19,12 +19,7 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Ambiant" ID="{0532682A-5D7E-423B-8E53-DA52DF0AA17E}">
-					<ObjectInclusionList>
-						<ObjectRef Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
+					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

@@ -3,7 +3,7 @@
 	<Platform GUID="{B514A5F6-16A1-40B1-920A-E202932CFE75}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambiant" Hash="920620191" Timestamp="1580567242"/>
+				<File Name="Ambiant" Hash="68248568" Timestamp="1580588949"/>
 				<File Name="Init" Hash="1415043472" Timestamp="1580588148"/>
 				<File Name="Main" Hash="2885671703" Timestamp="1580588148"/>
 				<File Name="Test" Hash="2548306864" Timestamp="1576719299"/>
@@ -11,14 +11,14 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2102497952" Timestamp="1580588148"/>
+				<File Name="" Hash="3079790400" Timestamp="1580588949"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{E758ACED-7CE2-4407-ABF0-498759A2BC24}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambiant" Hash="920620191" Timestamp="1580567241"/>
+				<File Name="Ambiant" Hash="68248568" Timestamp="1580588949"/>
 				<File Name="Init" Hash="3953820506" Timestamp="1580588148"/>
 				<File Name="Main" Hash="2885671703" Timestamp="1580588148"/>
 				<File Name="Test" Hash="2548306864" Timestamp="1576719299"/>
@@ -26,7 +26,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2376316794" Timestamp="1580588148"/>
+				<File Name="" Hash="2096885414" Timestamp="1580588949"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
