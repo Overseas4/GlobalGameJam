@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Patrick\Documents\GitHub\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Patrick\Documents\GitHub\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Patrick\Documents\GitHub\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Patrick\Documents\GitHub\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
