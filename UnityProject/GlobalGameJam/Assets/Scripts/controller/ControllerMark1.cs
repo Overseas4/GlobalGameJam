@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class ControllerMark1 : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ControllerMark1 : MonoBehaviour
 	private int forwardSpeedHash = Animator.StringToHash("forwardSpeed");
 	private int pickUpHash = Animator.StringToHash("pickUp");
 	private int action1Hash = Animator.StringToHash("action1");
+	private int interactibleLayerMask;
 
 	private float turnSpeed;
 	private float forwardSpeed;
@@ -21,6 +23,8 @@ public class ControllerMark1 : MonoBehaviour
 	public float decelationSpeed;
 	public float accelationSpeed;
 	public float rotateSpeed;
+	public float pickUpRange;
+	public int nbMaxPickUp;
 	private float life;
 
 	private Rigidbody rb;
@@ -29,6 +33,7 @@ public class ControllerMark1 : MonoBehaviour
 
 	private void Awake()
 	{
+		interactibleLayerMask = LayerMask.GetMask("Interactible");
 		rb = GetComponentInChildren<Rigidbody>();
 		anim = GetComponentInChildren<Animator>();
 		playerTransform = transform.GetChild(0).transform;
@@ -40,13 +45,22 @@ public class ControllerMark1 : MonoBehaviour
 
 	void Update()
 	{
+		if (Input.GetButton(PickUpButton))
+		{
+			Collider[] hits = Physics.OverlapSphere(transform.position, pickUpRange, interactibleLayerMask);
+			Collider[] orderedHits = hits.OrderBy(c => Vector3.Distance(transform.position, c.transform.position)).ToArray();
 
+			for (int i = 0; i < Mathf.Min(nbMaxPickUp, orderedHits.Length); i++)
+			{
+				//orderedHits[i].attachedRigidbody.GetComponent<IInteractible>();
+			}
+		}
 	}
 
 	private void FixedUpdate()
 	{
 		Vector3 direction = new Vector3(Input.GetAxisRaw(HorizontalAxis), 0, Input.GetAxisRaw(VerticalAxis));
-		rb.velocity *= decelationSpeed;
+		rb.velocity.Set(rb.velocity.x * decelationSpeed, rb.velocity.y, rb.velocity.z * decelationSpeed);
 
 		if (direction != Vector3.zero)
 		{
