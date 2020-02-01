@@ -1,0 +1,52 @@
+Event	ID	Name			Wwise Object Path	Notes
+	23400934	FS_eau			\Default Work Unit\CHARACTER\FS_eau	
+	127011407	FS_sable_marche			\Default Work Unit\CHARACTER\FS_sable_marche	
+	304890365	OBJ_Totoro_Aura_play			\Default Work Unit\OBJ_Totoro_Aura_play	
+	376456049	AMB_switch_nuit			\Default Work Unit\AMB\AMB_switch_nuit	
+	729984210	AMB_stop			\Default Work Unit\AMB\AMB_stop	
+	844881994	ACT_algue_use			\Default Work Unit\ACTIONS\ACT_algue_use	
+	912935335	ACT_bois_use			\Default Work Unit\ACTIONS\ACT_bois_use	
+	1678679793	AMB_switch_jour			\Default Work Unit\AMB\AMB_switch_jour	
+	2077102845	ACT_algue_pickUp			\Default Work Unit\ACTIONS\ACT_algue_pickUp	
+	2503182546	ACT_bois_pickUp			\Default Work Unit\ACTIONS\ACT_bois_pickUp	
+	2528094752	ACT_sable_pickUp			\Default Work Unit\ACTIONS\ACT_sable_pickUp	
+	2668050469	TRIG_claqBois_play			\Default Work Unit\TRIG_claqBois_play	
+	2689366621	ACT_sable_use			\Default Work Unit\ACTIONS\ACT_sable_use	
+	2961476021	ACT_superBois_pickUp			\Default Work Unit\ACTIONS\ACT_superBois_pickUp	
+	3517581714	ACT_superBois_use			\Default Work Unit\ACTIONS\ACT_superBois_use	
+	3638139367	AMB_jour_play			\Default Work Unit\AMB\AMB_jour_play	
+	4224216346	FS_sable_course			\Default Work Unit\CHARACTER\FS_sable_course	
+	4281641228	ACT_eau_pickUp			\Default Work Unit\ACTIONS\ACT_eau_pickUp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3509374	FS_sable_marche_11	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_marche_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_marche\FS_sable_marche_11		60952
+	14374580	FS_sable_course_16	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_course_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_course\FS_sable_course_16		108952
+	29139635	FS_eau_01	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_eau_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_eau\FS_eau_01		104492
+	53214674	FS_sable_marche_13	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_marche_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_marche\FS_sable_marche_13		61760
+	62547066	AMB_nuit_wave_09	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_wave_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_waves\AMB_nuit_wave_09		1011788
+	94534673	AMB_jour_mouette_02	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_mouette_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_birds\AMB_jour_mouette_02		137008
+	201240982	FS_eau_00	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_eau_00_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_eau\FS_eau_00		108824
+	201466404	AMB_jour_wave_05	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_wave_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_waves\AMB_jour_wave_05		1011788
+	261802212	AMB_jour_wave_02	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_wave_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_waves\AMB_jour_wave_02		956164
+	285009467	AMB_nuit_eau	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_eau_C089B5C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_eau		4797940
+	327986251	FS_eau_03	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_eau_03_DCA65CDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_eau\FS_eau_03		106560
+	414888579	AMB_jour_wave_03	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_wave_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_waves\AMB_jour_wave_03		912372
+	456965378	AMB_jour_wave_04	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_wave_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_waves\AMB_jour_wave_04		814216
+	515074450	FS_eau_02	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_eau_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_eau\FS_eau_02		90872
+	557627522	FS_sable_marche_14	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_marche_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_marche\FS_sable_marche_14		35720
+	605390967	AMB_jour_mouette_01	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_mouette_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_birds\AMB_jour_mouette_01		137008
+	634674283	AMB_nuit_background	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_background_812B2634.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_background		3015428
+	646411383	AMB_nuit_wave_07	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_wave_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_waves\AMB_nuit_wave_07		912372
+	710100213	AMB_jour_eau	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_eau_86E0FE84.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_eau		5087792
+	751262472	FS_sable_course_17	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_course_17_076F4DA0.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_course\FS_sable_course_17		108952
+	760461119	AMB_nuit_wave_06	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_wave_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_waves\AMB_nuit_wave_06		956164
+	830644049	AMB_nuit_cricket02	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_crickets_05_F3211E93.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_cricket02		3522416
+	883708242	FS_sable_marche_10	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_marche_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_marche\FS_sable_marche_10		52800
+	898447040	AMB_nuit_wave_08	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_nuit_wave_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_nuit\AMB_nuit_waves\AMB_nuit_wave_08		814216
+	917773226	AMB_jour_mouette_04	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_mouette_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_birds\AMB_jour_mouette_04		271448
+	931035927	AMB_jour_background	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_background_7D9C6A32.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_background		2700512
+	940516832	AMB_jour_mouette_03	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_mouette_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_birds\AMB_jour_mouette_03		163620
+	975767688	FS_sable_marche_12	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_marche_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_marche\FS_sable_marche_12		51952
+	993427534	ACT_eau_pickUp	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\ACT_eau_pickUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerActions\ACT_eau_pickUp\ACT_eau_pickUp		318500
+	1030168568	FS_sable_course_15	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_course_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_course\FS_sable_course_15		94456
+
