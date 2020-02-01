@@ -31,33 +31,254 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2cfe62f3b5b4964e90c0a5519a486c00
     GuidInternal: 
-    m_lastTime: -8586248888305357567
+    m_lastTime: -8586210167819671885
     List:
-    - name: Test
-      guid: f76d46d0427e7b4ab7e0b9a34a47ff76
-      id: 3157003241
+    - name: Ambiant
+      guid: 2a6832057e5d3b428e53da52df0aa17e
+      id: 78669895
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Test
+      - ElementName: Ambiant
         ObjectType: 7
-      Path: Default Work Unit\Test
+      Path: Default Work Unit\Ambiant
+    - name: Main
+      guid: f76d46d0427e7b4ab7e0b9a34a47ff76
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5da25d0f1a067a4e86970331ce30f5e6
     GuidInternal: 
-    m_lastTime: -8586248888305851443
+    m_lastTime: -8586210194991056486
     List:
-    - name: AMB_Sine_play
-      guid: 3117dc731fcb974e8f6b769469165c1e
-      id: 2483929586
+    - name: ACT_algue_pickUp
+      guid: 5ab35b40878b4b4d8044ab61a068fe8e
+      id: 2077102845
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: AMB_Sine_play
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_algue_pickUp
         ObjectType: 3
-      Path: Default Work Unit\AMB_Sine_play
+      Path: Default Work Unit\ACTIONS\ACT_algue_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_algue_use
+      guid: 060f45a4a90223419f6a1c6083d8881a
+      id: 844881994
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_algue_use
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_algue_use
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_bois_pickUp
+      guid: be85fa786704bb418ed83f1b4973480a
+      id: 2503182546
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_bois_pickUp
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_bois_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_bois_use
+      guid: b35cc01c5d11b34d8993b8c19087597a
+      id: 912935335
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_bois_use
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_bois_use
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_eau_pickUp
+      guid: a0b7f403272b084a8bbfa7f1524cd35a
+      id: 4281641228
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_eau_pickUp
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_eau_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_sable_pickUp
+      guid: 8dc67c3e7e03dc459518ff2bec4249d7
+      id: 2528094752
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_sable_pickUp
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_sable_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_sable_use
+      guid: 7236810430c5df448efcc73a27fcc252
+      id: 2689366621
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_sable_use
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_sable_use
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_superBois_pickUp
+      guid: 7198789201e2ba47bb03e5a6e33d2397
+      id: 2961476021
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_superBois_pickUp
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_superBois_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_superBois_use
+      guid: 58f30088203906499084c448a33291a4
+      id: 3517581714
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_superBois_use
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_superBois_use
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_jour_play
+      guid: 3117dc731fcb974e8f6b769469165c1e
+      id: 3638139367
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_jour_play
+        ObjectType: 3
+      Path: Default Work Unit\AMB\AMB_jour_play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_stop
+      guid: 6d6f3c40636dd5409187d2121bd6de0f
+      id: 729984210
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_stop
+        ObjectType: 3
+      Path: Default Work Unit\AMB\AMB_stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_switch_jour
+      guid: dc9b8d2fc4fd6b4da93adba4bec66f08
+      id: 1678679793
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_switch_jour
+        ObjectType: 3
+      Path: Default Work Unit\AMB\AMB_switch_jour
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_switch_nuit
+      guid: a724b952466def459972c4ee21e2efd7
+      id: 376456049
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_switch_nuit
+        ObjectType: 3
+      Path: Default Work Unit\AMB\AMB_switch_nuit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FS_eau
+      guid: 19eb938740d4ef4bac389b646fc91cd0
+      id: 23400934
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CHARACTER
+        ObjectType: 4
+      - ElementName: FS_eau
+        ObjectType: 3
+      Path: Default Work Unit\CHARACTER\FS_eau
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FS_sable_course
+      guid: b9bed9980b22e3498874e8dba2a87a0a
+      id: 4224216346
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CHARACTER
+        ObjectType: 4
+      - ElementName: FS_sable_course
+        ObjectType: 3
+      Path: Default Work Unit\CHARACTER\FS_sable_course
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FS_sable_marche
+      guid: ca5542706dda3a44b81eb687f504bd13
+      id: 127011407
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CHARACTER
+        ObjectType: 4
+      - ElementName: FS_sable_marche
+        ObjectType: 3
+      Path: Default Work Unit\CHARACTER\FS_sable_marche
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -115,5 +336,12 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /GlobalGameJam_WwiseProject
+  - /GlobalGameJam_WwiseProject/Events
+  - /GlobalGameJam_WwiseProject/Events/Default Work Unit
+  - /GlobalGameJam_WwiseProject/Events/Default Work Unit/ACTIONS
+  - /GlobalGameJam_WwiseProject/Events/Default Work Unit/AMB
+  - /GlobalGameJam_WwiseProject/Events/Default Work Unit/CHARACTER
+  - /GlobalGameJam_WwiseProject/SoundBanks
+  - /GlobalGameJam_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
