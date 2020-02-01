@@ -78,7 +78,11 @@ public class ColorRandomizer : MonoBehaviour
                 goRenderer.material.color = randomColor;
             }
         }
-
+        SkinnedMeshRenderer skin = GetComponent<SkinnedMeshRenderer>();
+       if(skin != null)
+        {
+            skin.material.color = randomColor;
+        }
     }
 
     void ResetOnEscape()

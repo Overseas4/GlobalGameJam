@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerSpawner : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class PlayerSpawner : MonoBehaviour
         Transform randomSpawnPoint = RandomSpawnPoint;
         Player.transform.position = randomSpawnPoint.position;
         Player.transform.rotation = randomSpawnPoint.rotation;
+        CinemachineVirtualCamera camera = FindObjectOfType<CinemachineVirtualCamera>();
+        camera.m_Follow = Player.transform;
+        camera.m_LookAt = Player.transform;
     }
 
     void ResetOnEscape()
