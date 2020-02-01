@@ -11,24 +11,176 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="78669895" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambiant</ObjectPath>
+			<ShortName>Ambiant</ShortName>
+			<Path>Ambiant.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB_jour_play" DurationType="Infinite"/>
+				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB_switch_jour" DurationType="Infinite"/>
+				<Event Id="376456049" Name="AMB_switch_nuit" ObjectPath="\Events\Default Work Unit\AMB_switch_nuit" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="62547066" Language="SFX">
+					<ShortName>AMB_nuit_wave_09.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_09_10C4C929.wem</Path>
+				</File>
+				<File Id="94534673" Language="SFX">
+					<ShortName>AMB_jour_mouette_02.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_02_10C4C929.wem</Path>
+				</File>
+				<File Id="201466404" Language="SFX">
+					<ShortName>AMB_jour_wave_05.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_05_10C4C929.wem</Path>
+				</File>
+				<File Id="261802212" Language="SFX">
+					<ShortName>AMB_jour_wave_02.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_02_10C4C929.wem</Path>
+				</File>
+				<File Id="285009467" Language="SFX">
+					<ShortName>AMB_nuit_eau.wav</ShortName>
+					<Path>SFX\AMB_nuit_eau_5C4CAF97.wem</Path>
+				</File>
+				<File Id="414888579" Language="SFX">
+					<ShortName>AMB_jour_wave_03.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_03_10C4C929.wem</Path>
+				</File>
+				<File Id="456965378" Language="SFX">
+					<ShortName>AMB_jour_wave_04.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_04_10C4C929.wem</Path>
+				</File>
+				<File Id="605390967" Language="SFX">
+					<ShortName>AMB_jour_mouette_01.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_01_10C4C929.wem</Path>
+				</File>
+				<File Id="634674283" Language="SFX">
+					<ShortName>AMB_nuit_background.wav</ShortName>
+					<Path>SFX\AMB_nuit_background_0ACCA464.wem</Path>
+				</File>
+				<File Id="646411383" Language="SFX">
+					<ShortName>AMB_nuit_wave_07.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_07_10C4C929.wem</Path>
+				</File>
+				<File Id="710100213" Language="SFX">
+					<ShortName>AMB_jour_eau.wav</ShortName>
+					<Path>SFX\AMB_jour_eau_8E71AC7F.wem</Path>
+				</File>
+				<File Id="760461119" Language="SFX">
+					<ShortName>AMB_nuit_wave_06.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_06_10C4C929.wem</Path>
+				</File>
+				<File Id="830644049" Language="SFX">
+					<ShortName>AMB_nuit_crickets_05.wav</ShortName>
+					<Path>SFX\AMB_nuit_crickets_05_ABA80F9D.wem</Path>
+				</File>
+				<File Id="898447040" Language="SFX">
+					<ShortName>AMB_nuit_wave_08.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_08_10C4C929.wem</Path>
+				</File>
+				<File Id="917773226" Language="SFX">
+					<ShortName>AMB_jour_mouette_04.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_04_10C4C929.wem</Path>
+				</File>
+				<File Id="931035927" Language="SFX">
+					<ShortName>AMB_jour_background.wav</ShortName>
+					<Path>SFX\AMB_jour_background_24ED9B6E.wem</Path>
+				</File>
+				<File Id="940516832" Language="SFX">
+					<ShortName>AMB_jour_mouette_03.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_03_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3157003241" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Test</ObjectPath>
-			<ShortName>Test</ShortName>
-			<Path>Test.bnk</Path>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2483929586" Name="AMB_Sine_play" ObjectPath="\Events\Default Work Unit\AMB_Sine_play" DurationType="Unknown"/>
+				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB_jour_play" DurationType="Infinite"/>
+				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB_switch_jour" DurationType="Infinite"/>
+				<Event Id="376456049" Name="AMB_switch_nuit" ObjectPath="\Events\Default Work Unit\AMB_switch_nuit" DurationType="Infinite"/>
 				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" MaxAttenuation="60.000000" DurationType="Unknown"/>
 				<Event Id="2668050469" Name="TRIG_claqBois_play" ObjectPath="\Events\Default Work Unit\TRIG_claqBois_play" DurationType="OneShot" DurationMin="0.200762" DurationMax="0.608598"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="62547066" Language="SFX">
+					<ShortName>AMB_nuit_wave_09.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_09_10C4C929.wem</Path>
+				</File>
+				<File Id="94534673" Language="SFX">
+					<ShortName>AMB_jour_mouette_02.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_02_10C4C929.wem</Path>
+				</File>
+				<File Id="201466404" Language="SFX">
+					<ShortName>AMB_jour_wave_05.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_05_10C4C929.wem</Path>
+				</File>
+				<File Id="261802212" Language="SFX">
+					<ShortName>AMB_jour_wave_02.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_02_10C4C929.wem</Path>
+				</File>
+				<File Id="285009467" Language="SFX">
+					<ShortName>AMB_nuit_eau.wav</ShortName>
+					<Path>SFX\AMB_nuit_eau_5C4CAF97.wem</Path>
+				</File>
 				<File Id="308285816" Language="SFX">
 					<ShortName>PercRes_Bois_claquement.wav</ShortName>
 					<Path>SFX\PercRes_Bois_claquement_10C4C929.wem</Path>
+				</File>
+				<File Id="414888579" Language="SFX">
+					<ShortName>AMB_jour_wave_03.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_03_10C4C929.wem</Path>
+				</File>
+				<File Id="456965378" Language="SFX">
+					<ShortName>AMB_jour_wave_04.wav</ShortName>
+					<Path>SFX\AMB_jour_wave_04_10C4C929.wem</Path>
+				</File>
+				<File Id="605390967" Language="SFX">
+					<ShortName>AMB_jour_mouette_01.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_01_10C4C929.wem</Path>
+				</File>
+				<File Id="634674283" Language="SFX">
+					<ShortName>AMB_nuit_background.wav</ShortName>
+					<Path>SFX\AMB_nuit_background_0ACCA464.wem</Path>
+				</File>
+				<File Id="646411383" Language="SFX">
+					<ShortName>AMB_nuit_wave_07.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_07_10C4C929.wem</Path>
+				</File>
+				<File Id="710100213" Language="SFX">
+					<ShortName>AMB_jour_eau.wav</ShortName>
+					<Path>SFX\AMB_jour_eau_8E71AC7F.wem</Path>
+				</File>
+				<File Id="760461119" Language="SFX">
+					<ShortName>AMB_nuit_wave_06.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_06_10C4C929.wem</Path>
+				</File>
+				<File Id="830644049" Language="SFX">
+					<ShortName>AMB_nuit_crickets_05.wav</ShortName>
+					<Path>SFX\AMB_nuit_crickets_05_ABA80F9D.wem</Path>
+				</File>
+				<File Id="898447040" Language="SFX">
+					<ShortName>AMB_nuit_wave_08.wav</ShortName>
+					<Path>SFX\AMB_nuit_wave_08_10C4C929.wem</Path>
+				</File>
+				<File Id="917773226" Language="SFX">
+					<ShortName>AMB_jour_mouette_04.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_04_10C4C929.wem</Path>
+				</File>
+				<File Id="931035927" Language="SFX">
+					<ShortName>AMB_jour_background.wav</ShortName>
+					<Path>SFX\AMB_jour_background_24ED9B6E.wem</Path>
+				</File>
+				<File Id="940516832" Language="SFX">
+					<ShortName>AMB_jour_mouette_03.wav</ShortName>
+					<Path>SFX\AMB_jour_mouette_03_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

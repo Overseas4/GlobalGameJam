@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMB_SINE_PLAY = 2483929586U;
+        static const AkUniqueID AMB_JOUR_PLAY = 3638139367U;
+        static const AkUniqueID AMB_STOP = 729984210U;
+        static const AkUniqueID AMB_SWITCH_JOUR = 1678679793U;
+        static const AkUniqueID AMB_SWITCH_NUIT = 376456049U;
         static const AkUniqueID OBJ_TOTORO_AURA_PLAY = 304890365U;
         static const AkUniqueID TRIG_CLAQBOIS_PLAY = 2668050469U;
     } // namespace EVENTS
@@ -21,7 +24,8 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID AMBIANT = 78669895U;
+        static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
 
     namespace BUSSES

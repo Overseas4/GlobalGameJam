@@ -18,7 +18,10 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="AMB_Sine" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" ShortID="646771588">
+						<BlendContainer Name="AMB_jour" ID="{B79B1739-9050-476E-86F0-DC593CDE8C36}" ShortID="646771588">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
@@ -28,13 +31,28 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Sine470Hz" ID="{57A40CCE-2FE1-4D6D-860E-C0772D19E999}" ShortID="146090795">
+								<RandomSequenceContainer Name="AMB_jour_waves" ID="{D5900431-3310-4429-8037-995C75F87C3D}" ShortID="291258576">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{851B83E5-1C8E-4399-A810-7D11A68F0DC1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1.5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -45,60 +63,437 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Wwise Sine" ID="{B6DC3572-1B60-47BA-91EF-13BFFA716A89}" ShortID="11507520" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+										<Sound Name="AMB_jour_wave_02" ID="{7CD39E16-4ABC-4F37-B87C-3134FBA364A1}" ShortID="971956304">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_wave_02" ID="{B601EE90-FADF-4F27-B7A3-5E07C5B60B73}" ShortID="261802212">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_wave_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_wave_02" ID="{B601EE90-FADF-4F27-B7A3-5E07C5B60B73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_jour_wave_03" ID="{44945615-3020-4D99-9794-1B03D502BBEE}" ShortID="95119688">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_wave_03" ID="{4FC6261A-3ACE-40F2-92BF-912CBB6178C8}" ShortID="414888579">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_wave_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_wave_03" ID="{4FC6261A-3ACE-40F2-92BF-912CBB6178C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_jour_wave_04" ID="{D13FD45A-CA71-4847-8258-9C33C2C72113}" ShortID="416571325">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_wave_04" ID="{95E21002-35CB-4E07-B379-9009E2225636}" ShortID="456965378">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_wave_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_wave_04" ID="{95E21002-35CB-4E07-B379-9009E2225636}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_jour_wave_05" ID="{C03551B1-9DC8-494A-A8FD-7BDC826F6BC5}" ShortID="1026491357">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_wave_05" ID="{F0630316-FFB3-49DD-910A-BB8470FAEB20}" ShortID="201466404">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_wave_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_wave_05" ID="{F0630316-FFB3-49DD-910A-BB8470FAEB20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{5426F706-0924-4119-87FC-9C9BB8AA647D}">
 											<PropertyList>
-												<Property Name="SineDuration" Type="Real32" Value="10.3"/>
-												<Property Name="SineFrequency" Type="Real32" Value="470"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="AMB_jour_waves_Path" ID="{85F6A52D-FCF2-4E71-A683-1C7FAF7C5D08}">
+													<PointList>
+														<Point>
+															<XPos>-0</XPos>
+															<YPos>50.51151</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_waves_Path_01" ID="{3C3B3C85-34D6-4C0B-A413-5E4170D18786}">
+													<PointList>
+														<Point>
+															<XPos>16.12903</XPos>
+															<YPos>50.5115</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_waves_Path_02" ID="{E165ADD0-C674-49A1-8A91-ABAC50F2167F}">
+													<PointList>
+														<Point>
+															<XPos>-16.66667</XPos>
+															<YPos>51.53453</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_waves_Path_03" ID="{D211C189-0C4D-4A58-BD5E-36C8FFDDAD36}">
+													<PointList>
+														<Point>
+															<XPos>-25.80645</XPos>
+															<YPos>45.90793</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_waves_Path_04" ID="{8F553569-1884-4D1F-9546-2DED2EDDFDBF}">
+													<PointList>
+														<Point>
+															<XPos>29.03226</XPos>
+															<YPos>44.88491</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="AMB_jour_birds" ID="{9B44F4F2-D423-4FCD-AEB5-0E2A058EEB67}" ShortID="725824146">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{98AA72A5-31B3-462F-AD77-3B85FD31BC38}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{79AB8004-2BC6-4483-A8E2-D55F19126230}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-101"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FF42AB67-84F6-499E-845A-90EF812BB0E9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="81"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{9FC89DF1-DA6A-499E-9556-F2A240CC3545}" ShortID="940685288">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{17FBB5CA-F449-416E-8FC6-2D3EC8B2FFAD}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_jour_mouette_01" ID="{60D8561F-0727-406F-A8C9-414784A4A5EC}" ShortID="1063557530">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_mouette_01" ID="{5E748D05-7229-4767-8E59-40681BC6499B}" ShortID="605390967">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_mouette_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_mouette_01" ID="{5E748D05-7229-4767-8E59-40681BC6499B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_jour_mouette_02" ID="{8A7B5435-A92D-4C3E-802A-8843AF471D34}" ShortID="513631185">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_mouette_02" ID="{17772EEF-4C86-4918-9DA3-938E5F0F5B05}" ShortID="94534673">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_mouette_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_mouette_02" ID="{17772EEF-4C86-4918-9DA3-938E5F0F5B05}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_jour_mouette_03" ID="{8F8D73D7-CAB4-488A-AF20-839AC5072921}" ShortID="644937152">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_mouette_03" ID="{83D3A04A-B1A1-4079-B6B8-109B2D99225C}" ShortID="940516832">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_mouette_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_mouette_03" ID="{83D3A04A-B1A1-4079-B6B8-109B2D99225C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_jour_mouette_04" ID="{B4487811-F366-4502-AD4C-12EA2D9A480B}" ShortID="785521910">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_jour_mouette_04" ID="{78368649-E2E2-44B2-8359-0F0FDAA33EE1}" ShortID="917773226">
+													<Language>SFX</Language>
+													<AudioFile>AMB_jour_mouette_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_jour_mouette_04" ID="{78368649-E2E2-44B2-8359-0F0FDAA33EE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{FF697B05-7E6E-4D07-A4B2-29192838F3F4}"/>
+										<Position Name="" ID="{D6BD3201-FBAC-4669-8ADA-BF9C27185C68}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="1.5"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="AMB_jour_birds_Path" ID="{68A4992B-FB40-4E91-AD31-22689A9E50B5}">
+													<PointList>
+														<Point>
+															<XPos>8.60216</XPos>
+															<YPos>-0.63939</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_birds_Path_01" ID="{ADD57DDC-25F9-4D7D-9B3B-D6D0A1E0326C}">
+													<PointList>
+														<Point>
+															<XPos>-14.51613</XPos>
+															<YPos>15.72891</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_birds_Path_02" ID="{658FEBBD-FD0E-4B4C-9FB7-86860BAAF8C0}">
+													<PointList>
+														<Point>
+															<XPos>-29.03225</XPos>
+															<YPos>8.05625</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_birds_Path_03" ID="{03CA2959-7518-441D-84FB-B67987CC0608}">
+													<PointList>
+														<Point>
+															<XPos>32.79571</XPos>
+															<YPos>11.12531</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_jour_birds_Path_04" ID="{4C5E0D48-A0AD-4503-843F-34E337F40D6A}">
+													<PointList>
+														<Point>
+															<XPos>-1.07527</XPos>
+															<YPos>1.40665</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<Sound Name="AMB_jour_background" ID="{4498FC82-5B0A-4D5A-AE55-7E279401B844}" ShortID="236984881">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_jour_background" ID="{2C24D93E-FC91-4E7C-A883-7C229976AE6E}" ShortID="931035927">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2555.51"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.15453697463133"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.24493300622759"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.09039603159626"/>
+												<Property Name="LoopEnd" Type="Real64" Value="14.1965287250964"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="15.3083050710377"/>
 											</PropertyList>
 											<Language>SFX</Language>
-										</SourcePlugin>
-										<SourcePlugin Name="Wwise Synth One" ID="{051DCF8E-64AB-4F3F-89BB-3AEF8222A695}" ShortID="218395273" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-											<PropertyList>
-												<Property Name="BaseFrequency" Type="Real32" Value="470"/>
-												<Property Name="OutputLevel" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{853917E8-A1EE-4B23-830B-BFA4CB7F966D}" ShortID="868129559">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<Custom>
-																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{0FE57F10-A526-4577-AEBD-4B2BA300FCAE}" ShortID="703657807">
-																			<PropertyList>
-																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																			</PropertyList>
-																		</ModulatorEnvelope>
-																	</Custom>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{0212E27D-D23F-4C3E-B5FA-94BA93661CA3}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>21</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>53</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<AudioFile>AMB_jour_background.wav</AudioFile>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Wwise Synth One" ID="{051DCF8E-64AB-4F3F-89BB-3AEF8222A695}" Platform="Linked"/>
+										<ActiveSource Name="AMB_jour_background" ID="{2C24D93E-FC91-4E7C-A883-7C229976AE6E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Sine300Hz" ID="{5E9A252E-2978-434C-8C34-608D3C7EE3F4}" ShortID="41207926">
+								<Sound Name="AMB_jour_eau" ID="{49ADBF2D-58BF-4E62-B87F-1FC3C2FBC20E}" ShortID="151395112">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-5</Value>
@@ -114,57 +509,331 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Wwise Sine" ID="{B7E796DE-ADB1-44FD-8D1E-7B3889CFE1DB}" ShortID="921409488" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+										<AudioFileSource Name="AMB_jour_eau" ID="{DD2E5336-DB5E-40A5-BA0A-B8DD4B095CBC}" ShortID="710100213">
 											<PropertyList>
-												<Property Name="SineDuration" Type="Real32" Value="10.7"/>
-												<Property Name="SineFrequency" Type="Real32" Value="300"/>
-												<Property Name="SineGain" Type="Real32" Value="-13"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="3415.456"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.79069581861807"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.4002943951689"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.71449599654921"/>
+												<Property Name="LoopEnd" Type="Real64" Value="26.0222392365136"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
-										</SourcePlugin>
-										<SourcePlugin Name="Wwise Synth One" ID="{F63C1F39-3A79-4B49-9876-63E8658CB6CB}" ShortID="951145841" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-											<PropertyList>
-												<Property Name="BaseFrequency" Type="Real32" Value="300"/>
-												<Property Name="OutputLevel" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{288173C4-533A-47C7-989A-83FFA773E876}" ShortID="783208878">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<Custom>
-																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{4E069957-C349-4CF0-9BCD-6CA6A2DEE9E5}" ShortID="541647597">
-																			<PropertyList>
-																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																			</PropertyList>
-																		</ModulatorEnvelope>
-																	</Custom>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{AD0A51DE-4310-4CBE-86DC-4A2CC0444B9E}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>21</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>53</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<AudioFile>AMB_jour_eau.wav</AudioFile>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Wwise Synth One" ID="{F63C1F39-3A79-4B49-9876-63E8658CB6CB}" Platform="Linked"/>
+										<ActiveSource Name="AMB_jour_eau" ID="{DD2E5336-DB5E-40A5-BA0A-B8DD4B095CBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="AMB_nuit" ID="{7ECF776C-0049-4772-AFC5-CC9170B2E60B}" ShortID="884118604">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="AMB_nuit_waves" ID="{E3DCD144-6B7C-4BE9-A0DD-744FCF7EBEF8}" ShortID="489812853">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8306496A-C3A2-4363-A621-1D28970FA877}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1.5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_nuit_wave_06" ID="{7A5B1698-E79A-4D2D-8531-A088A55B86CA}" ShortID="428962513">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_nuit_wave_06" ID="{B9612C6D-174B-43D7-8FE7-18DBE5C66051}" ShortID="760461119">
+													<Language>SFX</Language>
+													<AudioFile>AMB_nuit_wave_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_nuit_wave_06" ID="{B9612C6D-174B-43D7-8FE7-18DBE5C66051}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_nuit_wave_07" ID="{C7EE0D50-E710-4D61-8BDE-A3BBF7185F70}" ShortID="656155283">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_nuit_wave_07" ID="{104B40E2-6934-4440-AF35-4E2D260FCB5E}" ShortID="646411383">
+													<Language>SFX</Language>
+													<AudioFile>AMB_nuit_wave_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_nuit_wave_07" ID="{104B40E2-6934-4440-AF35-4E2D260FCB5E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_nuit_wave_08" ID="{6A6C289F-5875-43B5-A4F6-DDBBAC5904B2}" ShortID="845061344">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_nuit_wave_08" ID="{E5522B34-832D-4587-87C8-ACA366FC2841}" ShortID="898447040">
+													<Language>SFX</Language>
+													<AudioFile>AMB_nuit_wave_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_nuit_wave_08" ID="{E5522B34-832D-4587-87C8-ACA366FC2841}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_nuit_wave_09" ID="{16B4976C-A45F-4273-B795-52F43416B43A}" ShortID="820872582">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_nuit_wave_09" ID="{674B9583-B527-4DD2-A395-B2BC09694B0C}" ShortID="62547066">
+													<Language>SFX</Language>
+													<AudioFile>AMB_nuit_wave_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_nuit_wave_09" ID="{674B9583-B527-4DD2-A395-B2BC09694B0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{1B42778A-25EF-49EB-B0D7-A02DC593CC44}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="AMB_nuit_waves_Path" ID="{82F7FCF0-EFF9-48E2-9E6D-E5B975E156B4}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_nuit_waves_Path_01" ID="{8196527C-9C6A-4566-BE67-5A6D5509E273}">
+													<PointList>
+														<Point>
+															<XPos>-15.05376</XPos>
+															<YPos>51.53453</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_nuit_waves_Path_02" ID="{39BA7EA4-DE38-4A7E-BE3E-A97530B2D6CF}">
+													<PointList>
+														<Point>
+															<XPos>9.13978</XPos>
+															<YPos>51.02302</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_nuit_waves_Path_03" ID="{9E93B0A1-F524-467B-AF9F-74305B4D6B91}">
+													<PointList>
+														<Point>
+															<XPos>-28.49462</XPos>
+															<YPos>42.83887</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="AMB_nuit_waves_Path_04" ID="{21A07352-B3D0-4207-A943-2451A472FAE2}">
+													<PointList>
+														<Point>
+															<XPos>29.03226</XPos>
+															<YPos>38.7468</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<Sound Name="AMB_nuit_background" ID="{45AAC6E0-FB09-4723-A568-8E3AE77F1DFF}" ShortID="889862838">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_nuit_background" ID="{D8922CF8-6C9F-40D7-9BF9-3A52B8DFC19C}" ShortID="634674283">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2294.133"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.677418920011862"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.48386937337683"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.21935405602135"/>
+												<Property Name="LoopEnd" Type="Real64" Value="15.3096675922681"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AMB_nuit_background.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_nuit_background" ID="{D8922CF8-6C9F-40D7-9BF9-3A52B8DFC19C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_nuit_eau" ID="{2E03237C-7ABC-47D5-8104-9274BE97F168}" ShortID="541794092">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_nuit_eau" ID="{6C3425B1-8C2D-4CD2-B0E1-6E6A2AD26A90}" ShortID="285009467">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="3936.622"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.790444618181927"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.682656715702571"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.83841476528965"/>
+												<Property Name="LoopEnd" Type="Real64" Value="24.4319245619868"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AMB_nuit_eau.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_nuit_eau" ID="{6C3425B1-8C2D-4CD2-B0E1-6E6A2AD26A90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_nuit_cricket01" ID="{ACC2FD5D-B7EC-4460-810A-BBC0EB483034}" ShortID="268719770">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_nuit_crickets_01" ID="{57216329-1370-4B26-AD76-43A44411C570}" ShortID="46042487">
+											<Language>SFX</Language>
+											<AudioFile>AMB_nuit_crickets_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_nuit_crickets_01" ID="{57216329-1370-4B26-AD76-43A44411C570}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_nuit_cricket02" ID="{BEB54C77-654E-4D1F-8118-F308D4FEE041}" ShortID="300671631">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC007EBF-7ACD-4C30-ABD4-4EB7491DCA25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_nuit_crickets_05" ID="{BAF5588D-EE71-4B10-9840-224BE0CB7F5A}" ShortID="830644049">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="1156.02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.89682833238976"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.39799710637227"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.6090155375228"/>
+												<Property Name="LoopEnd" Type="Real64" Value="18.0948304711581"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AMB_nuit_crickets_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_nuit_crickets_05" ID="{BAF5588D-EE71-4B10-9840-224BE0CB7F5A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
