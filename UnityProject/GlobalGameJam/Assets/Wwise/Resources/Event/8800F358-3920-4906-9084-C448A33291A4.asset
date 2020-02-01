@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7475d23f768844408b09464b66f8542, type: 3}
+  m_Name: 8800F358-3920-4906-9084-C448A33291A4
+  m_EditorClassIdentifier: 
+  objectName: ACT_superBois_use
+  id: 3517581714
+  guid: 8800F358-3920-4906-9084-C448A33291A4
