@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: 36bb096ee8e3c884e8260d3cb8ac0829
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube1
+    100004: pCylinder2
+    100006: polySurface12
+    100008: polySurface12 1
+    100010: polySurface13
+    100012: polySurface14
+    100014: polySurface14 1
+    100016: polySurface15
+    100018: polySurface16
+    100020: polySurface16 1
+    100022: polySurface17
+    100024: polySurface18
+    100026: polySurface19
+    100028: polySurface20
+    100030: polySurface21
+    100032: polySurface22
+    100034: polySurface23
+    100036: polySurface24
+    100038: polySurface25
+    100040: polySurface27
+    100042: polySurface28
+    100044: polySurface29
+    100046: polySurface30
+    100048: polySurface30 1
+    100050: polySurface31
+    100052: polySurface32
+    100054: polySurface33
+    100056: polySurface34
+    100058: polySurface35
+    100060: polySurface36
+    100062: pPlane10
+    100064: pPlane11
+    100066: pPlane12
+    100068: pPlane13
+    100070: pPlane14
+    100072: pPlane15
+    100074: pPlane16
+    100076: pPlane17
+    100078: pPlane18
+    100080: pPlane5
+    100082: pPlane6
+    100084: pPlane7
+    100086: pPlane8
+    100088: pPlane9
+    100090: pSphere1
+    100092: pSphere2
+    100094: pSphere3
+    100096: transform1
+    100098: transform10
+    100100: transform11
+    100102: transform12
+    100104: transform13
+    100106: transform14
+    100108: transform15
+    100110: transform16
+    100112: transform17
+    100114: transform18
+    100116: transform19
+    100118: transform2
+    100120: transform20
+    100122: transform21
+    100124: transform22
+    100126: transform23
+    100128: transform24
+    100130: transform25
+    100132: transform26
+    100134: transform27
+    100136: transform28
+    100138: transform29
+    100140: transform3
+    100142: transform30
+    100144: transform31
+    100146: transform32
+    100148: transform33
+    100150: transform34
+    100152: transform35
+    100154: transform36
+    100156: transform37
+    100158: transform38
+    100160: transform39
+    100162: transform4
+    100164: transform40
+    100166: transform41
+    100168: transform42
+    100170: transform43
+    100172: transform44
+    100174: transform5
+    100176: transform6
+    100178: transform7
+    100180: transform8
+    100182: transform9
+    400000: //RootNode
+    400002: pCube1
+    400004: pCylinder2
+    400006: polySurface12
+    400008: polySurface12 1
+    400010: polySurface13
+    400012: polySurface14
+    400014: polySurface14 1
+    400016: polySurface15
+    400018: polySurface16
+    400020: polySurface16 1
+    400022: polySurface17
+    400024: polySurface18
+    400026: polySurface19
+    400028: polySurface20
+    400030: polySurface21
+    400032: polySurface22
+    400034: polySurface23
+    400036: polySurface24
+    400038: polySurface25
+    400040: polySurface27
+    400042: polySurface28
+    400044: polySurface29
+    400046: polySurface30
+    400048: polySurface30 1
+    400050: polySurface31
+    400052: polySurface32
+    400054: polySurface33
+    400056: polySurface34
+    400058: polySurface35
+    400060: polySurface36
+    400062: pPlane10
+    400064: pPlane11
+    400066: pPlane12
+    400068: pPlane13
+    400070: pPlane14
+    400072: pPlane15
+    400074: pPlane16
+    400076: pPlane17
+    400078: pPlane18
+    400080: pPlane5
+    400082: pPlane6
+    400084: pPlane7
+    400086: pPlane8
+    400088: pPlane9
+    400090: pSphere1
+    400092: pSphere2
+    400094: pSphere3
+    400096: transform1
+    400098: transform10
+    400100: transform11
+    400102: transform12
+    400104: transform13
+    400106: transform14
+    400108: transform15
+    400110: transform16
+    400112: transform17
+    400114: transform18
+    400116: transform19
+    400118: transform2
+    400120: transform20
+    400122: transform21
+    400124: transform22
+    400126: transform23
+    400128: transform24
+    400130: transform25
+    400132: transform26
+    400134: transform27
+    400136: transform28
+    400138: transform29
+    400140: transform3
+    400142: transform30
+    400144: transform31
+    400146: transform32
+    400148: transform33
+    400150: transform34
+    400152: transform35
+    400154: transform36
+    400156: transform37
+    400158: transform38
+    400160: transform39
+    400162: transform4
+    400164: transform40
+    400166: transform41
+    400168: transform42
+    400170: transform43
+    400172: transform44
+    400174: transform5
+    400176: transform6
+    400178: transform7
+    400180: transform8
+    400182: transform9
+    2100000: lambert1
+    2100002: blinn3
+    2300000: pCube1
+    2300002: polySurface12
+    2300004: polySurface36
+    2300006: pPlane18
+    3300000: pCube1
+    3300002: polySurface12
+    3300004: polySurface36
+    3300006: pPlane18
+    4300000: pCube1
+    4300002: polySurface12
+    4300004: pPlane18
+    4300006: polySurface36
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
