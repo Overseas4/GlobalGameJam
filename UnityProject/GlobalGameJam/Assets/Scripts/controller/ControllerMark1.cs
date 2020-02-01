@@ -7,8 +7,8 @@ public class ControllerMark1 : MonoBehaviour
 	private const string ActionButton = "Fire1";
 	private const string PickUpButton = "Fire2";
 
-	private int turnSpeedHash = Animator.StringToHash("turnSpeedHash");
-	private int forwardSpeedHash = Animator.StringToHash("forwardSpeedHash");
+	private int turnSpeedHash = Animator.StringToHash("turnSpeed");
+	private int forwardSpeedHash = Animator.StringToHash("forwardSpeed");
 	private int pickUpHash = Animator.StringToHash("pickUp");
 	private int action1Hash = Animator.StringToHash("action1");
 
@@ -46,6 +46,7 @@ public class ControllerMark1 : MonoBehaviour
 	private void FixedUpdate()
 	{
 		Vector3 direction = new Vector3(Input.GetAxisRaw(HorizontalAxis), 0, Input.GetAxisRaw(VerticalAxis));
+		rb.velocity *= decelationSpeed;
 
 		if (direction != Vector3.zero)
 		{
@@ -57,7 +58,6 @@ public class ControllerMark1 : MonoBehaviour
 		}
 		else
 		{
-			rb.velocity *= decelationSpeed;
 		}
 		rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
 
