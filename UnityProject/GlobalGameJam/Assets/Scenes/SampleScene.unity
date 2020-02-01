@@ -37,9 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -468,8 +467,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &170076736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170076733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df405f2b1e10354aa16a1b93a66cb80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sunupintensity: 0.95
+  _sunriseintensity: 0.65
+  _nightintensity: 0.45
+  _daydurationinseconds: 60
+  _halfdaydurationinseconds: 30
+  _nightdurationinseconds: 10
+  _colorsunrise: {r: 1, g: 0, b: 0, a: 1}
+  _colorsunup: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _colorsundown: {r: 0, g: 0.6642289, b: 1, a: 1}
 --- !u!1 &170164714
 GameObject:
   m_ObjectHideFlags: 0

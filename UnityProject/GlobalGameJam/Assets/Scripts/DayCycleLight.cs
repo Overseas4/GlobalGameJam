@@ -12,8 +12,8 @@ public class DayCycleLight : MonoBehaviour
     [SerializeField] private float _sunupintensity = 0.85f;
     [SerializeField] private float _sunriseintensity = 0.55f;
     [SerializeField] private float _nightintensity = 0.35f;
-    [SerializeField] private float _daydurationinseconds = 180f;
-    [SerializeField] private float _halfdaydurationinseconds = 90f;
+    [SerializeField] private float _daydurationinseconds = 120f;
+    [SerializeField] private float _halfdaydurationinseconds = 60f;
     [SerializeField] private float _nightdurationinseconds = 20f;
     [SerializeField] private Color _colorsunrise = Color.red;
     [SerializeField] private Color _colorsunup = Color.yellow;
@@ -33,13 +33,17 @@ public class DayCycleLight : MonoBehaviour
             switch (_currentdaytime)
             {
                 case daytime.earlyday:
-                    ratio = _timer / _halfdaydurationinseconds;
+                    ratio = 2f*(_timer / _halfdaydurationinseconds);
                     break;
                 case daytime.midday:
-                    ratio = (_timer - _halfdaydurationinseconds) / _halfdaydurationinseconds;
+                    ratio = ((_timer - _halfdaydurationinseconds) / _halfdaydurationinseconds);
                     break;
                 case daytime.lateday:
-                    ratio = (_timer - _daydurationinseconds) / _nightdurationinseconds;
+                    ratio = 2f * ((_timer - _daydurationinseconds) / _nightdurationinseconds);
+                    if(ratio > 1f)
+                    {
+                        ratio = 2f - ratio;
+                    }
                     break;
             }
             return ratio;
@@ -53,6 +57,7 @@ public class DayCycleLight : MonoBehaviour
             switch (_currentdaytime)
             {
                 case daytime.earlyday:
+                    Debug.Log(Ratio);
                     color = Color.Lerp(_colorsunrise, _colorsunup, Ratio);
                     break;
                 case daytime.midday:
@@ -97,6 +102,10 @@ public class DayCycleLight : MonoBehaviour
         {
             transform.Rotate(_rotationperseconddaytime * Time.deltaTime);
         }
+        else
+        {
+            transform.Rotate(_rotationpersecondnighttime * Time.deltaTime);
+        }
         if (_timer < _halfdaydurationinseconds)
         {
             _currentdaytime = daytime.earlyday;
@@ -105,13 +114,14 @@ public class DayCycleLight : MonoBehaviour
         {
             _currentdaytime = daytime.midday;
         }
-        else if (_timer < _nightdurationinseconds + _daydurationinseconds)
+        else if (_timer < _daydurationinseconds + _nightdurationinseconds)
         {
             _currentdaytime = daytime.lateday;
         }
         else
         {
             float fulldayduration = _daydurationinseconds + _nightdurationinseconds;
+            transform.rotation = Quaternion.identity;
             _timer -= fulldayduration;
         }
         _light.color = LightColor;
