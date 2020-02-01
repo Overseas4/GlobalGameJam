@@ -26,15 +26,15 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2077102845" Name="ACT_algue_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_algue_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="844881994" Name="ACT_algue_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_algue_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2503182546" Name="ACT_bois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="912935335" Name="ACT_bois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2077102845" Name="ACT_algue_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_algue_pickUp" DurationType="OneShot" DurationMin="0.682930" DurationMax="1.009897"/>
+				<Event Id="844881994" Name="ACT_algue_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_algue_use" DurationType="OneShot" DurationMin="0.837538" DurationMax="1.239245"/>
+				<Event Id="2503182546" Name="ACT_bois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_pickUp" DurationType="OneShot" DurationMin="0.644875" DurationMax="0.735226"/>
+				<Event Id="912935335" Name="ACT_bois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_use" DurationType="OneShot" DurationMin="1.239819" DurationMax="1.475208"/>
 				<Event Id="4281641228" Name="ACT_eau_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_eau_pickUp" DurationType="OneShot" DurationMin="1.584271" DurationMax="1.703875"/>
-				<Event Id="2528094752" Name="ACT_sable_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2689366621" Name="ACT_sable_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2961476021" Name="ACT_superBois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_pickUp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3517581714" Name="ACT_superBois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2528094752" Name="ACT_sable_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_pickUp" DurationType="OneShot" DurationMin="1.153107" DurationMax="1.153107"/>
+				<Event Id="2689366621" Name="ACT_sable_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_use" DurationType="OneShot" DurationMin="0.920000" DurationMax="0.920000"/>
+				<Event Id="2961476021" Name="ACT_superBois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_pickUp" DurationType="OneShot" DurationMin="0.695601" DurationMax="0.737389"/>
+				<Event Id="3517581714" Name="ACT_superBois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_use" DurationType="OneShot" DurationMin="1.362200" DurationMax="1.941301"/>
 				<Event Id="3638139367" Name="AMB_jour_play" ObjectPath="\Events\Default Work Unit\AMB\AMB_jour_play" DurationType="Infinite"/>
 				<Event Id="729984210" Name="AMB_stop" ObjectPath="\Events\Default Work Unit\AMB\AMB_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1678679793" Name="AMB_switch_jour" ObjectPath="\Events\Default Work Unit\AMB\AMB_switch_jour" DurationType="Infinite"/>
@@ -78,6 +78,10 @@
 					<ShortName>AMB_jour_wave_05.wav</ShortName>
 					<Path>SFX\AMB_jour_wave_05_10C4C929.wem</Path>
 				</File>
+				<File Id="223609586" Language="SFX">
+					<ShortName>ACT_bois_use.wav</ShortName>
+					<Path>SFX\ACT_bois_use_10C4C929.wem</Path>
+				</File>
 				<File Id="261802212" Language="SFX">
 					<ShortName>AMB_jour_wave_02.wav</ShortName>
 					<Path>SFX\AMB_jour_wave_02_10C4C929.wem</Path>
@@ -86,13 +90,25 @@
 					<ShortName>AMB_nuit_eau.wav</ShortName>
 					<Path>SFX\AMB_nuit_eau_C089B5C3.wem</Path>
 				</File>
+				<File Id="291583852" Language="SFX">
+					<ShortName>ACT_superBois_use01.wav</ShortName>
+					<Path>SFX\ACT_superBois_use01_10C4C929.wem</Path>
+				</File>
 				<File Id="327986251" Language="SFX">
 					<ShortName>FS_eau_03.wav</ShortName>
 					<Path>SFX\FS_eau_03_DCA65CDC.wem</Path>
 				</File>
+				<File Id="378869159" Language="SFX">
+					<ShortName>ACT_algue_use00.wav</ShortName>
+					<Path>SFX\ACT_algue_use00_10C4C929.wem</Path>
+				</File>
 				<File Id="414888579" Language="SFX">
 					<ShortName>AMB_jour_wave_03.wav</ShortName>
 					<Path>SFX\AMB_jour_wave_03_10C4C929.wem</Path>
+				</File>
+				<File Id="435387108" Language="SFX">
+					<ShortName>ACT_bois_use01.wav</ShortName>
+					<Path>SFX\ACT_bois_use01_10C4C929.wem</Path>
 				</File>
 				<File Id="456965378" Language="SFX">
 					<ShortName>AMB_jour_wave_04.wav</ShortName>
@@ -106,9 +122,17 @@
 					<ShortName>FS_sable_marche_14.wav</ShortName>
 					<Path>SFX\FS_sable_marche_14_10C4C929.wem</Path>
 				</File>
+				<File Id="570534908" Language="SFX">
+					<ShortName>ACT_algue_use01.wav</ShortName>
+					<Path>SFX\ACT_algue_use01_10C4C929.wem</Path>
+				</File>
 				<File Id="605390967" Language="SFX">
 					<ShortName>AMB_jour_mouette_01.wav</ShortName>
 					<Path>SFX\AMB_jour_mouette_01_10C4C929.wem</Path>
+				</File>
+				<File Id="614596379" Language="SFX">
+					<ShortName>ACT_algue_pickUp00.wav</ShortName>
+					<Path>SFX\ACT_algue_pickUp00_31DE818F.wem</Path>
 				</File>
 				<File Id="634674283" Language="SFX">
 					<ShortName>AMB_nuit_background.wav</ShortName>
@@ -138,6 +162,10 @@
 					<ShortName>FS_sable_marche_10.wav</ShortName>
 					<Path>SFX\FS_sable_marche_10_10C4C929.wem</Path>
 				</File>
+				<File Id="890633186" Language="SFX">
+					<ShortName>ACT_superBois_use00.wav</ShortName>
+					<Path>SFX\ACT_superBois_use00_10C4C929.wem</Path>
+				</File>
 				<File Id="898447040" Language="SFX">
 					<ShortName>AMB_nuit_wave_08.wav</ShortName>
 					<Path>SFX\AMB_nuit_wave_08_10C4C929.wem</Path>
@@ -154,6 +182,10 @@
 					<ShortName>AMB_jour_mouette_03.wav</ShortName>
 					<Path>SFX\AMB_jour_mouette_03_10C4C929.wem</Path>
 				</File>
+				<File Id="975444344" Language="SFX">
+					<ShortName>ACT_sable_use.wav</ShortName>
+					<Path>SFX\ACT_sable_use_10C4C929.wem</Path>
+				</File>
 				<File Id="975767688" Language="SFX">
 					<ShortName>FS_sable_marche_12.wav</ShortName>
 					<Path>SFX\FS_sable_marche_12_10C4C929.wem</Path>
@@ -162,9 +194,25 @@
 					<ShortName>ACT_eau_pickUp.wav</ShortName>
 					<Path>SFX\ACT_eau_pickUp_10C4C929.wem</Path>
 				</File>
+				<File Id="996675736" Language="SFX">
+					<ShortName>ACT_sable_pickUp.wav</ShortName>
+					<Path>SFX\ACT_sable_pickUp_10C4C929.wem</Path>
+				</File>
+				<File Id="999278570" Language="SFX">
+					<ShortName>ACT_superBois_pickUp.wav</ShortName>
+					<Path>SFX\ACT_superBois_pickUp_10C4C929.wem</Path>
+				</File>
 				<File Id="1030168568" Language="SFX">
 					<ShortName>FS_sable_course_15.wav</ShortName>
 					<Path>SFX\FS_sable_course_15_10C4C929.wem</Path>
+				</File>
+				<File Id="1041856966" Language="SFX">
+					<ShortName>ACT_bois_pickUp.wav</ShortName>
+					<Path>SFX\ACT_bois_pickUp_10C4C929.wem</Path>
+				</File>
+				<File Id="1052320360" Language="SFX">
+					<ShortName>ACT_algue_pickUP01.wav</ShortName>
+					<Path>SFX\ACT_algue_pickUP01_9D45400B.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

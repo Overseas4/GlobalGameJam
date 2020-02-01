@@ -219,48 +219,120 @@
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B0463754-5786-4D71-8719-E257D7BDC7E1}" ShortID="621549563">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_algue_pickUp" ID="{BDD6FE89-FFF0-4566-BEC8-812C0BFA2710}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_algue_use" ID="{A4450F06-02A9-4123-9F6A-1C6083D8881A}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{C67A7A38-E0E2-485C-B5E5-44FEF129CAC7}" ShortID="749907825">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_algue_use" ID="{3B96639F-6D09-403B-A0DD-FF12EEA139DF}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_bois_pickUp" ID="{78FA85BE-0467-41BB-8ED8-3F1B4973480A}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{13DCFF0E-7990-4007-B21E-5D16289CEA5D}" ShortID="107512145">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_bois_pickUp" ID="{5A1506BD-9D47-4EAD-88D4-92A5A8F2514D}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_bois_use" ID="{1CC05CB3-115D-4DB3-8993-B8C19087597A}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{202D56C7-69E8-47B4-BC7B-51C87F8F41BE}" ShortID="88413045">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_bois_use" ID="{60CA8A29-D567-459B-A4CA-441129F900D8}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_superBois_pickUp" ID="{92789871-E201-47BA-BB03-E5A6E33D2397}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{BCBB13A4-9C97-4882-AC16-19C58B23F176}" ShortID="652460011">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_superBois_pickUp" ID="{3F8F3D9C-3107-4962-B17A-674FB124A7A2}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_superBois_use" ID="{8800F358-3920-4906-9084-C448A33291A4}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{E224B002-70C5-4C35-8381-D86A0970AEAC}" ShortID="479052528">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_superBois_use" ID="{C05D629B-3522-463F-B8E2-26EDF0226502}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_sable_pickUp" ID="{3E7CC68D-037E-45DC-9518-FF2BEC4249D7}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{A5A60CE0-D626-4DE3-81CF-AE8153D51673}" ShortID="238846173">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_sable_pickUp" ID="{E1C2A895-6429-4E81-A2EC-86769FC8BE6C}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_sable_use" ID="{04813672-C530-44DF-8EFC-C73A27FCC252}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{9007A535-AAA9-491E-A89F-505CB51A12E2}" ShortID="1070628096">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_sable_use" ID="{E056218F-899E-4355-9A3F-7CE6400F78D2}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="ACT_eau_pickUp" ID="{03F4B7A0-2B27-4A08-8BBF-A7F1524CD35A}">
 							<PropertyList>
