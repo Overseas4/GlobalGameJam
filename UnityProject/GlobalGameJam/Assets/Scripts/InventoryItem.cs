@@ -24,6 +24,6 @@ public class InventoryItem : Interactible, IIventoryItem
                 }
             }
         }
-        Inventory.Instance.Items.Add(this);
+        Inventory.Instance.AddItem(this);
     }
 }
