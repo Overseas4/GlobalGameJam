@@ -47,7 +47,7 @@
 				<Event Id="127011407" Name="FS_sable_marche" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_marche" DurationType="OneShot" DurationMin="0.182487" DurationMax="0.349751"/>
 				<Event Id="1195524065" Name="MUS_menu_start" ObjectPath="\Events\Default Work Unit\NONDIEGETIC\MUS_menu_start" DurationType="Infinite"/>
 				<Event Id="1472992795" Name="MUS_menu_stop" ObjectPath="\Events\Default Work Unit\NONDIEGETIC\MUS_menu_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2846663964" Name="OBJ_bigWave" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_bigWave" DurationType="OneShot" DurationMin="11.951769" DurationMax="14.237780"/>
+				<Event Id="2846663964" Name="OBJ_bigWave" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_bigWave" DurationType="OneShot" DurationMin="6.994232" DurationMax="8.332016"/>
 				<Event Id="766522639" Name="OBJ_destr_barricade" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_barricade" DurationType="OneShot" DurationMin="2.518209" DurationMax="2.829861"/>
 				<Event Id="3091462167" Name="OBJ_destr_mur1" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur1" DurationType="OneShot" DurationMin="2.999977" DurationMax="2.999977"/>
 				<Event Id="3091462164" Name="OBJ_destr_mur2" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur2" DurationType="OneShot" DurationMin="2.967370" DurationMax="2.967370"/>
@@ -216,7 +216,7 @@
 				</File>
 				<File Id="922463449" Language="SFX">
 					<ShortName>OBJ_bigWave.wav</ShortName>
-					<Path>SFX\OBJ_bigWave_10C4C929.wem</Path>
+					<Path>SFX\OBJ_bigWave_EC57EA7F.wem</Path>
 				</File>
 				<File Id="931035927" Language="SFX">
 					<ShortName>AMB_jour_background.wav</ShortName>
