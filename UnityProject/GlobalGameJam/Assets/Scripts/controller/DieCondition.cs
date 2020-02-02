@@ -15,7 +15,7 @@ public class DieCondition : MonoBehaviour
 		youDie = true;
 		foreach (var item in destructibles)
 		{
-			if(item.Health >= 0)
+			if(item != null)
 			{
 				youDie = false;
 			}
