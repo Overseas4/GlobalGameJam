@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2cfe62f3b5b4964e90c0a5519a486c00
     GuidInternal: 
-    m_lastTime: -8586210131259973900
+    m_lastTime: -8586209479293678752
     List:
     - name: Ambiant
       guid: 2a6832057e5d3b428e53da52df0aa17e
@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5da25d0f1a067a4e86970331ce30f5e6
     GuidInternal: 
-    m_lastTime: -8586210017252149683
+    m_lastTime: -8586209437258254935
     List:
     - name: ACT_algue_pickUp
       guid: 5ab35b40878b4b4d8044ab61a068fe8e
@@ -125,6 +125,34 @@ MonoBehaviour:
       - ElementName: ACT_eau_pickUp
         ObjectType: 3
       Path: Default Work Unit\ACTIONS\ACT_eau_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_porte_ferme
+      guid: b4f5016efd44ec4184f3e3a3b9fe8153
+      id: 1539852140
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_porte_ferme
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_porte_ferme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ACT_porte_ouvre
+      guid: cc06947dfa9f114eb9b93963857fdaf9
+      id: 206252308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ACTIONS
+        ObjectType: 4
+      - ElementName: ACT_porte_ouvre
+        ObjectType: 3
+      Path: Default Work Unit\ACTIONS\ACT_porte_ouvre
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -240,6 +268,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: CHAR_die
+      guid: ad4636846bd56841a433d1cc0fd05400
+      id: 3070183186
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CHARACTER
+        ObjectType: 4
+      - ElementName: CHAR_die
+        ObjectType: 3
+      Path: Default Work Unit\CHARACTER\CHAR_die
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FS_eau
       guid: 19eb938740d4ef4bac389b646fc91cd0
       id: 23400934
@@ -282,6 +324,90 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: OBJ_bigWave
+      guid: 5d44c8e362a8424bb2fe903a23661f86
+      id: 2846663964
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_DESTRUCTION
+        ObjectType: 4
+      - ElementName: OBJ_bigWave
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_DESTRUCTION\OBJ_bigWave
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OBJ_destr_barricade
+      guid: 92d8c7a29243fb4f9b96e2c4cb1e07bc
+      id: 766522639
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_DESTRUCTION
+        ObjectType: 4
+      - ElementName: OBJ_destr_barricade
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_barricade
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OBJ_destr_mur1
+      guid: 23c32889a32c734f9d71f05fdfa00c62
+      id: 3091462167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_DESTRUCTION
+        ObjectType: 4
+      - ElementName: OBJ_destr_mur1
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OBJ_destr_mur2
+      guid: 4ceb876265131649a60106c16a6f057e
+      id: 3091462164
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_DESTRUCTION
+        ObjectType: 4
+      - ElementName: OBJ_destr_mur2
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OBJ_destr_mur3
+      guid: a2d5a50eff6eee4c91cca78ec81e3a1a
+      id: 3091462165
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_DESTRUCTION
+        ObjectType: 4
+      - ElementName: OBJ_destr_mur3
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OBJ_destr_porte
+      guid: 08c2c05e066f7d44a29cd1eec7c2d0dd
+      id: 1032280832
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OBJ_DESTRUCTION
+        ObjectType: 4
+      - ElementName: OBJ_destr_porte
+        ObjectType: 3
+      Path: Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_porte
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: OBJ_Totoro_Aura_play
       guid: a75fb037ac2fe148b2687b7d249f93bf
       id: 304890365
@@ -303,6 +429,20 @@ MonoBehaviour:
       - ElementName: TRIG_claqBois_play
         ObjectType: 3
       Path: Default Work Unit\TRIG_claqBois_play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_start
+      guid: 4ec0f18d52d05842be327f04461521e4
+      id: 1219048826
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NONDIEGETIC
+        ObjectType: 4
+      - ElementName: UI_start
+        ObjectType: 3
+      Path: Default Work Unit\NONDIEGETIC\UI_start
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -339,6 +479,6 @@ MonoBehaviour:
   - /GlobalGameJam_WwiseProject/Events
   - /GlobalGameJam_WwiseProject/Events/Default Work Unit
   - /GlobalGameJam_WwiseProject/Events/Default Work Unit/ACTIONS
-  - /GlobalGameJam_WwiseProject/Events/Default Work Unit/CHARACTER
+  - /GlobalGameJam_WwiseProject/Events/Default Work Unit/AMB
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
