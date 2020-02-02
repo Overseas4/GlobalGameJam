@@ -1886,6 +1886,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="OBJ_bigWave" ID="{34EEF389-FECB-4BFC-A832-5E0C34FBCAC7}" ShortID="922463449">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.51546347468973"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.99423188562082"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>OBJ_bigWave.wav</AudioFile>
 										</AudioFileSource>
