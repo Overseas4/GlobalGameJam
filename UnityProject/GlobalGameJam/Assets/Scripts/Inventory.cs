@@ -5,8 +5,8 @@ public class Inventory : MonoBehaviour
 {
     private static Inventory _instance;
     public static Inventory Instance { get => _instance; set => _instance = value; }
-    private List<InventoryStruct> _items;
-    public List<InventoryStruct> Items { get => _items; set => _items = value; }
+    private List<InventoryContainer> _items;
+    public List<InventoryContainer> Items { get => _items; set => _items = value; }
     public ControllerMark1 _player;
     public ControllerMark1 Player { get => _player != null ? _player :_player = GetComponentInParent<ControllerMark1>(); }
     public float TotalWeight = 0f;
@@ -24,11 +24,11 @@ public class Inventory : MonoBehaviour
             Destroy(_instance);
         }
         _instance = this;
-        _items = new List<InventoryStruct>();
+        _items = new List<InventoryContainer>();
         PlayerInitialMaxSpeed = Player.maxSpeed;
     }
 
-    public void AddItem(InventoryStruct item)
+    public void AddItem(InventoryContainer item)
     {
         Items.Add(item);
         TotalWeight += item.weight;

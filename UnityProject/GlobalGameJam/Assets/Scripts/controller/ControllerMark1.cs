@@ -30,8 +30,8 @@ public class ControllerMark1 : MonoBehaviour
 	public float accelationSpeed;
 	public float rotateSpeed;
 	public float pickUpRange;
-	public int nbMaxPickUp;
 	public float timeOfWaitForPickUp;
+	public float timeToWaitBeforeNextPickUp;
 
 	private Rigidbody rb;
 	private Collider collider;
@@ -39,6 +39,7 @@ public class ControllerMark1 : MonoBehaviour
 	private Transform playerTransform;
 	private Transform objectToInteractTransform;
 	private bool isPickUping;
+	private bool onPickUpCoolDown;
 
 	private void Awake()
 	{
@@ -49,15 +50,6 @@ public class ControllerMark1 : MonoBehaviour
 		collider = GetComponentInChildren<Collider>();
 		anim = GetComponentInChildren<Animator>();
 		playerTransform = transform.GetChild(0).transform;
-	}
-	void Start()
-	{
-
-	}
-
-	void Update()
-	{
-
 	}
 
 	private void FixedUpdate()
@@ -71,17 +63,113 @@ public class ControllerMark1 : MonoBehaviour
 			{
 				Collider[] hits = Physics.OverlapSphere(transform.position, pickUpRange, interactibleLayerMask);
 				Collider[] orderedHits = hits.OrderBy(c => Vector3.Distance(transform.position, c.transform.position)).ToArray();
-				Debug.Log(hits.Length);
-				Debug.Log(orderedHits.Length);
+
+				bool actionAllreadyDone = false;
+				bool willPickSand = false;
+				bool willPickWetSand = false;
+				IInteractible selectedWater = null;
+				IInteractible selectedSand = null;
 
 				if (orderedHits.Length > 0)
 				{
-					objectToInteractTransform = orderedHits[0].transform;
 					StartCoroutine(WaitForPickUp());
 				}
-				for (int i = 0; i < Mathf.Min(nbMaxPickUp, orderedHits.Length); i++)
+
+				for (int i = 0; i < orderedHits.Length; i++)
 				{
-					orderedHits[i].GetComponent<IInteractible>().Interact();
+					var interactible = orderedHits[i].GetComponent<IInteractible>();
+					if (interactible != null)
+					{
+						var destructible = orderedHits[i].GetComponent<IDestructible>();
+						if (destructible != null)
+						{
+							var currentSelected = UIInventory.Instance.GetCurrentSelected();
+							if (currentSelected != null)
+							{
+								objectToInteractTransform = null;
+								StartCoroutine(WaitForRepair());
+
+								destructible.RepairDamage(UIInventory.Instance.GetCurrentSelected().repairValue);
+								UIInventory.Instance.RemoveInstance(currentSelected);
+								actionAllreadyDone = true;
+								break;
+							}
+						}
+
+						var iventoryItem = orderedHits[i].GetComponent<IIventoryItem>();
+						if (iventoryItem != null)
+						{
+							switch (iventoryItem.Type)
+							{
+								case ItemType.Wood:
+									objectToInteractTransform = orderedHits[i].transform;
+									StartCoroutine(WaitForPickUp());
+									orderedHits[i].GetComponent<IInteractible>().Interact();
+									actionAllreadyDone = true;
+									break;
+
+								case ItemType.Water:
+									selectedWater = orderedHits[i].GetComponent<IInteractible>();
+									willPickWetSand = true;
+									break;
+
+								case ItemType.Sand:
+									selectedSand = orderedHits[i].GetComponent<IInteractible>();
+									willPickSand = true;
+
+									break;
+
+								case ItemType.SuperWood:
+									objectToInteractTransform = orderedHits[i].transform;
+									StartCoroutine(WaitForPickUp());
+									orderedHits[i].GetComponent<IInteractible>().Interact();
+									actionAllreadyDone = true;
+									break;
+								default:
+									break;
+							}
+
+							if (actionAllreadyDone)
+							{
+								break;
+							}
+						}
+					}
+				}
+
+				if (!actionAllreadyDone)
+				{
+					bool hasSand = false;
+					for (int i = 0; i < Inventory.Instance.Items.Count; i++)
+					{
+						if (Inventory.Instance.Items[i].type == ItemType.Sand)
+						{
+							hasSand = true;
+							break;
+						}
+					}
+					if (hasSand)
+					{
+						if (willPickWetSand)
+						{
+							if (selectedWater != null)
+							{
+								selectedWater.Interact();
+								StartCoroutine(WaitForPickUp());
+							}
+						}
+					}
+					else
+					{
+						if (willPickSand)
+						{
+							if (selectedSand != null)
+							{
+								selectedSand.Interact();
+								StartCoroutine(WaitForPickUp());
+							}
+						}
+					}
 				}
 			}
 
@@ -126,17 +214,57 @@ public class ControllerMark1 : MonoBehaviour
 		float timer = 0f;
 		anim.SetTrigger(pickUpHash);
 		isPickUping = true;
+		onPickUpCoolDown = true;
 		while (timer < timeOfWaitForPickUp)
 		{
 			timer += Time.deltaTime;
-			Quaternion playerRotation = playerTransform.rotation;
-			Vector3 targetDirection = objectToInteractTransform.position - playerTransform.position;
-			Quaternion directionRotation = Quaternion.LookRotation(new Vector3(targetDirection.x, 0, targetDirection.z));
-			Quaternion targetRotation = Quaternion.Slerp(playerRotation, directionRotation, Time.deltaTime * rotateSpeed);
-			playerTransform.rotation = targetRotation;
+
+			if (objectToInteractTransform != null)
+			{
+				Quaternion playerRotation = playerTransform.rotation;
+				Vector3 targetDirection = objectToInteractTransform.position - playerTransform.position;
+				Quaternion directionRotation = Quaternion.LookRotation(new Vector3(targetDirection.x, 0, targetDirection.z));
+				Quaternion targetRotation = Quaternion.Slerp(playerRotation, directionRotation, Time.deltaTime * rotateSpeed);
+				playerTransform.rotation = targetRotation;
+			}
 
 			yield return null;
 		}
 		isPickUping = false;
+		timer = 0f;
+		while (timer < timeToWaitBeforeNextPickUp)
+		{
+			timer += Time.deltaTime;
+		}
+		onPickUpCoolDown = true;
+	}
+
+	IEnumerator WaitForRepair()
+	{
+		float timer = 0f;
+		anim.SetTrigger(pickUpHash);
+		isPickUping = true;
+		onPickUpCoolDown = true;
+		while (timer < timeOfWaitForPickUp)
+		{
+			timer += Time.deltaTime;
+
+			if (objectToInteractTransform != null)
+			{
+				Quaternion playerRotation = playerTransform.rotation;
+				Vector3 targetDirection = objectToInteractTransform.position - playerTransform.position;
+				Quaternion directionRotation = Quaternion.LookRotation(new Vector3(targetDirection.x, 0, targetDirection.z));
+				Quaternion targetRotation = Quaternion.Slerp(playerRotation, directionRotation, Time.deltaTime * rotateSpeed);
+				playerTransform.rotation = targetRotation;
+			}
+
+			yield return null;
+		}
+		isPickUping = false;
+		timer = 0f;
+		while (timer < timeToWaitBeforeNextPickUp)
+		{
+			timer += Time.deltaTime;
+		}
 	}
 }

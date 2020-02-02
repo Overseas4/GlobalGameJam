@@ -20,16 +20,16 @@ public class InventoryItem : Interactible, IIventoryItem
 				if (Inventory.Instance.Items[i].type == ItemType.Sand)
 				{
                     eventController.Instance.ACT_eau_pickUp.Post(gameObject);
+                    InventoryContainer wetSand = new InventoryContainer(ItemType.WetSand,5f,5f);
+                    Inventory.Instance.AddItem(wetSand);
                     UIInventory.Instance.Notify();
-                    InventoryStruct wetWater = new InventoryStruct(ItemType.WetSand,5f,5f);
-                    Inventory.Instance.AddItem(new InventoryStruct(Type,Weight,RepairValue));
 				}
 			}
 		}
         else if (Type == ItemType.Sand)
         {
             bool canPickUpSand = true;
-            foreach (InventoryStruct item in Inventory.Instance.Items)
+            foreach (InventoryContainer item in Inventory.Instance.Items)
             {
                 if (item.type == ItemType.Sand || item.type == ItemType.WetSand)
                 {
@@ -40,8 +40,8 @@ public class InventoryItem : Interactible, IIventoryItem
             if (canPickUpSand)
             {
                 eventController.Instance.ACT_sable_pickUp.Post(gameObject);
+                Inventory.Instance.AddItem(new InventoryContainer(Type, Weight, RepairValue));
                 UIInventory.Instance.Notify();
-                Inventory.Instance.AddItem(new InventoryStruct(Type, Weight, RepairValue));
             }
         }
 		else
@@ -51,29 +51,29 @@ public class InventoryItem : Interactible, IIventoryItem
                 case ItemType.SeaShell:
                     break;
                 case ItemType.SeaWeed:
-                    eventController.Instance.ACT_algue_pickUp.Post(gameObject);
+                    eventController.Instance.ACT_algue_pickUp.Post(eventController.Instance.gameObject);
                     break;
                 case ItemType.SuperWood:
-                    eventController.Instance.ACT_superBois_pickUp.Post(gameObject);
+                    eventController.Instance.ACT_superBois_pickUp.Post(eventController.Instance.gameObject);
                     break;
                 case ItemType.Wood:
-                    eventController.Instance.ACT_bois_pickUp.Post(gameObject);
+                    eventController.Instance.ACT_bois_pickUp.Post(eventController.Instance.gameObject);
                     break;
             }
-			Inventory.Instance.AddItem(new InventoryStruct(Type, Weight, RepairValue));
+			Inventory.Instance.AddItem(new InventoryContainer(Type, Weight, RepairValue));
 			UIInventory.Instance.Notify();
 			Destroy(gameObject);
 		}
 	}
 }
 
-public struct InventoryStruct
+public class InventoryContainer
 {
 	public ItemType type;
 	public float weight;
 	public float repairValue;
 
-	public InventoryStruct(ItemType type, float weight, float repairValue)
+	public InventoryContainer(ItemType type, float weight, float repairValue)
 	{
 		this.type = type;
 		this.weight = weight;
