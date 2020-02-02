@@ -5,13 +5,13 @@
 			<Language ID="393239870">
 				<File Name="Ambiant" Hash="2039368347" Timestamp="1580591301"/>
 				<File Name="Init" Hash="1182415902" Timestamp="1580591301"/>
-				<File Name="Main" Hash="90825075" Timestamp="1580654034"/>
+				<File Name="Main" Hash="98776152" Timestamp="1580656189"/>
 				<File Name="Test" Hash="2548306864" Timestamp="1576719299"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2090853246" Timestamp="1580654034"/>
+				<File Name="" Hash="2602845262" Timestamp="1580656189"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -20,13 +20,13 @@
 			<Language ID="393239870">
 				<File Name="Ambiant" Hash="2039368347" Timestamp="1580591301"/>
 				<File Name="Init" Hash="2279659568" Timestamp="1580591301"/>
-				<File Name="Main" Hash="90825075" Timestamp="1580654034"/>
+				<File Name="Main" Hash="98776152" Timestamp="1580656189"/>
 				<File Name="Test" Hash="2548306864" Timestamp="1576719299"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3161775952" Timestamp="1580654034"/>
+				<File Name="" Hash="1958879792" Timestamp="1580656189"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

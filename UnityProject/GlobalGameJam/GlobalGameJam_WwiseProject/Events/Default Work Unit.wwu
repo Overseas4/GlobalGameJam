@@ -433,6 +433,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{C3C68CE0-65EC-4001-90E8-B5929C8622F0}" ShortID="966106682">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_bois_pickUp" ID="{5A1506BD-9D47-4EAD-88D4-92A5A8F2514D}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="OBJ_destr_barricade" ID="{A2C7D892-4392-4FFB-9B96-E2C4CB1E07BC}">
