@@ -53,6 +53,11 @@
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -145,6 +150,7 @@
 											<PropertyList>
 												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ChildrenList>
 												<Path2D Name="AMB_jour_waves_Path" ID="{85F6A52D-FCF2-4E71-A683-1C7FAF7C5D08}">
@@ -2065,6 +2071,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="CHAR_FS" ID="{3DE08EB7-0119-473B-88D0-6C396C9CD169}" ShortID="670006973">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
