@@ -184,10 +184,12 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   _wavesSpeed: 0.05
-  _cycleDuration: 6
-  _normalWaveScaling: 0.35
-  _bigWaveScaling: 0.5
-  _nbWavesBeforeBigWave: 2
+  _cycleDuration: 10
+  _normalWaveScaling: 0.45
+  _bigWaveScaling: 0.61
+  _nbWavesBeforeBigWave: 6
+  _minMaxDamage: {x: 10, y: 15}
+  _damageMultiplierPerBigWave: 1.5
 --- !u!114 &2613398256817121458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +397,22 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1470093659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599767905557356273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a43c2d63a07df4489cb82327daea99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactibleRange: 0
+  _type: 3
+  _weight: 5
+  _repairValue: 0
 --- !u!1001 &2241822877028593676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532987184558059261, guid: 138ae6f08e88ebc418952fc2b8b2bddb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8532987184558059262, guid: 138ae6f08e88ebc418952fc2b8b2bddb,
         type: 3}
@@ -469,6 +492,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ad24008a40cab7d4d906e8f9925fb0d8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 138ae6f08e88ebc418952fc2b8b2bddb, type: 3}
+--- !u!1 &7599767905557356273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8532987184558059261, guid: 138ae6f08e88ebc418952fc2b8b2bddb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2241822877028593676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7599767905557356274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8532987184558059262, guid: 138ae6f08e88ebc418952fc2b8b2bddb,

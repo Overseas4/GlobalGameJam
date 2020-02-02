@@ -9,7 +9,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	844881994	ACT_algue_use			\Default Work Unit\ACTIONS\ACT_algue_use	
 	912935335	ACT_bois_use			\Default Work Unit\ACTIONS\ACT_bois_use	
 	1032280832	OBJ_destr_porte			\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_porte	
+	1195524065	MUS_menu_start			\Default Work Unit\NONDIEGETIC\MUS_menu_start	
 	1219048826	UI_start			\Default Work Unit\NONDIEGETIC\UI_start	
+	1472992795	MUS_menu_stop			\Default Work Unit\NONDIEGETIC\MUS_menu_stop	
 	1539852140	ACT_porte_ferme			\Default Work Unit\ACTIONS\ACT_porte_ferme	
 	1678679793	AMB_switch_jour			\Default Work Unit\AMB\AMB_switch_jour	
 	2077102845	ACT_algue_pickUp			\Default Work Unit\ACTIONS\ACT_algue_pickUp	
@@ -71,6 +73,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	922463449	OBJ_bigWave	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\OBJ_bigWave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerObjects\OBJ_bigWave\OBJ_bigWave		2108356
 	931035927	AMB_jour_background	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_background_7D9C6A32.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_background		2700512
 	940516832	AMB_jour_mouette_03	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\AMB_jour_mouette_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerAmb\AMB_jour\AMB_jour_birds\AMB_jour_mouette_03		163620
+	959380486	MUS_menu	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\MUS_menu_01DC3A62.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerNonDiegetic\MUS_menu\MUS_menu		22252944
 	975444344	ACT_sable_use	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\ACT_sable_use_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerActions\ACT_sable_use\ACT_sable_use		157732
 	975767688	FS_sable_marche_12	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\FS_sable_marche_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MixerCharacter\CHAR_FS\FS_sable_marche\FS_sable_marche_12		51952
 	993427534	ACT_eau_pickUp	D:\yo_mi\Documents\GlobalGameJam\GlobalGameJam\UnityProject\GlobalGameJam\GlobalGameJam_WwiseProject\.cache\Windows\SFX\ACT_eau_pickUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mixerActions\ACT_eau_pickUp\ACT_eau_pickUp		318500
