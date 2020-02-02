@@ -3,15 +3,17 @@
 public class Destructible : MonoBehaviour, IDestructible
 {
 
-    [SerializeField] private DestructionState _desctructionState = DestructionState.New;
-    [SerializeField] private DestructibleObjects _desctructionObject = DestructibleObjects.CastleWall;
-    [SerializeField] private float _health = 100f;
-    [SerializeField] private GameObject _shapeNew = null;
-    [SerializeField] private GameObject _shapeDamaged = null;
-    [SerializeField] private GameObject _shapeVeryDamaged = null;
+    [SerializeField] public DestructionState _desctructionState = DestructionState.New;
+    [SerializeField] public DestructibleObjects _desctructionObject = DestructibleObjects.CastleWall;
+    [SerializeField] public float _health = 100f;
+    [SerializeField] public GameObject _shapeNew = null;
+    [SerializeField] public GameObject _shapeDamaged = null;
+    [SerializeField] public GameObject _shapeVeryDamaged = null;
     private bool _destroyed = false;
+    private int waterLayerMask = 4;
     public DestructionState DestructionState { get => _desctructionState; set => _desctructionState = value; }
     public float Health { get => _health; set => _health = value; }
+    public bool IsInWater { get; private set; }
 
     public GameObject ShapeNew { get => _shapeNew; set => _shapeNew = value; }
     public GameObject ShapeDamaged { get => _shapeDamaged; set => _shapeDamaged = value; }
@@ -124,15 +126,15 @@ public class Destructible : MonoBehaviour, IDestructible
     {
         switch (newState)
         {
-            case DestructionState.New:
-                break;
             case DestructionState.Damaged:
+                ChangeToThisPrefab(_shapeDamaged);
                 break;
             case DestructionState.VeryDamaged:
+                ChangeToThisPrefab(_shapeVeryDamaged);
                 break;
             case DestructionState.Broken:
-                break;
-            default:
+                //TODO Break
+                Destroy(this);
                 break;
         }
     }
@@ -142,15 +144,38 @@ public class Destructible : MonoBehaviour, IDestructible
         switch (newState)
         {
             case DestructionState.New:
+                ChangeToThisPrefab(_shapeNew);
                 break;
             case DestructionState.Damaged:
+                ChangeToThisPrefab(_shapeDamaged);
                 break;
             case DestructionState.VeryDamaged:
+                ChangeToThisPrefab(_shapeVeryDamaged);
                 break;
-            case DestructionState.Broken:
-                break;
-            default:
-                break;
+        }
+    }
+
+    public void ChangeToThisPrefab(GameObject prefab)
+    {
+        Instantiate(prefab);
+        prefab.transform.position = transform.position;
+        Destructible destructible = prefab.AddComponent<Destructible>();
+        destructible._shapeNew = _shapeNew;
+        destructible._shapeDamaged = _shapeDamaged;
+        destructible._shapeVeryDamaged = _shapeVeryDamaged;
+        destructible._health = _health;
+        destructible._desctructionState = _desctructionState;
+        destructible._desctructionObject = _desctructionObject;
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == waterLayerMask)
+        {
+            IsInWater = true;
+            ScrollWaterTexture water = other.GetComponent<ScrollWaterTexture>();
+            TakeDamage(Random.Range(water._minMaxDamage.x, water._minMaxDamage.y));
         }
     }
 }

@@ -1097,6 +1097,10 @@ MonoBehaviour:
   wood: {fileID: 5827904618482169519}
   wetSand: {fileID: 5827904618268974924}
   superWood: {fileID: 5827904617955756877}
+  sandHighlight: {fileID: 0}
+  woodHighlight: {fileID: 0}
+  wetSandHighlight: {fileID: 0}
+  superWoodHighlight: {fileID: 0}
   sandNumberIcon: {fileID: 5827904617799040444}
   woodNumberIcon: {fileID: 5827904617350030166}
   wetSandNumberIcon: {fileID: 5827904618211811621}
