@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 5827904616992467744}
   - component: {fileID: 5827904616992467750}
   - component: {fileID: 5827904616992467751}
+  - component: {fileID: 6561031766200484594}
   m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
@@ -435,6 +436,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &6561031766200484594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827904616992467745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e33d4c0a5512494396fe369434ceaf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sand: {fileID: 5827904616673031451}
+  wood: {fileID: 5827904618482169519}
+  wetSand: {fileID: 5827904618268974924}
+  superWood: {fileID: 5827904617955756877}
+  sandNumberIcon: {fileID: 5827904617799040444}
+  woodNumberIcon: {fileID: 5827904617350030166}
+  wetSandNumberIcon: {fileID: 5827904618211811621}
+  superWoodNumberIcon: {fileID: 5827904617782764965}
+  oneTexture: {fileID: 21300000, guid: 8120515c2ed78b040b90d2758eb978e3, type: 3}
+  twoTexture: {fileID: 21300000, guid: 3ded811b4ccc8814a847b1dd62feacfb, type: 3}
+  threeTexture: {fileID: 21300000, guid: 613bd7df53aa8d34f8e4a3dd44dbece0, type: 3}
+  fourTexture: {fileID: 21300000, guid: 53ca1df613d49a44398f9a0c3a1ace02, type: 3}
+  fiveTexture: {fileID: 21300000, guid: 5d9146c4728a584478a125e4a122481f, type: 3}
 --- !u!1 &5827904617350030160
 GameObject:
   m_ObjectHideFlags: 0

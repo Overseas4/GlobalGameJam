@@ -19,16 +19,21 @@ public class InventoryItem : Interactible, IIventoryItem
 			{
 				if (Inventory.Instance.Items[i].type == ItemType.Sand)
 				{
+					Inventory.Instance.AddItem(new InventoryStruct(Type, Weight, RepairValue));
 					UIInventory.Instance.Notify();
-					Inventory.Instance.AddItem(new InventoryStruct(Type,Weight,RepairValue));
 				}
 			}
+		}
+		else if (Type == ItemType.Sand)
+		{
+			Inventory.Instance.AddItem(new InventoryStruct(Type, Weight, RepairValue));
+			UIInventory.Instance.Notify();
 		}
 		else
 		{
 			Inventory.Instance.AddItem(new InventoryStruct(Type, Weight, RepairValue));
 			UIInventory.Instance.Notify();
-			
+			Destroy(gameObject);
 		}
 	}
 }
