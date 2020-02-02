@@ -52,7 +52,7 @@
 								<Action Name="" ID="{CEA49CFA-659D-44C7-B446-792736AB3D88}" ShortID="226002308">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+										<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -63,6 +63,7 @@
 								<Action Name="" ID="{CC4DC1F8-C24E-490A-8E67-74C7547693A5}" ShortID="833012265">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -344,6 +345,25 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="ACT_eau_pickUp" ID="{28A0B446-6F11-4F1E-A7E8-D9E1D751E67A}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="OBJ_DESTRUCTION" ID="{9FFA96F9-AAF9-4AB1-9720-2E1D60253731}" ShortID="509810686">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="OBJ_bigWave" ID="{E3C8445D-A862-4B42-B2FE-903A23661F86}">
+							<ChildrenList>
+								<Action Name="" ID="{710FB95A-3377-4EC8-8468-3260CF7D2371}" ShortID="762897432">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OBJ_bigWave" ID="{385BF00C-F76F-4E1C-A7D6-75AA0C450483}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
