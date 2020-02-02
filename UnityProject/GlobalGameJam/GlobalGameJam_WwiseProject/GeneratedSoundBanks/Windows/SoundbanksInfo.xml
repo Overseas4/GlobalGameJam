@@ -31,6 +31,8 @@
 				<Event Id="2503182546" Name="ACT_bois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_pickUp" DurationType="OneShot" DurationMin="0.644875" DurationMax="0.735226"/>
 				<Event Id="912935335" Name="ACT_bois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_use" DurationType="OneShot" DurationMin="1.239819" DurationMax="1.475208"/>
 				<Event Id="4281641228" Name="ACT_eau_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_eau_pickUp" DurationType="OneShot" DurationMin="1.584271" DurationMax="1.703875"/>
+				<Event Id="1539852140" Name="ACT_porte_ferme" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_porte_ferme" DurationType="OneShot" DurationMin="0.938753" DurationMax="1.118308"/>
+				<Event Id="206252308" Name="ACT_porte_ouvre" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_porte_ouvre" DurationType="OneShot" DurationMin="1.711361" DurationMax="2.068345"/>
 				<Event Id="2528094752" Name="ACT_sable_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_pickUp" DurationType="OneShot" DurationMin="1.153107" DurationMax="1.153107"/>
 				<Event Id="2689366621" Name="ACT_sable_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_use" DurationType="OneShot" DurationMin="0.920000" DurationMax="0.920000"/>
 				<Event Id="2961476021" Name="ACT_superBois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_pickUp" DurationType="OneShot" DurationMin="0.695601" DurationMax="0.737389"/>
@@ -94,6 +96,10 @@
 					<ShortName>AMB_nuit_eau.wav</ShortName>
 					<Path>SFX\AMB_nuit_eau_C089B5C3.wem</Path>
 				</File>
+				<File Id="285827438" Language="SFX">
+					<ShortName>OBJ_porte_ouvre.wav</ShortName>
+					<Path>SFX\OBJ_porte_ouvre_10C4C929.wem</Path>
+				</File>
 				<File Id="291583852" Language="SFX">
 					<ShortName>ACT_superBois_use01.wav</ShortName>
 					<Path>SFX\ACT_superBois_use01_10C4C929.wem</Path>
@@ -121,6 +127,10 @@
 				<File Id="515074450" Language="SFX">
 					<ShortName>FS_eau_02.wav</ShortName>
 					<Path>SFX\FS_eau_02_10C4C929.wem</Path>
+				</File>
+				<File Id="525442513" Language="SFX">
+					<ShortName>OBJ_porte_ferme.wav</ShortName>
+					<Path>SFX\OBJ_porte_ferme_10C4C929.wem</Path>
 				</File>
 				<File Id="557627522" Language="SFX">
 					<ShortName>FS_sable_marche_14.wav</ShortName>
