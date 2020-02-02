@@ -156,6 +156,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3a28f4313aeb3384080b25c94dfab06e,
       type: 2}
+  OBJ_bigWave:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9173f7a567fb03c45b4900b3b20157a1,
+      type: 2}
   OBJ_destr_mur1:
     idInternal: 0
     valueGuidInternal: 
