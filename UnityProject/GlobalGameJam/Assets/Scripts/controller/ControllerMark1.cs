@@ -13,7 +13,7 @@ public class ControllerMark1 : MonoBehaviour
 	private int pickUpHash = Animator.StringToHash("pickUp");
 	private int action1Hash = Animator.StringToHash("action1");
 	private int interactibleLayerMask;
-	private int waterLayerMask;
+	private int waterLayerMask = 4;
 
 	private float feetDistance = 1f;
 
@@ -44,7 +44,6 @@ public class ControllerMark1 : MonoBehaviour
 	{
 		RefMaxSpeed = maxSpeed;
 		interactibleLayerMask = LayerMask.GetMask("Interactible");
-		waterLayerMask = LayerMask.GetMask("Water");
 
 		rb = GetComponentInChildren<Rigidbody>();
 		collider = GetComponentInChildren<Collider>();
@@ -78,7 +77,7 @@ public class ControllerMark1 : MonoBehaviour
 
 				for (int i = 0; i < Mathf.Min(nbMaxPickUp, orderedHits.Length); i++)
 				{
-					//	orderedHits[i].GetComponent<IInteractible>().Interact();
+					orderedHits[i].GetComponent<IInteractible>().Interact();
 				}
 				if (orderedHits.Length > 0)
 				{
@@ -109,7 +108,7 @@ public class ControllerMark1 : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if(other.gameObject.layer == waterLayerMask)
+		if (other.gameObject.layer == waterLayerMask)
 		{
 			IsInWater = true;
 		}

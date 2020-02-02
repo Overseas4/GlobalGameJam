@@ -4,7 +4,8 @@
     Water,
     SeaWeed,
     Sand,
-    SeaShell
+    SeaShell,
+    SuperWood
 }
 
 public interface IIventoryItem 
