@@ -64,7 +64,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474482051830550369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: 0, z: 0}
+  m_LocalPosition: {x: 50, y: 0.2, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 1474482051829611629}
@@ -148,28 +148,46 @@ MonoBehaviour:
       time: 0
       value: 0
       inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 10
-      value: 10
-      inSlope: 1
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
+    - serializedVersion: 3
+      time: 5
+      value: 5.013343
+      inSlope: -0.0154899
+      outSlope: -0.0154899
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5281544
+      outWeight: 1
+    - serializedVersion: 3
+      time: 5.365282
+      value: 5
+      inSlope: -0.008543065
+      outSlope: -0.008543065
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 10
+      value: 0
+      inSlope: -0.027610324
+      outSlope: -0.027610324
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4712651
+      outWeight: 0
     m_PreInfinity: 2
-    m_PostInfinity: 2
+    m_PostInfinity: 1
     m_RotationOrder: 4
   _wavesSpeed: 0.05
-  _cycleDuration: 36
-  _waveHeight: 2
-  _bigWaveHeight: 3.5
-  _nbWavesBeforeBigWave: 5
+  _cycleDuration: 6
+  _waveHeight: 0.5
+  _bigWaveHeight: 1
+  _nbWavesBeforeBigWave: 3
 --- !u!114 &2613398256817121458
 MonoBehaviour:
   m_ObjectHideFlags: 0
