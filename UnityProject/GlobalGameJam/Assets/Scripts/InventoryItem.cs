@@ -43,7 +43,7 @@ public class InventoryItem : Interactible, IIventoryItem
 			bool canPickUpSand = true;
 			foreach (InventoryContainer item in Inventory.Instance.Items)
 			{
-				if (item.type == ItemType.Sand || item.type == ItemType.WetSand)
+				if (item.type == ItemType.Sand)
 				{
 					canPickUpSand = false;
 					break;

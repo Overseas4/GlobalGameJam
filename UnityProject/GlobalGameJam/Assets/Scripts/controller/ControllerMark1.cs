@@ -5,8 +5,6 @@ public class ControllerMark1 : MonoBehaviour
 {
 	private const string HorizontalAxis = "Horizontal";
 	private const string VerticalAxis = "Vertical";
-	private const string ActionButton = "Fire1";
-	private const string PickUpButton = "Fire1";
 
 	private int turnSpeedHash = Animator.StringToHash("turnSpeed");
 	private int forwardSpeedHash = Animator.StringToHash("forwardSpeed");
@@ -59,9 +57,9 @@ public class ControllerMark1 : MonoBehaviour
 
 		if (!isPickUping)
 		{
-			if (Input.GetButton(ActionButton))
+			if (Input.GetKeyDown(KeyCode.Mouse0))
 			{
-				Collider[] hits = Physics.OverlapSphere(transform.position, pickUpRange, interactibleLayerMask);
+				Collider[] hits = Physics.OverlapSphere(transform.position, pickUpRange);
 				Collider[] orderedHits = hits.OrderBy(c => Vector3.Distance(transform.position, c.transform.position)).ToArray();
 
 				bool actionAllreadyDone = false;
@@ -69,11 +67,6 @@ public class ControllerMark1 : MonoBehaviour
 				bool willPickWetSand = false;
 				IInteractible selectedWater = null;
 				IInteractible selectedSand = null;
-
-				if (orderedHits.Length > 0)
-				{
-					StartCoroutine(WaitForPickUp());
-				}
 
 				for (int i = 0; i < orderedHits.Length; i++)
 				{
@@ -96,7 +89,7 @@ public class ControllerMark1 : MonoBehaviour
 							}
 						}
 
-						var iventoryItem = orderedHits[i].GetComponent<IIventoryItem>();
+						var iventoryItem = orderedHits[i].GetComponent<InventoryItem>();
 						if (iventoryItem != null)
 						{
 							switch (iventoryItem.Type)
@@ -109,12 +102,12 @@ public class ControllerMark1 : MonoBehaviour
 									break;
 
 								case ItemType.Water:
-									selectedWater = orderedHits[i].GetComponent<IInteractible>();
+									selectedWater = iventoryItem;
 									willPickWetSand = true;
 									break;
 
 								case ItemType.Sand:
-									selectedSand = orderedHits[i].GetComponent<IInteractible>();
+									selectedSand = iventoryItem;
 									willPickSand = true;
 
 									break;
