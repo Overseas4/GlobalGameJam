@@ -718,6 +718,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1789320777, guid: 794aa7bf9475dfb4eb945f72d637a35e, type: 3}
+      propertyPath: _cycleDuration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789320777, guid: 794aa7bf9475dfb4eb945f72d637a35e, type: 3}
+      propertyPath: _nbWavesBeforeBigWave
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794aa7bf9475dfb4eb945f72d637a35e, type: 3}
 --- !u!1 &1384981428
