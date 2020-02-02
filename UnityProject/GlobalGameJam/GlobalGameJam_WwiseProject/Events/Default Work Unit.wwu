@@ -479,6 +479,33 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="MUS_menu_start" ID="{DC673694-5E08-4290-B3CC-2ABF8981D505}">
+							<ChildrenList>
+								<Action Name="" ID="{D83FBBD5-7B68-4E00-83D3-43EFEE0F1540}" ShortID="515544993">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_menu" ID="{62C6A4DF-1713-43C3-9485-0B2AA87185A4}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_menu_stop" ID="{ED748D93-A4FA-4022-88D1-DF875828EDA1}">
+							<ChildrenList>
+								<Action Name="" ID="{A5A79FEF-8112-4EC8-942C-C69ECCC72562}" ShortID="839497385">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_menu" ID="{62C6A4DF-1713-43C3-9485-0B2AA87185A4}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

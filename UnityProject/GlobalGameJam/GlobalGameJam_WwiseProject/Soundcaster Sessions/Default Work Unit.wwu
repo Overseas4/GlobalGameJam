@@ -112,6 +112,10 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MUS_menu_start" ID="{DC673694-5E08-4290-B3CC-2ABF8981D505}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="OBJ_destr_mur1" ID="{8928C323-2CA3-4F73-9D71-F05FDFA00C62}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
 							<Position X="2" Y="3"/>
 						</Module>
@@ -130,6 +134,10 @@
 						<Module>
 							<ObjectRef Name="CHAR_die" ID="{843646AD-D56B-4168-A433-D1CC0FD05400}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_menu_stop" ID="{ED748D93-A4FA-4022-88D1-DF875828EDA1}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="OBJ_destr_mur2" ID="{6287EB4C-1365-4916-A601-06C16A6F057E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>

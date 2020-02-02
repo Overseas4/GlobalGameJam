@@ -32,6 +32,8 @@ namespace AK
         static const AkUniqueID FS_EAU = 23400934U;
         static const AkUniqueID FS_SABLE_COURSE = 4224216346U;
         static const AkUniqueID FS_SABLE_MARCHE = 127011407U;
+        static const AkUniqueID MUS_MENU_START = 1195524065U;
+        static const AkUniqueID MUS_MENU_STOP = 1472992795U;
         static const AkUniqueID OBJ_BIGWAVE = 2846663964U;
         static const AkUniqueID OBJ_DESTR_BARRICADE = 766522639U;
         static const AkUniqueID OBJ_DESTR_MUR1 = 3091462167U;
