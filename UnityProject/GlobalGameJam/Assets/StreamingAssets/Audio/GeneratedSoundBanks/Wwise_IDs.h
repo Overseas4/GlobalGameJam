@@ -39,6 +39,7 @@ namespace AK
         static const AkUniqueID OBJ_DESTR_PORTE = 1032280832U;
         static const AkUniqueID OBJ_TOTORO_AURA_PLAY = 304890365U;
         static const AkUniqueID TRIG_CLAQBOIS_PLAY = 2668050469U;
+        static const AkUniqueID UI_START = 1219048826U;
     } // namespace EVENTS
 
     namespace BANKS

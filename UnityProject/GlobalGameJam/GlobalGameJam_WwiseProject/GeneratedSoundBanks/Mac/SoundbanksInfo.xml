@@ -52,6 +52,7 @@
 				<Event Id="1032280832" Name="OBJ_destr_porte" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_porte" DurationType="OneShot" DurationMin="0.814964" DurationMax="0.915823"/>
 				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2668050469" Name="TRIG_claqBois_play" ObjectPath="\Events\Default Work Unit\TRIG_claqBois_play" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1219048826" Name="UI_start" ObjectPath="\Events\Default Work Unit\NONDIEGETIC\UI_start" DurationType="OneShot" DurationMin="0.552404" DurationMax="0.552404"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="3509374" Language="SFX">
@@ -89,6 +90,10 @@
 				<File Id="223609586" Language="SFX">
 					<ShortName>ACT_bois_use.wav</ShortName>
 					<Path>SFX\ACT_bois_use_10C4C929.wem</Path>
+				</File>
+				<File Id="254349081" Language="SFX">
+					<ShortName>UI_start.wav</ShortName>
+					<Path>SFX\UI_start_10C4C929.wem</Path>
 				</File>
 				<File Id="261802212" Language="SFX">
 					<ShortName>AMB_jour_wave_02.wav</ShortName>

@@ -455,6 +455,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="NONDIEGETIC" ID="{48C4E5C5-659D-4384-A36C-75ADD4DB1D37}" ShortID="747997618">
+					<ChildrenList>
+						<Event Name="UI_start" ID="{8DF1C04E-D052-4258-BE32-7F04461521E4}">
+							<ChildrenList>
+								<Action Name="" ID="{8E640212-475C-4FFA-8351-A6EFE738AFB0}" ShortID="993367335">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_start" ID="{84BBF685-FB73-495E-B281-0D26F1C678CD}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
