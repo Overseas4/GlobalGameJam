@@ -160,7 +160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6431167238043059501
 RectTransform:
   m_ObjectHideFlags: 0
@@ -640,7 +640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9123373267262887454
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1097,10 +1097,10 @@ MonoBehaviour:
   wood: {fileID: 5827904618482169519}
   wetSand: {fileID: 5827904618268974924}
   superWood: {fileID: 5827904617955756877}
-  sandHighlight: {fileID: 0}
-  woodHighlight: {fileID: 0}
-  wetSandHighlight: {fileID: 0}
-  superWoodHighlight: {fileID: 0}
+  sandHighlight: {fileID: 7794521178171833055}
+  woodHighlight: {fileID: 828640845295887297}
+  wetSandHighlight: {fileID: 8666014403813926319}
+  superWoodHighlight: {fileID: 7794521178171833055}
   sandNumberIcon: {fileID: 5827904617799040444}
   woodNumberIcon: {fileID: 5827904617350030166}
   wetSandNumberIcon: {fileID: 5827904618211811621}
@@ -2396,7 +2396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8048898332180670160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2588,7 +2588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3151038802887110748
 RectTransform:
   m_ObjectHideFlags: 0

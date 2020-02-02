@@ -36,7 +36,7 @@ public class Inventory : MonoBehaviour
 		Items.Add(item);
 		TotalWeight += item.weight;
 		const float percent = 0.01f;
-		Player.maxSpeed = TotalWeight * percent * PlayerInitialMaxSpeed;
+		//Player.maxSpeed = TotalWeight * percent * PlayerInitialMaxSpeed;
 	}
 
 	public void RemoveItem(InventoryContainer item)
@@ -44,6 +44,6 @@ public class Inventory : MonoBehaviour
 		Items.Remove(item);
 		TotalWeight -= item.weight;
 		const float percent = 0.01f;
-		Player.maxSpeed = TotalWeight * percent * PlayerInitialMaxSpeed;
+		//Player.maxSpeed = TotalWeight * percent * PlayerInitialMaxSpeed;
 	}
 }
