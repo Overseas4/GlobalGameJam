@@ -32,11 +32,14 @@ namespace AK
         static const AkUniqueID FS_SABLE_COURSE = 4224216346U;
         static const AkUniqueID FS_SABLE_MARCHE = 127011407U;
         static const AkUniqueID OBJ_BIGWAVE = 2846663964U;
+        static const AkUniqueID OBJ_DESTR_BARRICADE = 766522639U;
         static const AkUniqueID OBJ_DESTR_MUR1 = 3091462167U;
         static const AkUniqueID OBJ_DESTR_MUR2 = 3091462164U;
         static const AkUniqueID OBJ_DESTR_MUR3 = 3091462165U;
+        static const AkUniqueID OBJ_DESTR_PORTE = 1032280832U;
         static const AkUniqueID OBJ_TOTORO_AURA_PLAY = 304890365U;
         static const AkUniqueID TRIG_CLAQBOIS_PLAY = 2668050469U;
+        static const AkUniqueID UI_START = 1219048826U;
     } // namespace EVENTS
 
     namespace BANKS

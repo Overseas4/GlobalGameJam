@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,11 @@ public class UIInventory : MonoBehaviour
 	[SerializeField] private GameObject wood;
 	[SerializeField] private GameObject wetSand;
 	[SerializeField] private GameObject superWood;
+
+	[SerializeField] private GameObject sandHighlight;
+	[SerializeField] private GameObject woodHighlight;
+	[SerializeField] private GameObject wetSandHighlight;
+	[SerializeField] private GameObject superWoodHighlight;
 
 	[SerializeField] private Image sandNumberIcon;
 	[SerializeField] private Image woodNumberIcon;
@@ -22,7 +28,7 @@ public class UIInventory : MonoBehaviour
 	[SerializeField] private Sprite fiveTexture;
 
 	public static UIInventory Instance;
-
+	private GameObject selectedHighlight;
 	private void Awake()
 	{
 		Instance = this;
@@ -65,16 +71,37 @@ public class UIInventory : MonoBehaviour
 					break;
 			}
 		}
-		sand.SetActive(numberOfSand != 0);
-		wood.SetActive(numberOfWood != 0);
-		superWood.SetActive(numberOfSuperWood != 0);
+
 		GameObject[] gameObjects = new GameObject[] { wetSand, sand, wood, superWood };
 		Image[] icons = new Image[] { wetSandNumberIcon, sandNumberIcon, woodNumberIcon, superWoodNumberIcon };
 		int[] numbers = new int[] { numberOfWetSand, numberOfSand, numberOfWood, numberOfSuperWood };
 
+		if (selectedHighlight == null)
+		{
+
+		}
+
 		for (int i = 0; i < gameObjects.Length; i++)
 		{
-			gameObjects[i].SetActive(numbers[i] != 0);
+			if (numbers[i] == 0)
+			{
+				if (gameObjects[i].activeInHierarchy)
+				{
+
+				}
+				else
+				{
+
+				}
+				gameObjects[i].SetActive(numbers[i] != 0);
+			}
+			else 
+			{
+				if (selectedHighlight == null)
+				{
+					SelectThisGameObject
+				}
+			}
 
 			switch (numbers[i])
 			{
@@ -96,6 +123,73 @@ public class UIInventory : MonoBehaviour
 				default:
 					break;
 			}
+		}
+	}
+
+	public InventoryContainer GetCurrentSelected()
+	{
+		ItemType type;
+		if (selectedHighlight == sandHighlight)
+		{
+			type = ItemType.Sand;
+			for (int i = 0; i < Inventory.Instance.Items.Count; i++)
+			{
+				if (Inventory.Instance.Items[i].type == type)
+				{
+					return Inventory.Instance.Items[i];
+				}
+			}
+		}
+		if (selectedHighlight == woodHighlight)
+		{
+			type = ItemType.Wood;
+			for (int i = 0; i < Inventory.Instance.Items.Count; i++)
+			{
+				if (Inventory.Instance.Items[i].type == type)
+				{
+					return Inventory.Instance.Items[i];
+				}
+			}
+		}
+		if (selectedHighlight == wetSandHighlight)
+		{
+			type = ItemType.WetSand;
+			for (int i = 0; i < Inventory.Instance.Items.Count; i++)
+			{
+				if (Inventory.Instance.Items[i].type == type)
+				{
+					return Inventory.Instance.Items[i];
+				}
+			}
+		}
+		if (selectedHighlight == superWoodHighlight)
+		{
+			type = ItemType.SuperWood;
+			for (int i = 0; i < Inventory.Instance.Items.Count; i++)
+			{
+				if (Inventory.Instance.Items[i].type == type)
+				{
+					return Inventory.Instance.Items[i];
+				}
+			}
+		}
+		return null;
+	}
+
+	internal void RemoveInstance(InventoryContainer itemToRemove)
+	{
+		Inventory.Instance.RemoveItem(itemToRemove);
+		Notify();
+	}
+
+	private void SelectThisGameObject(GameObject thisONE)
+	{
+		selectedHighlight.SetActive(false);
+		selectedHighlight = thisONE;
+
+		if (thisONE != null)
+		{
+			selectedHighlight.SetActive(true);
 		}
 	}
 }
