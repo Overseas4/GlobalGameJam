@@ -15,6 +15,7 @@ public enum DestructibleObjects
     Door,
     CastleWall,
     WoodWall,
+    Player,
 }
 
 public interface IDestructible
