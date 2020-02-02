@@ -70,25 +70,25 @@ public class ControllerMark1 : MonoBehaviour
 
 				for (int i = 0; i < orderedHits.Length; i++)
 				{
+					var destructible = orderedHits[i].GetComponent<IDestructible>();
+					if (destructible != null)
+					{
+						var currentSelected = UIInventory.Instance.GetCurrentSelected();
+						if (currentSelected != null)
+						{
+							objectToInteractTransform = null;
+							StartCoroutine(WaitForRepair());
+
+							destructible.RepairDamage(UIInventory.Instance.GetCurrentSelected().repairValue);
+							UIInventory.Instance.RemoveInstance(currentSelected);
+							actionAllreadyDone = true;
+							break;
+						}
+					}
+
 					var interactible = orderedHits[i].GetComponent<IInteractible>();
 					if (interactible != null)
 					{
-						var destructible = orderedHits[i].GetComponent<IDestructible>();
-						if (destructible != null)
-						{
-							var currentSelected = UIInventory.Instance.GetCurrentSelected();
-							if (currentSelected != null)
-							{
-								objectToInteractTransform = null;
-								StartCoroutine(WaitForRepair());
-
-								destructible.RepairDamage(UIInventory.Instance.GetCurrentSelected().repairValue);
-								UIInventory.Instance.RemoveInstance(currentSelected);
-								actionAllreadyDone = true;
-								break;
-							}
-						}
-
 						var iventoryItem = orderedHits[i].GetComponent<InventoryItem>();
 						if (iventoryItem != null)
 						{
