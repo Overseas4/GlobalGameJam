@@ -12,7 +12,7 @@ public class PlayerSpawner : MonoBehaviour
     void Awake()
     {
         _spawnPoints = GetComponentsInChildren<Transform>();
-        SetRandomPosition();
+        //SetRandomPosition();
     }
 
     void Start()
@@ -24,7 +24,7 @@ public class PlayerSpawner : MonoBehaviour
         ResetOnEscape();
     }
 
-    void SetRandomPosition()
+    public void SetRandomPosition()
     {
         Transform randomSpawnPoint = RandomSpawnPoint;
         Player.transform.position = randomSpawnPoint.position;

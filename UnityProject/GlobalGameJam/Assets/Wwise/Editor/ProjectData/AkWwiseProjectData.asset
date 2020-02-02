@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5da25d0f1a067a4e86970331ce30f5e6
     GuidInternal: 
-    m_lastTime: -8586209437258254935
+    m_lastTime: -8586209394604112748
     List:
     - name: ACT_algue_pickUp
       guid: 5ab35b40878b4b4d8044ab61a068fe8e
@@ -321,6 +321,34 @@ MonoBehaviour:
       - ElementName: FS_sable_marche
         ObjectType: 3
       Path: Default Work Unit\CHARACTER\FS_sable_marche
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MUS_menu_start
+      guid: 943667dc085e9042b3cc2abf8981d505
+      id: 1195524065
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NONDIEGETIC
+        ObjectType: 4
+      - ElementName: MUS_menu_start
+        ObjectType: 3
+      Path: Default Work Unit\NONDIEGETIC\MUS_menu_start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MUS_menu_stop
+      guid: 938d74edfaa4224088d1df875828eda1
+      id: 1472992795
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NONDIEGETIC
+        ObjectType: 4
+      - ElementName: MUS_menu_stop
+        ObjectType: 3
+      Path: Default Work Unit\NONDIEGETIC\MUS_menu_stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
