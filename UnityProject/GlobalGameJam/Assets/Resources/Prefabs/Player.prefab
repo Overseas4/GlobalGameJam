@@ -1,29 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &984751775121087887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647344510408891427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b2f84ee13d0acf408150a68f30de33b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectsOfSameColor: []
-  _colorsWithRatio:
-  - color: {r: 0, g: 0.5, b: 1, a: 0}
-    ratio: 0
-  - color: {r: 1, g: 0, b: 0.9590645, a: 0}
-    ratio: 0
-  - color: {r: 1, g: 0.41578948, b: 0, a: 0}
-    ratio: 0
-  - color: {r: 0.34246588, g: 1, b: 0, a: 0}
-    ratio: 0
-  - color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0}
-    ratio: 0
 --- !u!114 &461317515871049448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,17 +179,23 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c9b869374a2a6a848aa2d822314a9fb9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b03b5486a186ee4d8df66a874df95e5, type: 2}
+    - target: {fileID: 13700000, guid: c9b869374a2a6a848aa2d822314a9fb9, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d1eff01399dca34aad94a5401fc56df, type: 2}
+    - target: {fileID: 13700000, guid: c9b869374a2a6a848aa2d822314a9fb9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d1eff01399dca34aad94a5401fc56df, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9b869374a2a6a848aa2d822314a9fb9, type: 3}
 --- !u!4 &1647344510408785921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: c9b869374a2a6a848aa2d822314a9fb9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1647344510408923783}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1647344510408891427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: c9b869374a2a6a848aa2d822314a9fb9,
     type: 3}
   m_PrefabInstance: {fileID: 1647344510408923783}
   m_PrefabAsset: {fileID: 0}

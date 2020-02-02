@@ -6,7 +6,7 @@ public class ControllerMark1 : MonoBehaviour
 	private const string HorizontalAxis = "Horizontal";
 	private const string VerticalAxis = "Vertical";
 	private const string ActionButton = "Fire1";
-	private const string PickUpButton = "Fire2";
+	private const string PickUpButton = "Fire1";
 
 	private int turnSpeedHash = Animator.StringToHash("turnSpeed");
 	private int forwardSpeedHash = Animator.StringToHash("forwardSpeed");
@@ -59,7 +59,7 @@ public class ControllerMark1 : MonoBehaviour
 
 		if (!isPickUping)
 		{
-			if (Input.GetButton(PickUpButton))
+			if (Input.GetButton(ActionButton))
 			{
 				Collider[] hits = Physics.OverlapSphere(transform.position, pickUpRange, interactibleLayerMask);
 				Collider[] orderedHits = hits.OrderBy(c => Vector3.Distance(transform.position, c.transform.position)).ToArray();

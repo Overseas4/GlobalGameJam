@@ -12,11 +12,11 @@ public class PlayerSpawner : MonoBehaviour
     void Awake()
     {
         _spawnPoints = GetComponentsInChildren<Transform>();
+        SetRandomPosition();
     }
 
     void Start()
     {
-        SetRandomPosition();
     }
 
     void Update()

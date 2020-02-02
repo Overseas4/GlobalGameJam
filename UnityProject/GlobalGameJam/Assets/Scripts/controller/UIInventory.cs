@@ -46,10 +46,10 @@ public class UIInventory : MonoBehaviour
 
 	public void Notify()
 	{
-		int numberOfSand = 0;
-		int numberOfWetSand = 0;
 		int numberOfWood = 0;
 		int numberOfSuperWood = 0;
+		int numberOfWetSand = 0;
+		int numberOfSand = 0;
 
 		foreach (var items in Inventory.Instance.Items)
 		{
@@ -72,34 +72,29 @@ public class UIInventory : MonoBehaviour
 			}
 		}
 
-		GameObject[] gameObjects = new GameObject[] { wetSand, sand, wood, superWood };
-		Image[] icons = new Image[] { wetSandNumberIcon, sandNumberIcon, woodNumberIcon, superWoodNumberIcon };
-		int[] numbers = new int[] { numberOfWetSand, numberOfSand, numberOfWood, numberOfSuperWood };
-
-		if (selectedHighlight == null)
-		{
-
-		}
+		GameObject[] gameObjects = new GameObject[] { wood, superWood, wetSand, sand };
+		GameObject[] highlight = new GameObject[] { woodHighlight, superWoodHighlight, wetSandHighlight, sandHighlight };
+		Image[] icons = new Image[] { woodNumberIcon, superWoodNumberIcon, wetSandNumberIcon, sandNumberIcon };
+		int[] numbers = new int[] { numberOfWood, numberOfSuperWood, numberOfWetSand, numberOfSand };
 
 		for (int i = 0; i < gameObjects.Length; i++)
 		{
 			if (numbers[i] == 0)
 			{
-				if (gameObjects[i].activeInHierarchy)
+				gameObjects[i].SetActive(false);
+				if (selectedHighlight == highlight[i])
 				{
-
+					SelectNewHighlight();
 				}
-				else
-				{
-
-				}
-				gameObjects[i].SetActive(numbers[i] != 0);
 			}
-			else 
+			else
 			{
+				gameObjects[i].SetActive(true);
+
 				if (selectedHighlight == null)
 				{
-					SelectThisGameObject
+					selectedHighlight = highlight[i];
+					selectedHighlight.SetActive(true);
 				}
 			}
 
@@ -123,6 +118,61 @@ public class UIInventory : MonoBehaviour
 				default:
 					break;
 			}
+		}
+	}
+
+	private void SelectNewHighlight()
+	{
+		if (selectedHighlight != null)
+		{
+			selectedHighlight.SetActive(false);
+		}
+
+		int numberOfWood = 0;
+		int numberOfSuperWood = 0;
+		int numberOfWetSand = 0;
+		int numberOfSand = 0;
+
+		foreach (var items in Inventory.Instance.Items)
+		{
+			switch (items.type)
+			{
+				case ItemType.Wood:
+					++numberOfWood;
+					break;
+				case ItemType.Sand:
+					++numberOfSand;
+					break;
+				case ItemType.SuperWood:
+					++numberOfSuperWood;
+					break;
+				case ItemType.WetSand:
+					++numberOfWetSand;
+					break;
+				default:
+					break;
+			}
+		}
+
+		if (numberOfSand != 0)
+		{
+			selectedHighlight = sandHighlight;
+			selectedHighlight.SetActive(true);
+		}
+		if (numberOfWetSand != 0)
+		{
+			selectedHighlight = wetSandHighlight;
+			selectedHighlight.SetActive(true);
+		}
+		if (numberOfSuperWood != 0)
+		{
+			selectedHighlight = superWoodHighlight;
+			selectedHighlight.SetActive(true);
+		}
+		if (numberOfWood != 0)
+		{
+			selectedHighlight = woodHighlight;
+			selectedHighlight.SetActive(true);
 		}
 	}
 
@@ -178,18 +228,161 @@ public class UIInventory : MonoBehaviour
 
 	internal void RemoveInstance(InventoryContainer itemToRemove)
 	{
-		Inventory.Instance.Items.Remove(itemToRemove);
+		Inventory.Instance.RemoveItem(itemToRemove);
 		Notify();
 	}
 
-	private void SelectThisGameObject(GameObject thisONE)
+	void MoveHighlightUp()
 	{
-		selectedHighlight.SetActive(false);
-		selectedHighlight = thisONE;
+		List<GameObject> highlights = new List<GameObject>();
+		int numberOfWood = 0;
+		int numberOfSuperWood = 0;
+		int numberOfWetSand = 0;
+		int numberOfSand = 0;
 
-		if (thisONE != null)
+		foreach (var items in Inventory.Instance.Items)
 		{
-			selectedHighlight.SetActive(true);
+			switch (items.type)
+			{
+				case ItemType.Wood:
+					++numberOfWood;
+					break;
+				case ItemType.Sand:
+					++numberOfSand;
+					break;
+				case ItemType.SuperWood:
+					++numberOfSuperWood;
+					break;
+				case ItemType.WetSand:
+					++numberOfWetSand;
+					break;
+				default:
+					break;
+			}
+		}
+
+		if (numberOfWood != 0)
+		{
+			highlights.Add(sandHighlight);
+		}
+		if (numberOfSuperWood != 0)
+		{
+			highlights.Add(wetSandHighlight);
+		}
+		if (numberOfSand != 0)
+		{
+			highlights.Add(superWoodHighlight);
+		}
+		if (numberOfWetSand != 0)
+		{
+			highlights.Add(woodHighlight);
+		}
+
+		if (highlights.Count != 0)
+		{
+			for (int i = 0; i < highlights.Count; i++)
+			{
+				if (selectedHighlight == highlights[i])
+				{
+					selectedHighlight.SetActive(false);
+					if (i - 1 >= 0)
+					{
+						selectedHighlight = highlights[i - 1];
+						selectedHighlight.SetActive(true);
+					}
+					else
+					{
+						selectedHighlight = highlights[highlights.Count - 1];
+						selectedHighlight.SetActive(true);
+					}
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (selectedHighlight != null)
+			{
+				selectedHighlight.SetActive(false);
+			}
+			selectedHighlight = null;
+		}
+	}
+
+	void MoveHighlightDown()
+	{
+		List<GameObject> highlights = new List<GameObject>();
+		int numberOfWood = 0;
+		int numberOfSuperWood = 0;
+		int numberOfWetSand = 0;
+		int numberOfSand = 0;
+
+		foreach (var items in Inventory.Instance.Items)
+		{
+			switch (items.type)
+			{
+				case ItemType.Wood:
+					++numberOfWood;
+					break;
+				case ItemType.Sand:
+					++numberOfSand;
+					break;
+				case ItemType.SuperWood:
+					++numberOfSuperWood;
+					break;
+				case ItemType.WetSand:
+					++numberOfWetSand;
+					break;
+				default:
+					break;
+			}
+		}
+
+		if (numberOfWood != 0)
+		{
+			highlights.Add(sandHighlight);
+		}
+		if (numberOfSuperWood != 0)
+		{
+			highlights.Add(wetSandHighlight);
+		}
+		if (numberOfSand != 0)
+		{
+			highlights.Add(superWoodHighlight);
+		}
+		if (numberOfWetSand != 0)
+		{
+			highlights.Add(woodHighlight);
+		}
+
+		if (highlights.Count != 0)
+		{
+			for (int i = 0; i < highlights.Count; i++)
+			{
+				if (selectedHighlight == highlights[i])
+				{
+					selectedHighlight.SetActive(false);
+					if (i + 1 < highlights.Count)
+					{
+						selectedHighlight = highlights[i + 1];
+						selectedHighlight.SetActive(true);
+					}
+					else
+					{
+						selectedHighlight = highlights[0];
+						selectedHighlight.SetActive(true);
+					}
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (selectedHighlight != null)
+			{
+				selectedHighlight.SetActive(false);
+			}
+			selectedHighlight = null;
 		}
 	}
 }

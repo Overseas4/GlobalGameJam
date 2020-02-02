@@ -11,7 +11,12 @@ ModelImporter:
     2300000: pCylinder5
     3300000: pCylinder5
     4300000: pCylinder5
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100004, guid: c9b869374a2a6a848aa2d822314a9fb9, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -51,7 +56,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
