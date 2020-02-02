@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     private List<Transform> _spawnPointsList = new List<Transform>();
     private Transform[] _spawnPoints = null;
     public GameObject SpawnObject { get => Instantiate(_spawnPrefab); }
-    private static float timer = 0f;
+    private float timer = 0f;
     Transform GetSpawnPoint
     {
         get
