@@ -62,7 +62,7 @@ public class InventoryItem : Interactible, IIventoryItem
             }
 			Inventory.Instance.AddItem(new InventoryStruct(Type, Weight, RepairValue));
 			UIInventory.Instance.Notify();
-			
+			Destroy(gameObject);
 		}
 	}
 }
