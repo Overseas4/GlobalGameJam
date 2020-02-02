@@ -107,6 +107,10 @@ public class DayCycleLight : MonoBehaviour
         }
         if (_timer < _halfdaydurationinseconds)
         {
+            if(_currentdaytime == daytime.lateday)
+            {
+                eventController.Instance.AMB_switch_jour.Post(gameObject);
+            }
             _currentdaytime = daytime.earlyday;
         }
         else if (_timer < _daydurationinseconds)
@@ -115,6 +119,10 @@ public class DayCycleLight : MonoBehaviour
         }
         else if (_timer < _daydurationinseconds + _nightdurationinseconds)
         {
+            if(_currentdaytime != daytime.lateday)
+            {
+                eventController.Instance.AMB_switch_nuit.Post(gameObject);
+            }
             _currentdaytime = daytime.lateday;
         }
         else
@@ -143,6 +151,7 @@ public class DayCycleLight : MonoBehaviour
         _light = GetComponent<Light>();
         _light.color = _colorsunrise;
         _light.intensity = _sunriseintensity;
+        eventController.Instance.AMB_jour_play.Post(gameObject);
     }
 
 }

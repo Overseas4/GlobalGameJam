@@ -10,6 +10,13 @@ public enum DestructionState
     Broken,
 }
 
+public enum DestructibleObjects
+{
+    Door,
+    CastleWall,
+    WoodWall,
+}
+
 public interface IDestructible
 {
     DestructionState DestructionState { get; set; }
@@ -18,5 +25,8 @@ public interface IDestructible
     void RepairDamage(float repairAmount);
     void BreakDownTo(DestructionState newState);
     void RepairBackTo(DestructionState newState);
-
+    GameObject ShapeNew { get; set; }
+    GameObject ShapeDamaged { get; set; }
+    GameObject ShapeVeryDamaged { get; set; }
+    bool Destroyed { get; set; }
 }
