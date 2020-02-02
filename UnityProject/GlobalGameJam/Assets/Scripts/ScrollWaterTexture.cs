@@ -22,6 +22,8 @@ public class ScrollWaterTexture : MonoBehaviour
 
     private int _wavesCount = 0;
     [SerializeField] private int _nbWavesBeforeBigWave = 5;
+    [SerializeField] private Vector2 _minMaxDamage = new Vector2(10f, 15f);
+    [SerializeField] private float _damageMultiplierPerBigWave = 1.5f;
 
     private Renderer _renderer = null;
     private Renderer Renderer { get => _renderer != null ? _renderer : _renderer = GetComponent<Renderer>(); }
@@ -42,16 +44,38 @@ public class ScrollWaterTexture : MonoBehaviour
         _offset2 = new Vector2(_timer * _wavesSpeed* _scrollNormal2X, _timer * _wavesSpeed * _scrollNormal2Y);
         Renderer.material.mainTextureOffset = _offset;
         Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2);
-        float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _normalWaveScaling + _initialPosition.y;
+        float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _normalWaveScaling;
         transform.position = Vector3.up * y + _initialPosition;
         if (_timer > _nbWavesBeforeBigWave * 10f)
         {
             _bigWavesTimer += Time.deltaTime;
-            y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _bigWaveScaling + _initialPosition.y;
+            y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _bigWaveScaling;
             transform.position = Vector3.up * y + _initialPosition;
             if(_bigWavesTimer > 10f)
             {
+                _minMaxDamage *= _damageMultiplierPerBigWave;
+                _bigWavesTimer = 0f;
                 _timer = 0f;
+            }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Interactible"))
+        {
+            Destructible destructible = other.GetComponent<Destructible>();
+            if(destructible != null)
+            {
+                destructible.TakeDamage(Random.Range(_minMaxDamage.x, _minMaxDamage.y));
+            }
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Destructible destructible = other.GetComponent<Destructible>();
+            if (destructible != null)
+            {
+                destructible.TakeDamage(Random.Range(_minMaxDamage.x, _minMaxDamage.y));
             }
         }
     }

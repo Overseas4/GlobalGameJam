@@ -74,15 +74,14 @@ public class ControllerMark1 : MonoBehaviour
 				Debug.Log(hits.Length);
 				Debug.Log(orderedHits.Length);
 
-
-				for (int i = 0; i < Mathf.Min(nbMaxPickUp, orderedHits.Length); i++)
-				{
-					orderedHits[i].GetComponent<IInteractible>().Interact();
-				}
 				if (orderedHits.Length > 0)
 				{
 					objectToInteractTransform = orderedHits[0].transform;
 					StartCoroutine(WaitForPickUp());
+				}
+				for (int i = 0; i < Mathf.Min(nbMaxPickUp, orderedHits.Length); i++)
+				{
+					orderedHits[i].GetComponent<IInteractible>().Interact();
 				}
 			}
 

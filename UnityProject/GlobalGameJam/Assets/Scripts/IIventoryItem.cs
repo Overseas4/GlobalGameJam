@@ -4,6 +4,7 @@
     Water,
     SeaWeed,
     Sand,
+    WetSand,
     SeaShell,
     SuperWood
 }
