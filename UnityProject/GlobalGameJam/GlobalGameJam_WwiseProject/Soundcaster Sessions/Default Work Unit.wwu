@@ -49,6 +49,109 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="UTLIMATE TEST OF DOOOOOOOOOM" ID="{709378C9-CA2E-4894-B79A-BB031942FA39}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AMB_stop" ID="{403C6F6D-6D63-40D5-9187-D2121BD6DE0F}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FS_sable_course" ID="{98D9BEB9-220B-49E3-8874-E8DBA2A87A0A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OBJ_bigWave" ID="{E3C8445D-A862-4B42-B2FE-903A23661F86}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OBJ_destr_porte" ID="{5EC0C208-6F06-447D-A29C-D1EEC7C2D0DD}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_eau_pickUp" ID="{03F4B7A0-2B27-4A08-8BBF-A7F1524CD35A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_porte_ferme" ID="{6E01F5B4-44FD-41EC-84F3-E3A3B9FE8153}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_superBois_use" ID="{8800F358-3920-4906-9084-C448A33291A4}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FS_eau" ID="{8793EB19-D440-4BEF-AC38-9B646FC91CD0}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OBJ_destr_barricade" ID="{A2C7D892-4392-4FFB-9B96-E2C4CB1E07BC}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_algue_pickUp" ID="{405BB35A-8B87-4D4B-8044-AB61A068FE8E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_porte_ouvre" ID="{7D9406CC-9FFA-4E11-B9B9-3963857FDAF9}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FS_sable_marche" ID="{704255CA-DA6D-443A-B81E-B687F504BD13}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OBJ_destr_mur1" ID="{8928C323-2CA3-4F73-9D71-F05FDFA00C62}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_algue_use" ID="{A4450F06-02A9-4123-9F6A-1C6083D8881A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_sable_pickUp" ID="{3E7CC68D-037E-45DC-9518-FF2BEC4249D7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OBJ_destr_mur2" ID="{6287EB4C-1365-4916-A601-06C16A6F057E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_bois_pickUp" ID="{78FA85BE-0467-41BB-8ED8-3F1B4973480A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_sable_use" ID="{04813672-C530-44DF-8EFC-C73A27FCC252}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OBJ_destr_mur3" ID="{0EA5D5A2-6EFF-4CEE-91CC-A78EC81E3A1A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_bois_use" ID="{1CC05CB3-115D-4DB3-8993-B8C19087597A}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="4" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ACT_superBois_pickUp" ID="{92789871-E201-47BA-BB03-E5A6E33D2397}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="4" Y="5"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

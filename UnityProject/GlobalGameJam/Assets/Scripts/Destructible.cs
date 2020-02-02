@@ -21,6 +21,7 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void TakeDamage(float damageTaken)
     {
+        Debug.Log(Health);
         Health -= damageTaken;
         switch (DestructionState)
         {
