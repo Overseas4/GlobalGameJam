@@ -31,6 +31,8 @@
 				<Event Id="2503182546" Name="ACT_bois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_pickUp" DurationType="OneShot" DurationMin="0.644875" DurationMax="0.735226"/>
 				<Event Id="912935335" Name="ACT_bois_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_bois_use" DurationType="OneShot" DurationMin="1.239819" DurationMax="1.475208"/>
 				<Event Id="4281641228" Name="ACT_eau_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_eau_pickUp" DurationType="OneShot" DurationMin="1.584271" DurationMax="1.703875"/>
+				<Event Id="1539852140" Name="ACT_porte_ferme" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_porte_ferme" DurationType="OneShot" DurationMin="0.938753" DurationMax="1.118308"/>
+				<Event Id="206252308" Name="ACT_porte_ouvre" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_porte_ouvre" DurationType="OneShot" DurationMin="1.711361" DurationMax="2.068345"/>
 				<Event Id="2528094752" Name="ACT_sable_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_pickUp" DurationType="OneShot" DurationMin="1.153107" DurationMax="1.153107"/>
 				<Event Id="2689366621" Name="ACT_sable_use" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_sable_use" DurationType="OneShot" DurationMin="0.920000" DurationMax="0.920000"/>
 				<Event Id="2961476021" Name="ACT_superBois_pickUp" ObjectPath="\Events\Default Work Unit\ACTIONS\ACT_superBois_pickUp" DurationType="OneShot" DurationMin="0.695601" DurationMax="0.737389"/>
@@ -43,6 +45,9 @@
 				<Event Id="4224216346" Name="FS_sable_course" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_course" DurationType="OneShot" DurationMin="0.481704" DurationMax="0.643121"/>
 				<Event Id="127011407" Name="FS_sable_marche" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_marche" DurationType="OneShot" DurationMin="0.182487" DurationMax="0.349751"/>
 				<Event Id="2846663964" Name="OBJ_bigWave" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_bigWave" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="11.951769" DurationMax="14.237780"/>
+				<Event Id="3091462167" Name="OBJ_destr_mur1" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur1" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="2.999977" DurationMax="2.999977"/>
+				<Event Id="3091462164" Name="OBJ_destr_mur2" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur2" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="2.967370" DurationMax="2.967370"/>
+				<Event Id="3091462165" Name="OBJ_destr_mur3" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur3" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="3.391293" DurationMax="3.391293"/>
 				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2668050469" Name="TRIG_claqBois_play" ObjectPath="\Events\Default Work Unit\TRIG_claqBois_play" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -91,6 +96,10 @@
 					<ShortName>AMB_nuit_eau.wav</ShortName>
 					<Path>SFX\AMB_nuit_eau_C089B5C3.wem</Path>
 				</File>
+				<File Id="285827438" Language="SFX">
+					<ShortName>OBJ_porte_ouvre.wav</ShortName>
+					<Path>SFX\OBJ_porte_ouvre_10C4C929.wem</Path>
+				</File>
 				<File Id="291583852" Language="SFX">
 					<ShortName>ACT_superBois_use01.wav</ShortName>
 					<Path>SFX\ACT_superBois_use01_10C4C929.wem</Path>
@@ -119,6 +128,10 @@
 					<ShortName>FS_eau_02.wav</ShortName>
 					<Path>SFX\FS_eau_02_10C4C929.wem</Path>
 				</File>
+				<File Id="525442513" Language="SFX">
+					<ShortName>OBJ_porte_ferme.wav</ShortName>
+					<Path>SFX\OBJ_porte_ferme_10C4C929.wem</Path>
+				</File>
 				<File Id="557627522" Language="SFX">
 					<ShortName>FS_sable_marche_14.wav</ShortName>
 					<Path>SFX\FS_sable_marche_14_10C4C929.wem</Path>
@@ -134,6 +147,10 @@
 				<File Id="614596379" Language="SFX">
 					<ShortName>ACT_algue_pickUp00.wav</ShortName>
 					<Path>SFX\ACT_algue_pickUp00_646FA6ED.wem</Path>
+				</File>
+				<File Id="616886962" Language="SFX">
+					<ShortName>destr_mur02.wav</ShortName>
+					<Path>SFX\destr_mur02_10C4C929.wem</Path>
 				</File>
 				<File Id="634674283" Language="SFX">
 					<ShortName>AMB_nuit_background.wav</ShortName>
@@ -154,6 +171,10 @@
 				<File Id="760461119" Language="SFX">
 					<ShortName>AMB_nuit_wave_06.wav</ShortName>
 					<Path>SFX\AMB_nuit_wave_06_10C4C929.wem</Path>
+				</File>
+				<File Id="792399853" Language="SFX">
+					<ShortName>destr_mur03.wav</ShortName>
+					<Path>SFX\destr_mur03_10C4C929.wem</Path>
 				</File>
 				<File Id="830644049" Language="SFX">
 					<ShortName>AMB_nuit_crickets_05.wav</ShortName>
@@ -206,6 +227,10 @@
 				<File Id="999278570" Language="SFX">
 					<ShortName>ACT_superBois_pickUp.wav</ShortName>
 					<Path>SFX\ACT_superBois_pickUp_10C4C929.wem</Path>
+				</File>
+				<File Id="1020100082" Language="SFX">
+					<ShortName>destr_mur01.wav</ShortName>
+					<Path>SFX\destr_mur01_10C4C929.wem</Path>
 				</File>
 				<File Id="1030168568" Language="SFX">
 					<ShortName>FS_sable_course_15.wav</ShortName>

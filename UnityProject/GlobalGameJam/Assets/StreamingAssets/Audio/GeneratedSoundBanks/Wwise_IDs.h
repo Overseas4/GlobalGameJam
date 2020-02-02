@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID ACT_BOIS_PICKUP = 2503182546U;
         static const AkUniqueID ACT_BOIS_USE = 912935335U;
         static const AkUniqueID ACT_EAU_PICKUP = 4281641228U;
+        static const AkUniqueID ACT_PORTE_FERME = 1539852140U;
+        static const AkUniqueID ACT_PORTE_OUVRE = 206252308U;
         static const AkUniqueID ACT_SABLE_PICKUP = 2528094752U;
         static const AkUniqueID ACT_SABLE_USE = 2689366621U;
         static const AkUniqueID ACT_SUPERBOIS_PICKUP = 2961476021U;
@@ -30,6 +32,9 @@ namespace AK
         static const AkUniqueID FS_SABLE_COURSE = 4224216346U;
         static const AkUniqueID FS_SABLE_MARCHE = 127011407U;
         static const AkUniqueID OBJ_BIGWAVE = 2846663964U;
+        static const AkUniqueID OBJ_DESTR_MUR1 = 3091462167U;
+        static const AkUniqueID OBJ_DESTR_MUR2 = 3091462164U;
+        static const AkUniqueID OBJ_DESTR_MUR3 = 3091462165U;
         static const AkUniqueID OBJ_TOTORO_AURA_PLAY = 304890365U;
         static const AkUniqueID TRIG_CLAQBOIS_PLAY = 2668050469U;
     } // namespace EVENTS
