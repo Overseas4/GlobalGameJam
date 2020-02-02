@@ -128,6 +128,10 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="CHAR_die" ID="{843646AD-D56B-4168-A433-D1CC0FD05400}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="OBJ_destr_mur2" ID="{6287EB4C-1365-4916-A601-06C16A6F057E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
 							<Position X="3" Y="3"/>
 						</Module>

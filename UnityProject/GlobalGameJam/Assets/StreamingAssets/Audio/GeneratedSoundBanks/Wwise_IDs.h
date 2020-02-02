@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID AMB_STOP = 729984210U;
         static const AkUniqueID AMB_SWITCH_JOUR = 1678679793U;
         static const AkUniqueID AMB_SWITCH_NUIT = 376456049U;
+        static const AkUniqueID CHAR_DIE = 3070183186U;
         static const AkUniqueID FS_EAU = 23400934U;
         static const AkUniqueID FS_SABLE_COURSE = 4224216346U;
         static const AkUniqueID FS_SABLE_MARCHE = 127011407U;
