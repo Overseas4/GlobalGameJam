@@ -90,33 +90,33 @@ public class Destructible : MonoBehaviour, IDestructible
             case DestructionState.Broken:
                 if (Health >= 100f)
                 {
-                    BreakDownTo(DestructionState.New);
+                    RepairBackTo(DestructionState.New);
                 }
                 else if (Health >= 66f)
                 {
-                    BreakDownTo(DestructionState.Damaged);
+                    RepairBackTo(DestructionState.Damaged);
                 }
                 else if (Health < 33f)
                 {
-                    BreakDownTo(DestructionState.VeryDamaged);
+                    RepairBackTo(DestructionState.VeryDamaged);
                 }
                 break;
 
             case DestructionState.VeryDamaged:
                 if (Health >= 100f)
                 {
-                    BreakDownTo(DestructionState.New);
+                    RepairBackTo(DestructionState.New);
                 }
                 else if (Health <= 66f)
                 {
-                    BreakDownTo(DestructionState.Damaged);
+                    RepairBackTo(DestructionState.Damaged);
                 }
                 break;
 
             case DestructionState.Damaged:
                 if (Health >= 100f)
                 {
-                    BreakDownTo(DestructionState.New);
+                    RepairBackTo(DestructionState.New);
                 }
                 break;
             default:
