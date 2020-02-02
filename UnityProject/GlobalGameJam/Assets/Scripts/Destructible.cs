@@ -25,14 +25,16 @@ public class Destructible : MonoBehaviour, IDestructible
     {
         Debug.Log(Health);
         Health -= damageTaken;
+        Health = Health > 0f ? Health : 0f;
+
         switch (DestructionState)
         {
             case DestructionState.New:
-                if(Health <= 0f)
+                if (Health <= 0f)
                 {
                     BreakDownTo(DestructionState.Broken);
                 }
-                else if(Health <= 33f)
+                else if (Health <= 33f)
                 {
                     BreakDownTo(DestructionState.VeryDamaged);
                 }
@@ -40,7 +42,7 @@ public class Destructible : MonoBehaviour, IDestructible
                 {
                     BreakDownTo(DestructionState.Damaged);
                 }
-                else if(Health < 100f)
+                else if (Health < 100f)
                 {
                     BreakDownTo(DestructionState.Damaged);
                 }
@@ -83,10 +85,11 @@ public class Destructible : MonoBehaviour, IDestructible
     public void RepairDamage(float repairAmount)
     {
         Health += repairAmount;
+        Health = Health < 100f ? Health : 100f;
         switch (DestructionState)
         {
             case DestructionState.Broken:
-                if (Health == 100f)
+                if (Health >= 100f)
                 {
                     BreakDownTo(DestructionState.New);
                 }
@@ -124,6 +127,7 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void BreakDownTo(DestructionState newState)
     {
+        _desctructionState = newState;
         switch (newState)
         {
             case DestructionState.Damaged:
@@ -141,6 +145,7 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void RepairBackTo(DestructionState newState)
     {
+        _desctructionState = newState;
         switch (newState)
         {
             case DestructionState.New:
@@ -157,6 +162,7 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void ChangeToThisPrefab(GameObject prefab)
     {
+        Destructible previousShape = GetComponent<Destructible>();
         Instantiate(prefab);
         prefab.transform.position = transform.position;
         Destructible destructible = prefab.AddComponent<Destructible>();
@@ -171,6 +177,7 @@ public class Destructible : MonoBehaviour, IDestructible
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Triggered!");
         if (other.gameObject.layer == waterLayerMask)
         {
             IsInWater = true;
