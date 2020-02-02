@@ -3,7 +3,7 @@
 public class Destructible : MonoBehaviour, IDestructible
 {
 
-    [SerializeField] public DestructionState _desctructionState = DestructionState.New;
+    [SerializeField] public DestructionState _destructionState = DestructionState.New;
     [SerializeField] public DestructibleObjects _desctructionObject = DestructibleObjects.CastleWall;
     [SerializeField] public float _health = 100f;
     [SerializeField] public GameObject _shapeNew = null;
@@ -11,7 +11,7 @@ public class Destructible : MonoBehaviour, IDestructible
     [SerializeField] public GameObject _shapeVeryDamaged = null;
     private bool _destroyed = false;
     private int waterLayerMask = 4;
-    public DestructionState DestructionState { get => _desctructionState; set => _desctructionState = value; }
+    public DestructionState DestructionState { get => _destructionState; set => _destructionState = value; }
     public float Health { get => _health; set => _health = value; }
     public bool IsInWater { get; private set; }
 
@@ -23,7 +23,6 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void TakeDamage(float damageTaken)
     {
-        Debug.Log(Health);
         Health -= damageTaken;
         Health = Health > 0f ? Health : 0f;
 
@@ -127,17 +126,20 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void BreakDownTo(DestructionState newState)
     {
-        _desctructionState = newState;
+        _shapeNew.SetActive(false);
+        _shapeDamaged.SetActive(false);
+        _shapeVeryDamaged.SetActive(false);
+
+        _destructionState = newState;
         switch (newState)
         {
             case DestructionState.Damaged:
-                ChangeToThisPrefab(_shapeDamaged);
+                _shapeDamaged.SetActive(true);
                 break;
             case DestructionState.VeryDamaged:
-                ChangeToThisPrefab(_shapeVeryDamaged);
+                _shapeVeryDamaged.SetActive(true);
                 break;
             case DestructionState.Broken:
-                //TODO Break
                 Destroy(this);
                 break;
         }
@@ -145,44 +147,43 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void RepairBackTo(DestructionState newState)
     {
-        _desctructionState = newState;
+        _shapeNew.SetActive(false);
+        _shapeDamaged.SetActive(false);
+        _shapeVeryDamaged.SetActive(false);
         switch (newState)
         {
             case DestructionState.New:
-                ChangeToThisPrefab(_shapeNew);
+                _shapeNew.SetActive(true);
                 break;
             case DestructionState.Damaged:
-                ChangeToThisPrefab(_shapeDamaged);
+                _shapeDamaged.SetActive(true);
                 break;
             case DestructionState.VeryDamaged:
-                ChangeToThisPrefab(_shapeVeryDamaged);
+                _shapeVeryDamaged.SetActive(true);
                 break;
         }
     }
 
-    public void ChangeToThisPrefab(GameObject prefab)
-    {
-        Destructible previousShape = GetComponent<Destructible>();
-        Instantiate(prefab);
-        prefab.transform.position = transform.position;
-        Destructible destructible = prefab.AddComponent<Destructible>();
-        destructible._shapeNew = _shapeNew;
-        destructible._shapeDamaged = _shapeDamaged;
-        destructible._shapeVeryDamaged = _shapeVeryDamaged;
-        destructible._health = _health;
-        destructible._desctructionState = _desctructionState;
-        destructible._desctructionObject = _desctructionObject;
-        Destroy(gameObject);
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered!");
         if (other.gameObject.layer == waterLayerMask)
         {
             IsInWater = true;
             ScrollWaterTexture water = other.GetComponent<ScrollWaterTexture>();
             TakeDamage(Random.Range(water._minMaxDamage.x, water._minMaxDamage.y));
         }
+    }
+
+    public void ChangeToThisPrefab(GameObject prefab)
+    {
+
+        GameObject newPrefab = Instantiate(prefab, transform);
+    }
+
+    void Start()
+    {
+        _shapeNew.SetActive(true);
+        _shapeDamaged.SetActive(false);
+        _shapeVeryDamaged.SetActive(false);
     }
 }
