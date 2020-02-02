@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8540278645575983595}
   - component: {fileID: 8540278645575983592}
   - component: {fileID: 8540278645575983597}
+  - component: {fileID: 6982983232512026215}
   m_Layer: 0
   m_Name: CubeNew
   m_TagString: Untagged
@@ -112,3 +113,19 @@ MonoBehaviour:
     type: 3}
   _shapeVeryDamaged: {fileID: 6494355505729230615, guid: 37de461a3552fd444af55919395c65c4,
     type: 3}
+--- !u!54 &6982983232512026215
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8540278645575983590}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
