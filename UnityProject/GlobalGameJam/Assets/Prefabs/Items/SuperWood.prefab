@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3885083999261443667}
+  - component: {fileID: 4028011671135480689}
+  - component: {fileID: 9047527583925211688}
   m_Layer: 0
   m_Name: SuperWood
   m_TagString: Untagged
@@ -31,6 +33,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4028011671135480689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728011817165714371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.6007378, z: 1.8914268}
+  m_Center: {x: 0, y: -0.10036743, z: -0.004865885}
+--- !u!114 &9047527583925211688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728011817165714371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a43c2d63a07df4489cb82327daea99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactibleRange: 0
+  _type: 6
+  _weight: 10
+  _repairValue: 10
 --- !u!1001 &7687592822617260700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 876b071906f63cc4bac378a21d4e79e6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9fdf7a3dc1f4c794987c305c5b6161a0, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a42f8032b720d4fa31574ee0107b67, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 876b071906f63cc4bac378a21d4e79e6, type: 3}
 --- !u!4 &7687592822617659420 stripped
