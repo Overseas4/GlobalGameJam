@@ -424,6 +424,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="OBJ_destr_porte" ID="{5EC0C208-6F06-447D-A29C-D1EEC7C2D0DD}">
+							<ChildrenList>
+								<Action Name="" ID="{23FC4AB0-2013-4F8F-A288-F145AC7012C9}" ShortID="870829959">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OBJ_destr_porte" ID="{DA94388C-5A77-4B59-96E5-92FAF4C63864}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OBJ_destr_barricade" ID="{A2C7D892-4392-4FFB-9B96-E2C4CB1E07BC}">
+							<ChildrenList>
+								<Action Name="" ID="{5426F090-5A84-4F2D-A6D5-60BE80745A30}" ShortID="961173835">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OBJ_destr_barricade" ID="{1DF9859C-2BB9-4B72-8B2D-3A55580C6D3C}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

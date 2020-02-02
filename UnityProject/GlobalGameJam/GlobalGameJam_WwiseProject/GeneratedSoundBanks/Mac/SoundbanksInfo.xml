@@ -45,9 +45,11 @@
 				<Event Id="4224216346" Name="FS_sable_course" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_course" DurationType="OneShot" DurationMin="0.481704" DurationMax="0.643121"/>
 				<Event Id="127011407" Name="FS_sable_marche" ObjectPath="\Events\Default Work Unit\CHARACTER\FS_sable_marche" DurationType="OneShot" DurationMin="0.182487" DurationMax="0.349751"/>
 				<Event Id="2846663964" Name="OBJ_bigWave" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_bigWave" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="11.951769" DurationMax="14.237780"/>
+				<Event Id="766522639" Name="OBJ_destr_barricade" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_barricade" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="2.518209" DurationMax="2.829861"/>
 				<Event Id="3091462167" Name="OBJ_destr_mur1" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur1" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="2.999977" DurationMax="2.999977"/>
 				<Event Id="3091462164" Name="OBJ_destr_mur2" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur2" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="2.967370" DurationMax="2.967370"/>
 				<Event Id="3091462165" Name="OBJ_destr_mur3" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_mur3" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="3.391293" DurationMax="3.391293"/>
+				<Event Id="1032280832" Name="OBJ_destr_porte" ObjectPath="\Events\Default Work Unit\OBJ_DESTRUCTION\OBJ_destr_porte" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="0.814964" DurationMax="0.915823"/>
 				<Event Id="304890365" Name="OBJ_Totoro_Aura_play" ObjectPath="\Events\Default Work Unit\OBJ_Totoro_Aura_play" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2668050469" Name="TRIG_claqBois_play" ObjectPath="\Events\Default Work Unit\TRIG_claqBois_play" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -164,6 +166,10 @@
 					<ShortName>AMB_jour_eau.wav</ShortName>
 					<Path>SFX\AMB_jour_eau_86E0FE84.wem</Path>
 				</File>
+				<File Id="747577440" Language="SFX">
+					<ShortName>OBJ_destr_barricade.wav</ShortName>
+					<Path>SFX\OBJ_destr_barricade_10C4C929.wem</Path>
+				</File>
 				<File Id="751262472" Language="SFX">
 					<ShortName>FS_sable_course_17.wav</ShortName>
 					<Path>SFX\FS_sable_course_17_076F4DA0.wem</Path>
@@ -227,6 +233,10 @@
 				<File Id="999278570" Language="SFX">
 					<ShortName>ACT_superBois_pickUp.wav</ShortName>
 					<Path>SFX\ACT_superBois_pickUp_10C4C929.wem</Path>
+				</File>
+				<File Id="1015651864" Language="SFX">
+					<ShortName>OBJ_destr_porte.wav</ShortName>
+					<Path>SFX\OBJ_destr_porte_10C4C929.wem</Path>
 				</File>
 				<File Id="1020100082" Language="SFX">
 					<ShortName>destr_mur01.wav</ShortName>
