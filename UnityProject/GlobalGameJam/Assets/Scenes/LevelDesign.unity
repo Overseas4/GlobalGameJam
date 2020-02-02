@@ -6686,47 +6686,47 @@ PrefabInstance:
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _curveY.m_Curve.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _normalWaveScaling
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
-        type: 3}
-      propertyPath: _bigWaveScaling
       value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
+      propertyPath: _bigWaveScaling
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
+        type: 3}
       propertyPath: _curveY.m_Curve.Array.data[3].time
-      value: 6.584003
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _curveY.m_Curve.Array.data[3].value
-      value: 4.145509
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _curveY.m_Curve.Array.data[3].inSlope
-      value: -1.2470433
+      value: -0.027610324
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _curveY.m_Curve.Array.data[3].outSlope
-      value: -1.2470433
+      value: -0.027610324
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _curveY.m_Curve.Array.data[3].inWeight
-      value: 0.33333334
+      value: 0.4712651
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
       propertyPath: _curveY.m_Curve.Array.data[3].outWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8875616580919143913, guid: b0a74851ee63c0a4395aba583006c258,
         type: 3}
