@@ -178,7 +178,7 @@ public class UIInventory : MonoBehaviour
 
 	internal void RemoveInstance(InventoryContainer itemToRemove)
 	{
-		Inventory.Instance.Items.Remove(itemToRemove);
+		Inventory.Instance.RemoveItem(itemToRemove);
 		Notify();
 	}
 
