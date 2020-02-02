@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5222406956594241549}
   - component: {fileID: 5222406956594241538}
   - component: {fileID: 5222406956594241539}
-  - component: {fileID: 1234101967092891033}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -152,6 +151,31 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 264e309ec2eadad40bc4f2d1fd0ff18d,
       type: 2}
+  OBJ_destr_barricade:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3a28f4313aeb3384080b25c94dfab06e,
+      type: 2}
+  OBJ_destr_mur1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e960f0ffbcea78c4e840a0ad607a3e94,
+      type: 2}
+  OBJ_destr_mur2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7682f38ed44360141b74092e909df5a0,
+      type: 2}
+  OBJ_destr_mur3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7ace2dc21aa6cb347b2c0664d38d778d,
+      type: 2}
+  OBJ_destr_porte:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3f5198a051287a04583a3c5a56f3a4cb,
+      type: 2}
 --- !u!114 &5222406956594241538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,30 +228,3 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
---- !u!114 &1234101967092891033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5222406956594241544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f566d06b6743919478e2366dad4accc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: d74653430b5870e40910eb6574cb41d1,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  diffractionFlags: 11
-  engineLogging: 0
