@@ -90,9 +90,7 @@ public class ControllerMark1 : MonoBehaviour
 
 		anim.SetFloat(forwardSpeedHash, ForwardSpeed);
 		anim.SetBool(pickUpHash, pickUp);
-		//anim.SetBool(action1Hash, action1);
-		Physics.
-		if(collider.)
-		IsInWater = Physics.Raycast(transform.position, Vector3.down * feetDistance, waterLayerMask);
+        //anim.SetBool(action1Hash, action1);
+		//IsInWater = Physics.Raycast(transform.position, Vector3.down * feetDistance, waterLayerMask);
 	}
 }
