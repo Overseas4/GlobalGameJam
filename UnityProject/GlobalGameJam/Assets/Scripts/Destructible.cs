@@ -92,18 +92,18 @@ public class Destructible : MonoBehaviour, IDestructible
                 {
                     BreakDownTo(DestructionState.New);
                 }
-                else if (Health <= 66f)
+                else if (Health >= 66f)
                 {
                     BreakDownTo(DestructionState.Damaged);
                 }
-                else if (Health <= 33f)
+                else if (Health < 33f)
                 {
                     BreakDownTo(DestructionState.VeryDamaged);
                 }
                 break;
 
             case DestructionState.VeryDamaged:
-                if (Health == 100f)
+                if (Health >= 100f)
                 {
                     BreakDownTo(DestructionState.New);
                 }
@@ -114,7 +114,7 @@ public class Destructible : MonoBehaviour, IDestructible
                 break;
 
             case DestructionState.Damaged:
-                if (Health == 100f)
+                if (Health >= 100f)
                 {
                     BreakDownTo(DestructionState.New);
                 }
@@ -126,6 +126,23 @@ public class Destructible : MonoBehaviour, IDestructible
 
     public void BreakDownTo(DestructionState newState)
     {
+        switch (_desctructionObject)
+        {
+            case DestructibleObjects.CastleWall:
+                switch (_destructionState)
+                {
+                    case DestructionState.New:
+                        eventController.Instance.OBJ_destr_mur1.Post(gameObject);
+                        break;
+                    case DestructionState.Damaged:
+                        eventController.Instance.OBJ_destr_mur2.Post(gameObject);
+                        break;
+                    case DestructionState.VeryDamaged:
+                        eventController.Instance.OBJ_destr_mur3.Post(gameObject);
+                        break;
+                }
+                break;
+        }
         _shapeNew.SetActive(false);
         _shapeDamaged.SetActive(false);
         _shapeVeryDamaged.SetActive(false);
