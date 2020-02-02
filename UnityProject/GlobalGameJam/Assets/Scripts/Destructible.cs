@@ -4,7 +4,7 @@ public class Destructible : MonoBehaviour, IDestructible
 {
 
     [SerializeField] private DestructionState _desctructionState = DestructionState.New;
-    [SerializeField] private DestructibleObjects _desctructionState = DestructibleObjects.CastleWall;
+    [SerializeField] private DestructibleObjects _desctructionObject = DestructibleObjects.CastleWall;
     [SerializeField] private float _health = 100f;
     [SerializeField] private GameObject _shapeNew = null;
     [SerializeField] private GameObject _shapeDamaged = null;
