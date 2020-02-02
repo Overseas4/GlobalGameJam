@@ -41,7 +41,7 @@ public class UIInventory : MonoBehaviour
 
 	private void Start()
 	{
-		Notify();
+		//Notify();
 	}
 
 	public void Notify()
