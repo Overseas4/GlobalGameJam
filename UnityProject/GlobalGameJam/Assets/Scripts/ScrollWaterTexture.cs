@@ -8,9 +8,9 @@ public class ScrollWaterTexture : MonoBehaviour
     [SerializeField] private AnimationCurve _curveY = AnimationCurve.Linear(0, 0, 10, 10);
     [SerializeField] private float _wavesSpeed = 0.05f;
     [SerializeField] private float _cycleDuration = 36f;
-    [SerializeField] private float _waveHeight = 2f;
+    [SerializeField] private float _normalWaveScaling = 1f;
 
-    [SerializeField] private float _bigWaveHeight = 3.5f;
+    [SerializeField] private float _bigWaveScaling = 3.5f;
 
     private float _scrollNormalY = 0.62f;
     private float _scrollNormalX = 0.35f;
@@ -42,12 +42,12 @@ public class ScrollWaterTexture : MonoBehaviour
         _offset2 = new Vector2(_timer * _wavesSpeed* _scrollNormal2X, _timer * _wavesSpeed * _scrollNormal2Y);
         Renderer.material.mainTextureOffset = _offset;
         Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2);
-        float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * 0.35f + _initialPosition.y;
+        float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _normalWaveScaling + _initialPosition.y;
         transform.position = Vector3.up * y + _initialPosition;
         if (_timer > _nbWavesBeforeBigWave * 10f)
         {
             _bigWavesTimer += Time.deltaTime;
-            y = _curveY.Evaluate(Time.timeSinceLevelLoad) * 0.85f + _initialPosition.y;
+            y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _bigWaveScaling + _initialPosition.y;
             transform.position = Vector3.up * y + _initialPosition;
             if(_bigWavesTimer > 10f)
             {
