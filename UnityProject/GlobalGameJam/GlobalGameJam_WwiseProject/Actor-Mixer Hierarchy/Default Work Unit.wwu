@@ -2690,7 +2690,7 @@
 										<AudioFileSource Name="MUS_menu" ID="{A4872969-BA9C-4C1F-AED3-49A353ACADF4}" ShortID="959380486">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="2987.757"/>
-												<Property Name="LoopBegin" Type="Real64" Value="96.6269543142229"/>
+												<Property Name="LoopBegin" Type="Real64" Value="27.1170823403576"/>
 												<Property Name="LoopEnd" Type="Real64" Value="124.483307362575"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
