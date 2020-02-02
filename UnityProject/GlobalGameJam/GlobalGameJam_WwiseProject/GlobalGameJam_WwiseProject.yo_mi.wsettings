@@ -21,6 +21,7 @@
 				<Property Name="Event Action List\{92789871-E201-47BA-BB03-E5A6E33D2397}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{98D9BEB9-220B-49E3-8874-E8DBA2A87A0A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A4450F06-02A9-4123-9F6A-1C6083D8881A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E3C8445D-A862-4B42-B2FE-903A23661F86}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -41,7 +42,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="7axY5+J8B0Sr8EmHWaK8JPalFLWhFrFAkgriApMs/nU="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="921G0EJ+e0q34LmjSkf/dg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="Ecen4oDuDUyul+ATErWC3QH/////////7MIvmDTQyEaO3gko4oPVOAH/////////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="7MIvmDTQyEaO3gko4oPVOAH/////////Ecen4oDuDUyul+ATErWC3QH/////////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -57,7 +58,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_11_0" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_0" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_0" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_0" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
@@ -93,8 +94,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_0" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_0" Type="string" Value="9Jpoow72KUOnFUUKYO7gSiBqQspvy/BPtXA4/N2A5qI="/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="b2OMTBblUUCeHBHVcuDAaPSaaKMO9ilDpxVFCmDu4Eo5F5u3UJBuR4bw3Fk83ow2RrSgKBFvHk+n6Nnh11HmeiBqQspvy/BPtXA4/N2A5qI="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_0" Type="string" Value="Re+qn5D4J0OTSYMlA3O58l2iXQ8aBnpOhpcDMc4w9eY="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="b2OMTBblUUCeHBHVcuDAaPSaaKMO9ilDpxVFCmDu4Eo5F5u3UJBuR4bw3Fk83ow28zGj0gE60Eebf6xlZmqxsiBqQspvy/BPtXA4/N2A5qI="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_0" Type="string" Value="XaJdDxoGek6GlwMxzjD15g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="XaJdDxoGek6GlwMxzjD15g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_0" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
@@ -138,7 +139,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{A0AB3CE8-C440-4B70-A776-E39B48F6671B}"/>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{D4A44121-2844-4C8F-AFCC-4B9193538408}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

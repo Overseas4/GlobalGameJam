@@ -6,15 +6,19 @@
 				<SoundcasterSession Name="Ambiance" ID="{D4A44121-2844-4C8F-AFCC-4B9193538408}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="OBJ_bigWave" ID="{E3C8445D-A862-4B42-B2FE-903A23661F86}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="AMB_jour_play" ID="{73DC1731-CB1F-4E97-8F6B-769469165C1E}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="AMB_switch_nuit" ID="{52B924A7-6D46-45EF-9972-C4EE21E2EFD7}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
+							<ObjectRef Name="AMB_switch_jour" ID="{2F8D9BDC-FDC4-4D6B-A93A-DBA4BEC66F08}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>

@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID FS_EAU = 23400934U;
         static const AkUniqueID FS_SABLE_COURSE = 4224216346U;
         static const AkUniqueID FS_SABLE_MARCHE = 127011407U;
+        static const AkUniqueID OBJ_BIGWAVE = 2846663964U;
         static const AkUniqueID OBJ_TOTORO_AURA_PLAY = 304890365U;
         static const AkUniqueID TRIG_CLAQBOIS_PLAY = 2668050469U;
     } // namespace EVENTS

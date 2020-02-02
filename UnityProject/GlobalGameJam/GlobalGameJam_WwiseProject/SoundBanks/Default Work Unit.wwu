@@ -9,6 +9,7 @@
 						<ObjectRef Name="CHARACTER" ID="{1B0CBFD4-69D7-4574-A501-BDA57B7734E2}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="AMB" ID="{AFB37257-60EA-457B-AC15-635EFFE2B88F}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="OBJ_Totoro_Aura_play" ID="{37B05FA7-2FAC-48E1-B268-7B7D249F93BF}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="OBJ_DESTRUCTION" ID="{9FFA96F9-AAF9-4AB1-9720-2E1D60253731}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="TRIG_claqBois_play" ID="{8AA22861-B6E8-4F50-AA4D-FD946272EF52}" WorkUnitID="{0F5DA25D-061A-4E7A-8697-0331CE30F5E6}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
