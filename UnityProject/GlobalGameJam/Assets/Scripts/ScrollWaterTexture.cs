@@ -44,7 +44,7 @@ public class ScrollWaterTexture : MonoBehaviour
         Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2);
         float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * 0.35f + _initialPosition.y;
         transform.position = Vector3.up * y + _initialPosition;
-        if (_timer > 60f)
+        if (_timer > _nbWavesBeforeBigWave * 10f)
         {
             _bigWavesTimer += Time.deltaTime;
             y = _curveY.Evaluate(Time.timeSinceLevelLoad) * 0.85f + _initialPosition.y;
