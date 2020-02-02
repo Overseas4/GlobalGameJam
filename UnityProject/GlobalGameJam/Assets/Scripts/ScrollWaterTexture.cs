@@ -6,8 +6,6 @@ public class ScrollWaterTexture : MonoBehaviour
 {
 
     [SerializeField] private AnimationCurve _curveY = AnimationCurve.Linear(0, 0, 10, 10);
-
-
     [SerializeField] private float _wavesSpeed = 0.05f;
     [SerializeField] private float _cycleDuration = 36f;
     [SerializeField] private float _waveHeight = 2f;
@@ -30,14 +28,11 @@ public class ScrollWaterTexture : MonoBehaviour
     private Vector2 _offset = new Vector2();
     private Vector2 _offset2 = new Vector2();
     private Vector3 _initialPosition;
-    private GameObject _rotationPoint;
+
     void Start()
     {
         _offset = Renderer.material.mainTextureOffset;
         _initialPosition = transform.position;
-        _rotationPoint = new GameObject();
-        _rotationPoint.transform.SetParent(transform.parent);
-        _rotationPoint.transform.position = transform.position;
     }
 
     void Update()
@@ -48,12 +43,12 @@ public class ScrollWaterTexture : MonoBehaviour
         Renderer.material.mainTextureOffset = _offset;
         Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2);
         float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * 0.35f + _initialPosition.y;
-        transform.position = Vector3.up * y;
+        transform.position = Vector3.up * y + _initialPosition;
         if (_timer > 60f)
         {
             _bigWavesTimer += Time.deltaTime;
             y = _curveY.Evaluate(Time.timeSinceLevelLoad) * 0.85f + _initialPosition.y;
-            transform.position = Vector3.up * y;
+            transform.position = Vector3.up * y + _initialPosition;
             if(_bigWavesTimer > 10f)
             {
                 _timer = 0f;
