@@ -350,6 +350,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="ACT_porte_ferme" ID="{6E01F5B4-44FD-41EC-84F3-E3A3B9FE8153}">
+							<ChildrenList>
+								<Action Name="" ID="{B791DEFB-8407-4096-BCA5-878B5034D139}" ShortID="599823238">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_porte_ferme" ID="{651C4EA9-DE52-450C-A91E-9DA53A760A35}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ACT_porte_ouvre" ID="{7D9406CC-9FFA-4E11-B9B9-3963857FDAF9}">
+							<ChildrenList>
+								<Action Name="" ID="{CD59E7C9-703A-422D-AB7A-641761FCAD23}" ShortID="643048447">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ACT_porte_ouvre" ID="{A46AA48B-2FA8-4F9E-9CB5-58A1D674D95A}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="OBJ_DESTRUCTION" ID="{9FFA96F9-AAF9-4AB1-9720-2E1D60253731}" ShortID="509810686">
@@ -364,6 +386,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="OBJ_bigWave" ID="{385BF00C-F76F-4E1C-A7D6-75AA0C450483}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OBJ_destr_mur3" ID="{0EA5D5A2-6EFF-4CEE-91CC-A78EC81E3A1A}">
+							<ChildrenList>
+								<Action Name="" ID="{1043D16F-8B0D-4A1E-87C5-3C9B2F76957C}" ShortID="221951420">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OBJ_destr_mur3" ID="{EA3BDD28-3D22-4D73-B120-44A9ABADD0CB}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OBJ_destr_mur2" ID="{6287EB4C-1365-4916-A601-06C16A6F057E}">
+							<ChildrenList>
+								<Action Name="" ID="{C3F5972F-3F37-4F52-A300-EA0E138D803A}" ShortID="1060799465">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OBJ_destr_mur2" ID="{864B3A7B-4515-4D6F-8042-507D5481B187}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OBJ_destr_mur1" ID="{8928C323-2CA3-4F73-9D71-F05FDFA00C62}">
+							<ChildrenList>
+								<Action Name="" ID="{0CCF4904-B822-47DB-9E8F-39E1F6FDD9B1}" ShortID="455939483">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OBJ_destr_mur1" ID="{AE1CB632-96DD-4068-9028-CD6A3E13BDB1}" WorkUnitID="{A3689AF4-F60E-4329-A715-450A60EEE04A}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

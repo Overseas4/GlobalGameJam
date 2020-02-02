@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID ACT_BOIS_PICKUP = 2503182546U;
         static const AkUniqueID ACT_BOIS_USE = 912935335U;
         static const AkUniqueID ACT_EAU_PICKUP = 4281641228U;
+        static const AkUniqueID ACT_PORTE_FERME = 1539852140U;
+        static const AkUniqueID ACT_PORTE_OUVRE = 206252308U;
         static const AkUniqueID ACT_SABLE_PICKUP = 2528094752U;
         static const AkUniqueID ACT_SABLE_USE = 2689366621U;
         static const AkUniqueID ACT_SUPERBOIS_PICKUP = 2961476021U;
