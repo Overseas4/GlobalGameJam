@@ -2665,6 +2665,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<ActorMixer Name="MUS_menu" ID="{AF953BCE-B7DC-4C48-9D73-2DF4D1A17E72}" ShortID="262272873">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9F81F580-E43B-4603-9B6D-750A5ADABBCF}"/>
