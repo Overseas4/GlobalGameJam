@@ -30,6 +30,7 @@ public class ScrollWaterTexture : MonoBehaviour
     private Vector2 _offset = new Vector2();
     private Vector2 _offset2 = new Vector2();
     private Vector3 _initialPosition;
+    bool isBigWave = false;
 
     void Start()
     {
@@ -46,8 +47,14 @@ public class ScrollWaterTexture : MonoBehaviour
         Renderer.material.SetTextureOffset("_DetailAlbedoMap", _offset2);
         float y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _normalWaveScaling;
         transform.position = Vector3.up * y + _initialPosition;
+        isBigWave = false;
         if (_timer > _nbWavesBeforeBigWave * 10f)
         {
+            if (!isBigWave)
+            {
+                eventController.Instance.OBJ_bigWave.Post(gameObject);
+            }
+            isBigWave = true;
             _bigWavesTimer += Time.deltaTime;
             y = _curveY.Evaluate(Time.timeSinceLevelLoad) * _bigWaveScaling;
             transform.position = Vector3.up * y + _initialPosition;

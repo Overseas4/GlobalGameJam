@@ -26,8 +26,9 @@ public class eventController : MonoBehaviour
 	public AK.Wwise.Event ACT_sable_pickUp;
 	public AK.Wwise.Event ACT_superBois_pickUp;
 
-	public AK.Wwise.Event OBJ_destr_barricade;
-	public AK.Wwise.Event OBJ_destr_mur1;
+    public AK.Wwise.Event OBJ_destr_barricade;
+    public AK.Wwise.Event OBJ_bigWave;
+    public AK.Wwise.Event OBJ_destr_mur1;
 	public AK.Wwise.Event OBJ_destr_mur2;
 	public AK.Wwise.Event OBJ_destr_mur3;
 	public AK.Wwise.Event OBJ_destr_porte;
