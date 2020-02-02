@@ -22,6 +22,8 @@ public class ScrollWaterTexture : MonoBehaviour
 
     private int _wavesCount = 0;
     [SerializeField] private int _nbWavesBeforeBigWave = 5;
+    [SerializeField] private Vector2 _minMaxDamage = new Vector2(10f, 15f);
+    [SerializeField] private float _damageMultiplierPerBigWave = 1.5f;
 
     private Renderer _renderer = null;
     private Renderer Renderer { get => _renderer != null ? _renderer : _renderer = GetComponent<Renderer>(); }
@@ -51,8 +53,29 @@ public class ScrollWaterTexture : MonoBehaviour
             transform.position = Vector3.up * y + _initialPosition;
             if(_bigWavesTimer > 10f)
             {
+                _minMaxDamage *= _damageMultiplierPerBigWave;
                 _bigWavesTimer = 0f;
                 _timer = 0f;
+            }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Interactible"))
+        {
+            Destructible destructible = other.GetComponent<Destructible>();
+            if(destructible != null)
+            {
+                destructible.TakeDamage(Random.Range(_minMaxDamage.x, _minMaxDamage.y));
+            }
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Destructible destructible = other.GetComponent<Destructible>();
+            if (destructible != null)
+            {
+                destructible.TakeDamage(Random.Range(_minMaxDamage.x, _minMaxDamage.y));
             }
         }
     }
