@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Water : MonoBehaviour
+public class ScrollWaterTexture : MonoBehaviour
 {
 
     [SerializeField] private AnimationCurve _curveY = AnimationCurve.Linear(0, 0, 10, 10);
