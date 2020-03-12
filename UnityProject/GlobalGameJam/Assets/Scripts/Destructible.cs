@@ -186,7 +186,7 @@ public class Destructible : MonoBehaviour, IDestructible
         if (other.gameObject.layer == waterLayerMask)
         {
             IsInWater = true;
-            ScrollWaterTexture water = other.GetComponent<ScrollWaterTexture>();
+            Water water = other.GetComponent<Water>();
             TakeDamage(Random.Range(water._minMaxDamage.x, water._minMaxDamage.y));
         }
     }
